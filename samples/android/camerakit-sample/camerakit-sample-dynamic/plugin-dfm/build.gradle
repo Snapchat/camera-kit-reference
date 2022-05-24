@@ -1,0 +1,29 @@
+apply plugin: 'com.android.dynamic-feature'
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+
+    buildFeatures {
+        buildConfig = false
+        resValues = false
+    }
+
+    defaultConfig {
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude("**/*.mp4")
+    }
+}
+
+dependencies {
+    implementation project(':camerakit-sample-dynamic-plugin-shared')
+    implementation project(':camerakit-sample-dynamic-app-host-dfm')
+}

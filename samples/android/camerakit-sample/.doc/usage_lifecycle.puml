@@ -1,0 +1,23 @@
+@startuml
+skinparam activity {
+    backgroundColor #fff
+}
+
+start
+partition "App/Activity onCreate" {
+:Create Source<ImageProcessor>, backed by hardware camera or video stream;
+:Obtain Session.Builder using a method that takes Android Context;
+:Configure Session using its Builder to provide Source<ImageProcessor> and other options;
+:Build Session and keep the instance around, it is the entry point to all SDK features;
+}
+partition "In foreground / onResume" {
+:Get available Lenses through LensesComponent exposed by Session;
+:Pick one Lens from the list of available;
+:Request to apply selected Lens;
+:Request to remove all applied Lenses if needed;
+}
+partition "App/Activity / onDestroy" {
+:Close Session to release all resources;
+}
+stop
+@enduml

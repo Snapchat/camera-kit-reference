@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CameraKit Custom Video Sample</string>
+    <string name="camera_kit_unsupported">CameraKit is not supported on this device</string>
+    <string name="required_permissions_not_granted">Required permissions not granted by the user: %s</string>
+</resources>

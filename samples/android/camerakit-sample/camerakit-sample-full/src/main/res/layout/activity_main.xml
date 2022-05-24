@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.snap.camerakit.support.widget.CameraLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:splitMotionEvents="true"
+        app:lensesCarouselHeight="@dimen/lenses_carousel_height"
+        app:lensesCarouselMarginBottom="@dimen/lenses_carousel_margin_bottom"
+        app:lensesCarouselCloseButtonMarginBottom="@dimen/lenses_carousel_close_button_margin_bottom"
+        >
+
+        <TextureView
+            android:id="@+id/mini_preview"
+            android:layout_width="126dp"
+            android:layout_height="224dp"
+            android:layout_gravity="bottom|end"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lens_attribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/avenir_next_demi_bold"
+            android:textSize="20sp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Very long lens name that should get ellipsized"
+            />
+
+    </com.snap.camerakit.support.widget.CameraLayout>
+
+    <FrameLayout
+        android:id="@+id/debug_container"
+        android:layout_width="224dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/black"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ToggleButton
+                android:id="@+id/custom_lenses_carousel_view_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="top|start"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textAllCaps="true"
+                android:textOff="@string/custom_lenses_carousel_off"
+                android:textOn="@string/custom_lenses_carousel_on"
+                />
+
+            <ToggleButton
+                android:id="@+id/mini_preview_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="top|start"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textAllCaps="true"
+                android:textOff="@string/mini_preview_off"
+                android:textOn="@string/mini_preview_on"
+                />
+
+            <ToggleButton
+                android:id="@+id/capture_photo_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center_vertical|start"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textAllCaps="true"
+                android:textOff="@string/capture_photo_off"
+                android:textOn="@string/capture_photo_on"
+                />
+
+            <ToggleButton
+                android:id="@+id/mute_audio_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center_vertical|start"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textAllCaps="true"
+                android:textOff="@string/mute_audio_off"
+                android:textOn="@string/mute_audio_on"
+                />
+
+            <Button
+                android:id="@+id/lenses_prefetch_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center_vertical|start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textAllCaps="true"
+                android:text="@string/prefetch_lenses"
+                />
+
+            <Button
+                android:id="@+id/update_lens_groups_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center_vertical|start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textAllCaps="true"
+                android:text="@string/update_lens_groups"
+                />
+
+            <Button
+                android:id="@+id/trigger_legal_prompt_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_vertical|start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textAllCaps="true"
+                android:text="@string/trigger_legal_prompt"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/version_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="bottom|start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:color/black"
+            />
+
+    </FrameLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

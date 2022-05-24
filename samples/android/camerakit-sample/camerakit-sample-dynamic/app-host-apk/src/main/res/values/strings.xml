@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CameraKit Sample Dynamic Standalone APK</string>
+    <string name="message_lenses_unavailable">No lenses are available</string>
+    <string name="message_camerakit_start_failure">Failed to start CameraKit due to:\n\n%s</string>
+    <string name="message_camerakit_unsupported">CameraKit is not supported on this device</string>
+    <string name="button_camerakit_start">Start CameraKit</string>
+</resources>
