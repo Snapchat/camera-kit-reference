@@ -47,7 +47,7 @@ allprojects {
     // AS has a bug where it incorrectly constructs a dependency version string for an artifact that
     // is published with .aar extension (Maven packaging) when executing a "download sources" task
     // that is built-in, see similar issue: https://youtrack.jetbrains.com/issue/IDEA-234036.
-    // We fix it for CameraKit artifacts by removing @aar extension from version name using
+    // We fix it for Camera Kit artifacts by removing @aar extension from version name using
     // a custom resolutionStrategy:
     configurations.all {
         if (it.name.startsWith('downloadSources')) {

@@ -1,6 +1,6 @@
-# CameraKit Sample Custom Input App
+# Camera Kit Sample Custom Input App
 
-An app that demonstrates how to setup a custom input to the CameraKit's processing pipeline:
+An app that demonstrates how to setup a custom input to the Camera Kit's processing pipeline:
 
 ![demo](../.doc/sample_input_demo.png)
 

@@ -1,4 +1,4 @@
-# CameraKit Sample Full App
+# Camera Kit Sample Full App
 
 An app that opens into a camera screen where user can capture photos or videos with lenses applied:
 

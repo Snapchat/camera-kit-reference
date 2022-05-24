@@ -1,9 +1,9 @@
 # CHANGELOG
 
-All notable changes to the CameraKit SDK will be documented in this file.
+All notable changes to the Camera Kit SDK will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and the CameraKit SDK adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <a name="unreleased"></a>
 ## [Unreleased]
@@ -11,8 +11,8 @@ and the CameraKit SDK adheres to [Semantic Versioning](https://semver.org/spec/v
 <a name="1.12.0"></a>
 ## [1.12.0] - 2022-04-22
 ### Notes
-- Starting with this release, an API token **must** be provided as part of the CameraKit configuration, failure to do so will result in a runtime exception. See [Android](https://docs.snap.com/snap-kit/camera-kit/configuration/android#service-authorization) and [iOS](https://docs.snap.com/snap-kit/camera-kit/configuration/ios/#service-authorization) documentation for examples on how to obtain and provide an API token.
-- The legal agreement prompt has been updated to use a more user friendly text copy. Updating to this release will result in users needing to accept the updated prompt which includes a new link to the CameraKit's "learn more" [page](https://support.snapchat.com/en-US/article/camera-information-use).
+- Starting with this release, an API token **must** be provided as part of the Camera Kit configuration, failure to do so will result in a runtime exception. See [Android](https://docs.snap.com/snap-kit/camera-kit/configuration/android#service-authorization) and [iOS](https://docs.snap.com/snap-kit/camera-kit/configuration/ios/#service-authorization) documentation for examples on how to obtain and provide an API token.
+- The legal agreement prompt has been updated to use a more user friendly text copy. Updating to this release will result in users needing to accept the updated prompt which includes a new link to the Camera Kit's "learn more" [page](https://support.snapchat.com/en-US/article/camera-information-use).
 
 ### Features
 - Lens Studio 4.19 support
@@ -28,7 +28,7 @@ and the CameraKit SDK adheres to [Semantic Versioning](https://semver.org/spec/v
 - **iOS:**  `LensProcessor.setAudioMuted` doesn't mute/unmute audio coming from lenses
 
 ### Known Issues
-- Lenses using the new [Text to Speech](https://docs.snap.com/lens-studio/references/guides/lens-features/audio/text-to-speech) feature throw a runtime exception on Android and simply do nothing on iOS. This is expected as the feature is currently unavailable in CameraKit.  
+- Lenses using the new [Text to Speech](https://docs.snap.com/lens-studio/references/guides/lens-features/audio/text-to-speech) feature throw a runtime exception on Android and simply do nothing on iOS. This is expected as the feature is currently unavailable in Camera Kit.  
 
 <a name="1.11.1"></a>
 ## [1.11.1] - 2022-04-05
@@ -48,7 +48,7 @@ and the CameraKit SDK adheres to [Semantic Versioning](https://semver.org/spec/v
 ## [1.10.0] - 2022-02-28
 ### Bug Fixes
 - **iOS:**  Binary size optimizations (1.3MB uncompressed savings)
-- **Android:**  Use consistent directory names for files related to CameraKit
+- **Android:**  Use consistent directory names for files related to Camera Kit
 - **Android:**  Certain emulator images fail to render lenses
 
 ### Features
@@ -638,7 +638,7 @@ and the CameraKit SDK adheres to [Semantic Versioning](https://semver.org/spec/v
 <a name="0.2.0"></a>
 ## [0.2.0] - 2020-02-27
 ### Bug Fixes
-- **Android:**  Shutdown CameraKit when app ID is unauthorized
+- **Android:**  Shutdown Camera Kit when app ID is unauthorized
 - **Android:**  Restart lens tracking on single tap gesture
 - **Android:**  Audio playback continues when app is in background
 
