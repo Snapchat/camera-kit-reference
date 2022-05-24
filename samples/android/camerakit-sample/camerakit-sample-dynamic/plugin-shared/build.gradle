@@ -1,0 +1,30 @@
+// This module contains a basic implementation of CameraKit's Plugin interface which can be used
+// to interact with dynamically loaded CameraKit SDK in both dynamic feature module and standalone
+// apk scenarios.
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        consumerProguardFiles 'consumer-proguard-rules.pro'
+    }
+
+    buildFeatures {
+        buildConfig = false
+        resValues = false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api "com.snap.camerakit:camerakit-plugin-api:$cameraKitVersion"
+    api "com.snap.camerakit:camerakit:$cameraKitVersion"
+}

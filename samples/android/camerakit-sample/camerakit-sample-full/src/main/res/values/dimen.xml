@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lenses_carousel_margin_bottom">0dp</dimen>
+    <dimen name="lenses_carousel_height">152dp</dimen>
+    <dimen name="lenses_carousel_close_button_margin_bottom">20dp</dimen>
+</resources>

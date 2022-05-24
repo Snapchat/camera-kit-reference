@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CameraKit Sample</string>
+    <string name="app_name_portrait_locked">CameraKit Sample Portrait</string>
+    <string name="camera_kit_unsupported">CameraKit is not supported on this device</string>
+    <string name="camera_kit_error">Error in Camera Kit</string>
+    <string name="required_permissions_not_granted">Required permissions not granted by the user: %s</string>
+    <string name="available_lenses">Available lenses</string>
+    <string name="prefetch_lenses">Prefetch lenses</string>
+    <string name="update_lens_groups">Update lens groups</string>
+    <string name="trigger_legal_prompt">Trigger legal prompt</string>
+    <string name="lens_groups">Lens groups</string>
+    <string name="version_info">v%s (%d)</string>
+    <string name="mini_preview_off">Mini Preview OFF</string>
+    <string name="mini_preview_on">Mini Preview ON</string>
+    <string name="capture_photo_off">Photo Capture OFF</string>
+    <string name="capture_photo_on">Photo Capture ON</string>
+    <string name="custom_lenses_carousel_off">Custom Carousel OFF</string>
+    <string name="custom_lenses_carousel_on">Custom Carousel ON</string>
+    <string name="mute_audio_off">Mute Audio OFF</string>
+    <string name="mute_audio_on">Mute Audio ON</string>
+    <string name="share_video">Share video</string>
+    <string name="share_image">Share image</string>
+    <string name="button_camera_flip_content_description">Flip camera</string>
+    <string name="button_lens_activate_content_description">Activate lenses</string>
+    <string name="ar_core_take_photo_unsupported">ARCore does not support capturing photo.</string>
+    <string name="reset">Reset</string>
+
+    <string name="transition_shared_dummy">transition_shared_dummy</string>
+    <string name="lock_portrait_orientation">lock_portrait_orientation</string>
+</resources>

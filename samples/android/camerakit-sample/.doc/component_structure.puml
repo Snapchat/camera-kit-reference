@@ -1,0 +1,79 @@
+@startuml
+
+skinparam linetype ortho
+skinparam component {
+    backgroundColor #fff
+}
+skinparam class {
+    backgroundColor #fff
+}
+skinparam note {
+    backgroundColor #FFFC00
+}
+
+interface ImageProcessor {
+    Closeable connectInput(ImageProcessor.Input input)
+    Closeable connectOutput(ImageProcessor.Output output)
+}
+
+component Session {
+
+    component LensesComponent {
+
+        interface Processor {
+            void apply(Lens lens, Consumer<Boolean> callback)
+            void clear(Consumer<Boolean> callback)
+        }
+        interface Repository {
+            void query(QueryCriteria queryCriteria, Consumer<Result> callback)
+        }
+        interface Lens {
+            id : String
+        }
+
+        Processor --|> ImageProcessor
+    }
+}
+
+Session --o LensesComponent : Owns and provides access to various feature components like lenses
+
+rectangle App {
+    class Context
+    class ViewStub
+    interface Source<ImageProcessor> {
+       Closeable attach(ImageProcessor imageProcessor)
+    }
+    interface LensesConfiguration
+
+    Context ---> Session
+    ViewStub ...> Session
+    Session <... LensesConfiguration
+    Source ...> Session
+
+}
+
+note bottom of App
+    User provided dependencies to create a new Session instance.
+    All dependencies except for the Android Context are optional
+    making it possible to use Session without image processing
+    capabilities - when loading data in a background job, for example.
+end note
+
+note top of Context
+   Needed to access resources, assets etc.
+end note
+
+note top of LensesConfiguration
+   Allows to configure LensesComponent behavior
+end note
+
+note top of Source
+   Abstraction that allows to connect to image
+   streaming source such as device camera
+end note
+
+note top of ViewStub
+   Provides a place in view hierarchy for Session to attach views
+end note
+
+@enduml

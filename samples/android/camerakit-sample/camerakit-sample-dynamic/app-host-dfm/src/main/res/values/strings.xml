@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CameraKit Sample Dynamic Feature Module</string>
+    <string name="title_camerakit">dynamic_feature_camerakit</string>
+    <string name="message_camerakit_load_feature">Loading CameraKit as dynamic feature</string>
+    <string name="message_camerakit_start_failure">Failed to start CameraKit due to:\n\n%s</string>
+    <string name="button_camerakit_start">Start CameraKit</string>
+</resources>

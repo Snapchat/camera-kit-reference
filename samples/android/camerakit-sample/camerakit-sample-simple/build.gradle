@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+
+    defaultConfig {
+        applicationId 'com.snap.camerakit.sample.simple'
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode cameraKitDistributionCode
+        versionName cameraKitDistributionVersion
+
+        manifestPlaceholders = [
+            'cameraKitApplicationId': cameraKitApplicationId,
+            'cameraKitApiToken': cameraKitApiToken
+        ]
+
+        buildConfigField 'String', "LENS_GROUP_ID_TEST", "\"$cameraKitLensesGroupId\""
+    }
+
+    buildTypes {
+        debug {}
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        debug {
+            storeFile rootProject.file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+}
+
+dependencies {
+    // The artifact that provides CameraKit support CameraActivity which transitively pulls all the necessary
+    // dependencies to get a full-featured CameraKit based camera capture flow.
+    implementation "com.snap.camerakit:support-camera-activity:$cameraKitVersion"
+}

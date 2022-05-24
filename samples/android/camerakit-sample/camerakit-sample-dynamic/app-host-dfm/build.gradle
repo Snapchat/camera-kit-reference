@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+android {
+    def cameraKitDynamicFeatureModule = 'camerakit_sample_dynamic_plugin_dfm'
+
+    compileSdkVersion androidCompileSdkVersion
+
+    defaultConfig {
+        applicationId 'com.snap.camerakit.sample.dynamic.app'
+
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode cameraKitDistributionCode
+        versionName cameraKitDistributionVersion
+
+        manifestPlaceholders = [
+                'cameraKitApplicationId': cameraKitApplicationId,
+                'cameraKitApiToken': cameraKitApiToken
+        ]
+
+        buildConfigField 'String', "LENS_GROUP_ID_TEST", "\"$cameraKitLensesGroupId\""
+        buildConfigField 'String', "DYNAMIC_FEATURE_CAMERAKIT", "\"$cameraKitDynamicFeatureModule\""
+    }
+
+    dynamicFeatures = [":$cameraKitDynamicFeatureModule".toString()]
+
+    buildTypes {
+        debug {}
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        debug {
+            storeFile rootProject.file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+}
+
+configurations {
+    binary
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+    implementation 'com.google.android.play:core:1.10.3'
+
+    api "com.snap.camerakit:camerakit-plugin-api:$cameraKitVersion"
+    api "com.snap.camerakit:camerakit-api:$cameraKitVersion"
+
+    binary 'com.android.tools.build:bundletool:1.2.0'
+}
+
+def aapt2Path = new File(
+        android.sdkDirectory, "build-tools/${android.buildToolsRevision}/aapt2").absolutePath
+def bundleToolMainClass = 'com.android.tools.build.bundletool.BundleToolMain'
+
+// Adds a couple of new tasks per app variant to build and install apk split files to a connected
+// device for local testing to avoid the need to upload app bundles to Google Play, copy modified from:
+// https://github.com/android/app-bundle-samples/blob/3d37e1a68e11f6f146831b9ab047223a45246ed6/DynamicFeatureNavigation/XML/app/build.gradle.kts#L63-L95
+android.applicationVariants.all { variant ->
+    variant.outputs.each { output ->
+        def apkPath = output.outputFile.absolutePath
+        apkPath = apkPath.replace('.apk', '.aab')
+        apkPath = apkPath.replace('build/outputs/apk/', 'build/outputs/bundle/')
+
+        def apksPath = apkPath.replace('build/outputs/bundle/', 'build/outputs/apks/')
+        apksPath = apksPath.replace('.aab', '.apks')
+
+        def buildApksTask = tasks.register("buildApks${variant.name.capitalize()}", JavaExec) {
+            classpath = configurations.binary
+            main = bundleToolMainClass
+            args = [
+                    'build-apks',
+                    '--overwrite',
+                    '--local-testing',
+                    '--bundle',
+                    apkPath,
+                    '--output',
+                    apksPath,
+                    '--ks',
+                    android.signingConfigs.debug.storeFile.absolutePath,
+                    '--ks-pass',
+                    "pass:$android.signingConfigs.debug.storePassword",
+                    '--ks-key-alias',
+                    android.signingConfigs.debug.keyAlias,
+                    '--key-pass',
+                    "pass:$android.signingConfigs.debug.keyPassword",
+                    '--aapt2',
+                    aapt2Path
+            ]
+            dependsOn("bundle${variant.name.capitalize()}")
+        }
+
+        tasks.register("installApkSplitsForTest${variant.name.capitalize()}", JavaExec) {
+            group = 'Install'
+            classpath = configurations.binary
+            main = bundleToolMainClass
+            args = ['install-apks', '--apks', apksPath]
+            dependsOn(buildApksTask)
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lenses_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/lenses_unavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="@string/message_lenses_unavailable"
+        style="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/loading_indicator"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        style="@style/Widget.AppCompat.ProgressBar"
+        />
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="end"
+        >
+
+        <ViewStub
+            android:id="@+id/camerakit_stub"
+            android:inflatedId="@+id/camerakit_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+</merge>
