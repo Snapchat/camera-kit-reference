@@ -1,4 +1,4 @@
-# CameraKit Sample Custom Video App
+# Camera Kit Sample Custom Video App
 
 An app that opens into a camera screen where user can capture videos with lenses applied with native Android video recording architecture:
 

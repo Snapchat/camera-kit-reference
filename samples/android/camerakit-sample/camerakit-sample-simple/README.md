@@ -1,10 +1,10 @@
-# CameraKit Sample Simple App
+# Camera Kit Sample Simple App
 
-An app that demonstrates how to launch the CameraKit's support `CameraActivity` with different parameters and get results back:
+An app that demonstrates how to launch the Camera Kit's support `CameraActivity` with different parameters and get results back:
 
 ![demo](../.doc/sample_simple_demo.gif)
 
-The full-featured `CameraActivity` is a great option for existing apps to integrate CameraKit without much additional code with the most minimal setup being:
+The full-featured `CameraActivity` is a great option for existing apps to integrate Camera Kit without much additional code with the most minimal setup being:
 
 - Add to a `build.gradle`:
     ```groovy

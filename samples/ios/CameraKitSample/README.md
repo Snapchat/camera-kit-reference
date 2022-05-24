@@ -2,13 +2,13 @@
 
 ### Usage Philosophy
 
-In general, CameraKit attaches to your existing camera workflow. You are still responsible for configuring and managing an AVCaptureSession, which CameraKit will attach onto. You may start, stop, and reconfigure your session as needed.
+In general, Camera Kit attaches to your existing camera workflow. You are still responsible for configuring and managing an AVCaptureSession, which Camera Kit will attach onto. You may start, stop, and reconfigure your session as needed.
 
 ## Getting Started
 
 ### Requirements
 
-CameraKit requires a minimum of iOS 11, and a 64 bit processor. CameraKit will compile, but not run on a Simulator (due to lack of AVCaptureSession support).
+Camera Kit requires a minimum of iOS 11, and a 64 bit processor. Camera Kit will compile, but not run on a Simulator (due to lack of AVCaptureSession support).
 
 Make sure you also update `SCCameraKitClientID` and `SCCameraKitAPIToken` in your application's `Info.plist` with the application ID and API token from the Snap Kit developer portal. Note that you can also pass in these values when creating a session like:
 ```swift
@@ -65,24 +65,24 @@ captureSession.startRunning()
 
 (PS: don't forget to add `NSCameraUsageDescription` in your Info.plist and make sure you have set up the proper permissions/authorization flows)
 
-#### Configuring the CameraKit Pipeline
+#### Configuring the Camera Kit Pipeline
 
-CameraKit works similarly to AVCaptureSession – it also has inputs and outputs. We'll create a CameraKit session, and connect it to your existing AVCaptureSession.
+Camera Kit works similarly to AVCaptureSession – it also has inputs and outputs. We'll create a Camera Kit session, and connect it to your existing AVCaptureSession.
 
-To begin, first instantiate a `Session`. A `Session` object will be your main entry point into CameraKit. Through it, you can access components like lenses.
+To begin, first instantiate a `Session`. A `Session` object will be your main entry point into Camera Kit. Through it, you can access components like lenses.
 
 ```swift
 let cameraKit = Session()
 ```
 
-Next, create a CameraKit input and start your CameraKit Session with it. AVSessionInput is an input that CameraKit provides that wraps up lens-specific details of AVCaptureSession configuration (such as setting the pixel format).
+Next, create a Camera Kit input and start your Camera Kit Session with it. AVSessionInput is an input that Camera Kit provides that wraps up lens-specific details of AVCaptureSession configuration (such as setting the pixel format).
 
 ```swift
 let input = AVSessionInput(session: yourAVCaptureSession)
 cameraKit.start(with: input)
 ```
 
-To display the processed output of CameraKit, we provide a `PreviewView` that behaves similarly to `AVCaptureVideoPreviewLayer`. The `PreviewView` is a CameraKit `Output` – it receives processed frames and displays them. We'll also set `automaticallyConfiguresTouchHandler` so that CameraKit can process touch events and users can interact with lenses. Add it to the view heirarchy like any other `UIView`, and connect it to the Session by calling `add(output:)`.
+To display the processed output of Camera Kit, we provide a `PreviewView` that behaves similarly to `AVCaptureVideoPreviewLayer`. The `PreviewView` is a Camera Kit `Output` – it receives processed frames and displays them. We'll also set `automaticallyConfiguresTouchHandler` so that CameraKit can process touch events and users can interact with lenses. Add it to the view heirarchy like any other `UIView`, and connect it to the Session by calling `add(output:)`.
 
 ```swift
 let previewView = PreviewView()
@@ -94,7 +94,7 @@ At this point, if you build and run your app, you should see your camera input d
 
 #### Activating Lenses
 
-CameraKit lenses are provided by the `LensRepository` class. You can access this through `cameraKit.lenses.respository`. Lenses are fetched asynchronously, and you may wish to hold a reference to the lenses returned from `LensRepository`.
+Camera Kit lenses are provided by the `LensRepository` class. You can access this through `cameraKit.lenses.respository`. Lenses are fetched asynchronously, and you may wish to hold a reference to the lenses returned from `LensRepository`.
 
 ```swift
 cameraKit.lenses.repository.availableLenses { lenses, error in
