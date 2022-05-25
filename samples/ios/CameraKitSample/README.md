@@ -94,12 +94,14 @@ At this point, if you build and run your app, you should see your camera input d
 
 #### Activating Lenses
 
-Camera Kit lenses are provided by the `LensRepository` class. You can access this through `cameraKit.lenses.respository`. Lenses are fetched asynchronously, and you may wish to hold a reference to the lenses returned from `LensRepository`.
+Camera Kit lenses are provided by the `LensRepository` class. You can access this through `cameraKit.lenses.respository`. Lenses are fetched asynchronously by adding yourself as an observer for a specific groupID and/or lensID in the repository, and you may wish to hold a reference to the lenses returned from `LensRepository`.
 
 ```swift
-cameraKit.lenses.repository.availableLenses { lenses, error in
+func repository(_ repository: LensRepository, didUpdateLenses lenses: [Lens], forGroupID groupID: String) {
 	self.lenses = lenses
 }
+
+cameraKit.lenses.repository.addObserver(self, groupID: "group_id_here")
 ```
 
 The `LensProcessor` is responsible for applying and clearing lenses. You can access it through `cameraKit.lenses.processor`.
