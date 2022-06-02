@@ -1,7 +1,7 @@
 target 'CameraKitSample' do
-	pod 'SCSDKCameraKit', '1.12.0'
-	pod 'SCSDKCameraKitReferenceUI', '1.12.0'
-	pod 'SCSDKCameraKitReferenceSwiftUI', '1.12.0'
+	pod 'SCSDKCameraKit', '1.13.0'
+	pod 'SCSDKCameraKitReferenceUI', '1.13.0'
+	pod 'SCSDKCameraKitReferenceSwiftUI', '1.13.0'
 	pod 'SnapSDK', '1.14.0', :subspecs => ['SCSDKCreativeKit']
 
 	target 'CameraKitSampleTests' do

@@ -10,6 +10,7 @@
 		0F16357923F1E30900DA79A0 /* ApplicationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16357823F1E30900DA79A0 /* ApplicationInfo.swift */; };
 		0F16357B23F1E34D00DA79A0 /* ApplicationInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16357A23F1E34D00DA79A0 /* ApplicationInfoTests.swift */; };
 		0F3A1CE1242C30B000CADA27 /* lens_icons in Resources */ = {isa = PBXBuildFile; fileRef = 0F3A1CE0242C30B000CADA27 /* lens_icons */; };
+		0F5219222832D18C00CFDC26 /* CatFactLensRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5219212832D18C00CFDC26 /* CatFactLensRemoteApi.swift */; };
 		0FA888552416B2FF0033B70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF07ED623D79DC500CFFA3F /* Assets.xcassets */; };
 		0FF07ECE23D79DC400CFFA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF07ECD23D79DC400CFFA3F /* AppDelegate.swift */; };
 		0FF07EDA23D79DC500CFFA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF07ED823D79DC500CFFA3F /* LaunchScreen.storyboard */; };
@@ -40,6 +41,7 @@
 		0F16357823F1E30900DA79A0 /* ApplicationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationInfo.swift; sourceTree = "<group>"; };
 		0F16357A23F1E34D00DA79A0 /* ApplicationInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationInfoTests.swift; sourceTree = "<group>"; };
 		0F3A1CE0242C30B000CADA27 /* lens_icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lens_icons; sourceTree = "<group>"; };
+		0F5219212832D18C00CFDC26 /* CatFactLensRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactLensRemoteApi.swift; sourceTree = "<group>"; };
 		0F711700251A9C4F003EA17A /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKCoreKit.framework; path = SnapKit/SCSDKCoreKit.framework; sourceTree = "<group>"; };
 		0F711701251A9C4F003EA17A /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKCreativeKit.framework; path = SnapKit/SCSDKCreativeKit.framework; sourceTree = "<group>"; };
 		0F711725251AB775003EA17A /* SCSDKCameraKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SCSDKCameraKit.xcframework; path = CameraKit/Sources/SCSDKCameraKit.xcframework; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0F16357823F1E30900DA79A0 /* ApplicationInfo.swift */,
+				0F5219212832D18C00CFDC26 /* CatFactLensRemoteApi.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF07ECE23D79DC400CFFA3F /* AppDelegate.swift in Sources */,
+				0F5219222832D18C00CFDC26 /* CatFactLensRemoteApi.swift in Sources */,
 				0F16357923F1E30900DA79A0 /* ApplicationInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

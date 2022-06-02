@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     fileprivate var supportedOrientations: UIInterfaceOrientationMask = .allButUpsideDown
 
     let snapAPI = SCSDKSnapAPI()
-    let cameraController = CameraController()
+    let cameraController = SampleCameraController()
     // This is how you configure properties for a CameraKit Session
     // Pass in applicationID and apiToken through a SessionConfig which will override the ones stored in the app's Info.plist
     // which is useful to dynamically update your apiToken in case it ever gets revoked.
@@ -95,5 +95,15 @@ extension AppDelegate: AppOrientationDelegate {
         supportedOrientations = .allButUpsideDown
     }
 
+}
+
+// MARK: Data Provider
+
+class SampleCameraController: CameraController {
+    override func configureDataProvider() -> DataProviderComponent {
+        DataProviderComponent(
+            deviceMotion: nil, userData: UserDataProvider(), lensHint: nil, location: nil,
+            mediaPicker: lensMediaProvider, remoteApiServiceProviders: [CatFactRemoteApiServiceProvider()])
+    }
 }
 

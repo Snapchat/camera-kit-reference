@@ -7,6 +7,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -14,6 +15,8 @@ import android.util.Log
 import android.view.KeyEvent
 import android.view.Surface
 import android.view.TextureView
+import android.view.Window
+import android.view.WindowManager
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -22,6 +25,7 @@ import android.widget.Toast
 import android.widget.ToggleButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.ColorUtils
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.LifecycleOwner
 import com.snap.camerakit.LegalProcessor
@@ -39,6 +43,7 @@ import com.snap.camerakit.lenses.whenApplied
 import com.snap.camerakit.lenses.whenHasSome
 import com.snap.camerakit.lenses.whenIdle
 import com.snap.camerakit.support.widget.CameraLayout
+import com.snap.camerakit.support.widget.FlashBehavior
 import com.snap.camerakit.support.widget.LensesCarouselView
 import com.snap.camerakit.support.widget.arCoreSupportedAndInstalled
 import java.io.Closeable
@@ -74,6 +79,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     private var lensesProcessorEvents = Closeable {}
     private var legalProcessorEvents = Closeable {}
     private var lensesPrefetch: Closeable = Closeable {}
+    private var flashListenerCloseable = Closeable {}
     private var useCustomLensesCarouselView = false
     private var muteAudio = false
 
@@ -97,6 +103,16 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             }
         useCustomLensesCarouselView = savedInstanceState?.getBoolean(BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL) ?: false
         muteAudio = savedInstanceState?.getBoolean(BUNDLE_ARG_MUTE_AUDIO) ?: false
+
+        // OPTIONAL: For front flash, we change status and navigation bar colors to add extra illumination on subject.
+        // In order for system bar colors to change, we need to change window flags to the following.
+        window.apply {
+            // To allow window to change color later (below).
+            addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            // The following only need to be cleared if activity/theme sets these flags.
+            clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION)
+        }
 
         setContentView(R.layout.activity_main)
         val rootLayout = findViewById<DrawerLayout>(R.id.root_layout)
@@ -135,6 +151,8 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                 if (useCustomLensesCarouselView) {
                     attachWidgetsTo(findViewById(R.id.lenses_widgets_stub))
                 }
+                // Pass a factory which provides a demo service which handles remote API requests from lenses.
+                remoteApiServiceFactory(CatFactRemoteApiService.Factory)
             }
 
             configureLensesCarousel {
@@ -155,6 +173,9 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                     }
                 }
             }
+
+            // Attach listener for flash state changes. Returned is a closeable to detach the listener on close.
+            flashListenerCloseable = flashBehavior.attachOnFlashChangedListener(OnFlashChangedListener(window))
         }
 
         cameraLayout.onSessionAvailable { session ->
@@ -235,6 +256,12 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             rootLayout.findViewById<ToggleButton>(R.id.capture_photo_toggle).apply {
                 setOnCheckedChangeListener { _, isChecked ->
                     cameraLayout.changeImageCaptureMethod(photo = isChecked)
+                }
+            }
+
+            findViewById<ToggleButton>(R.id.ring_flash_toggle).apply {
+                setOnCheckedChangeListener { _, isChecked ->
+                    cameraLayout.flashBehavior.shouldUseRingFlash = isChecked
                 }
             }
 
@@ -392,6 +419,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         lensesProcessorEvents.close()
         legalProcessorEvents.close()
         lensesPrefetch.close()
+        flashListenerCloseable.close()
         super.onDestroy()
     }
 
