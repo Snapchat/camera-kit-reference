@@ -23,8 +23,8 @@ allprojects {
         // NOTE: replace the value with a token specific to your application
         cameraKitApiToken = property('com.snap.camerakit.api.token')
         // NOTE: replace the value with a lenses group ID specific to your application
-        cameraKitLensesGroupId = property('com.snap.cakerakit.lenses.group.id')
-        cameraKitLensesGroupIdArCore = property('com.snap.cakerakit.lenses.group.id.arcore')
+        cameraKitLensesGroupId = property('com.snap.camerakit.lenses.group.id')
+        cameraKitLensesGroupIdArCore = property('com.snap.camerakit.lenses.group.id.arcore')
     }
 
     buildscript {
