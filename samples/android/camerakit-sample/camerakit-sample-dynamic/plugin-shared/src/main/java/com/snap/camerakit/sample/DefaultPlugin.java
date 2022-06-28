@@ -1,5 +1,7 @@
 package com.snap.camerakit.sample;
 
+import static com.snap.camerakit.Versions.versionFrom;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.SurfaceTexture;
@@ -16,6 +18,7 @@ import com.snap.camerakit.ImageProcessors;
 import com.snap.camerakit.Session;
 import com.snap.camerakit.Sessions;
 import com.snap.camerakit.Source;
+import com.snap.camerakit.Version;
 import com.snap.camerakit.lenses.LensesComponent;
 import com.snap.camerakit.lenses.LensesLaunchData;
 import com.snap.camerakit.plugin.Plugin;
@@ -236,5 +239,10 @@ public final class DefaultPlugin extends Plugin {
     @Override
     public LensesComponent.Lens.LaunchData.Builder newLensLaunchDataBuilder() {
         return LensesLaunchData.newBuilder();
+    }
+
+    @Override
+    public Version version() {
+        return versionFrom(context);
     }
 }

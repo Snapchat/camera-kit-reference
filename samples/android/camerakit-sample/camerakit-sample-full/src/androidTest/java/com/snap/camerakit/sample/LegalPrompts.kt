@@ -15,7 +15,7 @@ fun acceptIfLegalPromptIsDisplayed() {
     }
     try {
         val selector = By
-            .textContains("ACCEPT")
+            .textContains("I Agree")
             .clickable(true)
         if (uiDevice.wait(Until.hasObject(selector), 3_000L)) {
             uiDevice.findObject(selector)?.click()
