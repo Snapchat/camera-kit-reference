@@ -7,7 +7,6 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
-import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -15,9 +14,8 @@ import android.util.Log
 import android.view.KeyEvent
 import android.view.Surface
 import android.view.TextureView
-import android.view.Window
-import android.view.WindowManager
 import android.view.View
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -25,7 +23,6 @@ import android.widget.Toast
 import android.widget.ToggleButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.ColorUtils
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.LifecycleOwner
 import com.snap.camerakit.LegalProcessor
@@ -43,9 +40,9 @@ import com.snap.camerakit.lenses.whenApplied
 import com.snap.camerakit.lenses.whenHasSome
 import com.snap.camerakit.lenses.whenIdle
 import com.snap.camerakit.support.widget.CameraLayout
-import com.snap.camerakit.support.widget.FlashBehavior
 import com.snap.camerakit.support.widget.LensesCarouselView
 import com.snap.camerakit.support.widget.arCoreSupportedAndInstalled
+import com.snap.camerakit.versionFrom
 import java.io.Closeable
 import java.util.Date
 
@@ -85,6 +82,8 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        Log.d(TAG, "Using the CameraKit version: ${versionFrom(this)}")
 
         val metadata = packageManager.getActivityInfo(componentName, PackageManager.GET_META_DATA).metaData
         val lockPortraitOrientation = metadata?.getBoolean(getString(R.string.lock_portrait_orientation)) ?: false

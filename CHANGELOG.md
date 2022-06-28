@@ -8,6 +8,14 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.14.0"></a>
+## [1.14.0] - 2022-06-27
+### Features
+- Lens Studio 4.22 support
+- Add support for lenses with static assets
+- **Android**  New API to obtain the current version of the Camera Kit SDK
+- **iOS** Add standard flash along with ring light for front-facing flash to sample app
+
 <a name="1.13.0"></a>
 ## [1.13.0] - 2022-05-27
 ### Features

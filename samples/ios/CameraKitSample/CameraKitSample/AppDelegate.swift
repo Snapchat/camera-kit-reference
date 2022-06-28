@@ -33,7 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         cameraController.groupIDs = [SCCameraKitLensRepositoryBundledGroup, Constants.partnerGroupId]
+        
+        // If you want to support sharing to Snapchat (via CreativeKit) you can set this delegate below.
+        // Note that you need to make sure CreativeKit is set up correctly in your app, which includes
+        // adding proper SnapKit app id in Info.plist (`SCSDKClientId`) and ensuring your app is either
+        // approved in production and/or your Snapchat username is allowlisted in SnapKit dashboard.
+        // See https://docs.snap.com/snap-kit/creative-kit/Tutorials/ios
         cameraController.snapchatDelegate = self
+        
         let cameraViewController = CameraViewController(cameraController: cameraController)
         cameraViewController.appOrientationDelegate = self
         window?.rootViewController = cameraViewController
@@ -106,4 +113,3 @@ class SampleCameraController: CameraController {
             mediaPicker: lensMediaProvider, remoteApiServiceProviders: [CatFactRemoteApiServiceProvider()])
     }
 }
-
