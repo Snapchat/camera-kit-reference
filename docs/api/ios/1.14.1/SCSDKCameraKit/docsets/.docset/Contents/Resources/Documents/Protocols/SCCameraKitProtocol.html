@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SCCameraKitProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/SCCameraKitProtocol" class="dashAnchor"></a>
+
+    <a title="SCCameraKitProtocol Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           1.14.1 Docs
+        </a>
+         (87% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      SCCameraKitProtocol Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitARSessionInput.html">SCCameraKitARSessionInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitAVSessionInput.html">SCCameraKitAVSessionInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitAVWriterOutput.html">SCCameraKitAVWriterOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitCacheConfig.html">SCCameraKitCacheConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitDataProviderComponent.html">SCCameraKitDataProviderComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:objc(cs)SCCameraKitEmptyLensLaunchData">SCCameraKitEmptyLensLaunchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitExplicitViewportProvider.html">SCCameraKitExplicitViewportProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitLensLaunchDataBuilder.html">SCCameraKitLensLaunchDataBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitLensMediaPickerProviderPhotoLibrary.html">SCCameraKitLensMediaPickerProviderPhotoLibrary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitLensRemoteApiResponse.html">SCCameraKitLensRemoteApiResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitLensesConfig.html">SCCameraKitLensesConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitPhotoCaptureOutput.html">SCCameraKitPhotoCaptureOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitPortraitAdjustment.html">SCCameraKitPortraitAdjustment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitPreviewView.html">SCCameraKitPreviewView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitSession.html">SCCameraKitSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitSessionConfig.html">SCCameraKitSessionConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitToneMapAdjustment.html">SCCameraKitToneMapAdjustment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SCCameraKitUserData.html">SCCameraKitUserData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitAdjustmentsComponentErrorDomain">SCCameraKitAdjustmentsComponentErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitErrorCannotWriteToFile">SCCameraKitErrorCannotWriteToFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitErrorLensChecksumMissing">SCCameraKitErrorLensChecksumMissing</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitErrorLensContentNotFound">SCCameraKitErrorLensContentNotFound</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitErrorLensContentUrlMissing">SCCameraKitErrorLensContentUrlMissing</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitErrorLensMetadataNotFound">SCCameraKitErrorLensMetadataNotFound</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitErrorUnspecified">SCCameraKitErrorUnspecified</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitExceptionInvalidApplicationState">SCCameraKitExceptionInvalidApplicationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitExceptionInvalidLens">SCCameraKitExceptionInvalidLens</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitExceptionInvalidTexture">SCCameraKitExceptionInvalidTexture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitExceptionProcessingInternalFailure">SCCameraKitExceptionProcessingInternalFailure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitExceptionProcessingLensFailure">SCCameraKitExceptionProcessingLensFailure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitExceptionUnauthorized">SCCameraKitExceptionUnauthorized</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitLensRepositoryBundledGroup">SCCameraKitLensRepositoryBundledGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitLensesComponentErrorDomain">SCCameraKitLensesComponentErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SCCameraKitVersion">SCCameraKitVersion</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SCCameraKitAdjustmentsComponentError.html">SCCameraKitAdjustmentsComponentError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SCCameraKitLensFacingPreference.html">SCCameraKitLensFacingPreference</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SCCameraKitLensFetchStatus.html">SCCameraKitLensFetchStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SCCameraKitLensMediaPickerAssetType.html">SCCameraKitLensMediaPickerAssetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SCCameraKitLensMediaPickerProviderAllowedMediaType.html">SCCameraKitLensMediaPickerProviderAllowedMediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SCCameraKitLensRemoteApiResponseStatus.html">SCCameraKitLensRemoteApiResponseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SCCameraKitLensRemoteApiServiceCallStatus.html">SCCameraKitLensRemoteApiServiceCallStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Adjustment.html">Adjustment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitARInputDelegate.html">SCCameraKitARInputDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAccessTokenProvider.html">SCCameraKitAccessTokenProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAccessTokenProviderTask.html">SCCameraKitAccessTokenProviderTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols.html#/c:objc(pl)SCCameraKitAdjustment">SCCameraKitAdjustment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols.html#/c:objc(pl)SCCameraKitAdjustmentController">SCCameraKitAdjustmentController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAdjustmentsComponent.html">SCCameraKitAdjustmentsComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAdjustmentsProcessor.html">SCCameraKitAdjustmentsProcessor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAdjustmentsProcessorObserver.html">SCCameraKitAdjustmentsProcessorObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAgreementSet.html">SCCameraKitAgreementSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAgreementsPresentationContextProvider.html">SCCameraKitAgreementsPresentationContextProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitAgreementsStore.html">SCCameraKitAgreementsStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitDeviceMotionDataProvider.html">SCCameraKitDeviceMotionDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitDeviceMotionParameters.html">SCCameraKitDeviceMotionParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitErrorHandler.html">SCCameraKitErrorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitInputDestination.html">SCCameraKitInputDestination</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLens.html">SCCameraKitLens</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensHintDelegate.html">SCCameraKitLensHintDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensHintProvider.html">SCCameraKitLensHintProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols.html#/c:objc(pl)SCCameraKitLensLaunchData">SCCameraKitLensLaunchData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensMediaPickerAsset.html">SCCameraKitLensMediaPickerAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensMediaPickerProvider.html">SCCameraKitLensMediaPickerProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensMediaPickerProviderMediaApplicationDelegate.html">SCCameraKitLensMediaPickerProviderMediaApplicationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensMediaPickerProviderUIDelegate.html">SCCameraKitLensMediaPickerProviderUIDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensPrefetcher.html">SCCameraKitLensPrefetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensPrefetcherObserver.html">SCCameraKitLensPrefetcherObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensPrefetcherTask.html">SCCameraKitLensPrefetcherTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensPreview.html">SCCameraKitLensPreview</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensProcessor.html">SCCameraKitLensProcessor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensProcessorObserver.html">SCCameraKitLensProcessorObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRemoteApiRequest.html">SCCameraKitLensRemoteApiRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRemoteApiResponse.html">SCCameraKitLensRemoteApiResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRemoteApiService.html">SCCameraKitLensRemoteApiService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRemoteApiServiceCall.html">SCCameraKitLensRemoteApiServiceCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRemoteApiServiceProvider.html">SCCameraKitLensRemoteApiServiceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRepository.html">SCCameraKitLensRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRepositoryGroupObserver.html">SCCameraKitLensRepositoryGroupObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensRepositorySpecificObserver.html">SCCameraKitLensRepositorySpecificObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLensesComponent.html">SCCameraKitLensesComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLocationDataProvider.html">SCCameraKitLocationDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitLocationParameters.html">SCCameraKitLocationParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitOutput.html">SCCameraKitOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitPortraitAdjustmentController.html">SCCameraKitPortraitAdjustmentController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitPreferences.html">SCCameraKitPreferences</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitProtocol.html">SCCameraKitProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitTextInputContextProvider.html">SCCameraKitTextInputContextProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitTextInputKeyboardAccessoryProvider.html">SCCameraKitTextInputKeyboardAccessoryProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols.html#/c:objc(pl)SCCameraKitTexture">SCCameraKitTexture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitToneMapAdjustmentController.html">SCCameraKitToneMapAdjustmentController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitUserDataProvider.html">SCCameraKitUserDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SCCameraKitUserDataProviderDelegate.html">SCCameraKitUserDataProviderDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type%20Definitions/SCCameraKitLensMediaPickerAssetMetadata.html">SCCameraKitLensMediaPickerAssetMetadata</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/AdjustmentsProcessor.html">AdjustmentsProcessor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>SCCameraKitProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SCCameraKitProtocol</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
+
+<span class="c1">/// Contains lenses related objects.</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensesComponent.html">SCCameraKitLensesComponent</a></span><span class="o">&gt;</span> <span class="n">lenses</span><span class="p">;</span>
+
+<span class="c1">/// Contains adjustment related objects.</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAdjustmentsComponent.html">SCCameraKitAdjustmentsComponent</a></span><span class="o">&gt;</span> <span class="n">adjustments</span><span class="p">;</span>
+
+<span class="c1">/// Begin processing input frames with front camera position and portrait video orientation</span>
+<span class="c1">/// @param input the input to configure.</span>
+<span class="c1">/// @param arInput the ARKit input to configure.</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+               <span class="nf">arInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span> <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">start</span><span class="p">(</span><span class="n">input</span><span class="o">:</span><span class="n">arInput</span><span class="o">:</span><span class="p">));</span>
+
+<span class="c1">/// Deprecated. Use</span>
+<span class="c1">/// -startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:agreementsPresentationContextProvider:</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+               <span class="nf">arInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span>
+        <span class="nf">cameraPosition</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">cameraPosition</span>
+      <span class="nf">videoOrientation</span><span class="p">:(</span><span class="n">AVCaptureVideoOrientation</span><span class="p">)</span><span class="nv">videoOrientation</span>
+          <span class="nf">dataProvider</span><span class="p">:(</span><span class="n"><a href="../Classes/SCCameraKitDataProviderComponent.html">SCCameraKitDataProviderComponent</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">dataProvider</span>
+          <span class="nf">hintDelegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensHintDelegate.html">SCCameraKitLensHintDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">hintDelegate</span> <span class="n">__attribute__</span><span class="p">((</span><span class="n">deprecated</span><span class="p">));</span>
+
+<span class="c1">/// Deprecated. Use</span>
+<span class="c1">/// -startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:textInputContextProvider:agreementsPresentationContextProvider:</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+                                  <span class="nf">arInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span>
+                           <span class="nf">cameraPosition</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">cameraPosition</span>
+                         <span class="nf">videoOrientation</span><span class="p">:(</span><span class="n">AVCaptureVideoOrientation</span><span class="p">)</span><span class="nv">videoOrientation</span>
+                             <span class="nf">dataProvider</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/SCCameraKitDataProviderComponent.html">SCCameraKitDataProviderComponent</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">dataProvider</span>
+                             <span class="nf">hintDelegate</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensHintDelegate.html">SCCameraKitLensHintDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">hintDelegate</span>
+    <span class="nf">agreementsPresentationContextProvider</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAgreementsPresentationContextProvider.html">SCCameraKitAgreementsPresentationContextProvider</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">agreementsPresentationContextProvider</span>
+    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">start</span><span class="p">(</span><span class="n">input</span><span class="o">:</span><span class="n">arInput</span><span class="o">:</span><span class="n">cameraPosition</span><span class="o">:</span><span class="n">videoOrientation</span><span class="o">:</span><span class="n">dataProvider</span><span class="o">:</span><span class="n">hintDelegate</span><span class="o">:</span><span class="n">agreementsPresentationContextProvider</span><span class="o">:</span><span class="p">))</span>
+        <span class="n">__attribute__</span><span class="p">((</span><span class="n">deprecated</span><span class="p">));</span>
+<span class="p">;</span>
+
+<span class="c1">/// Begin processing input frames.</span>
+<span class="c1">/// @param input the input to configure.</span>
+<span class="c1">/// @param arInput the ARKit input to configure.</span>
+<span class="c1">/// @param cameraPosition the camera position in use</span>
+<span class="c1">/// @param videoOrientation the orientation for the outputted video buffers</span>
+<span class="c1">/// @param dataProvider data provider component to pass in custom data providers (optional -- will create and handle</span>
+<span class="c1">/// data providers by default if nil)</span>
+<span class="c1">/// @param hintDelegate lens hint delegate to show/hide hints for applied lenses</span>
+<span class="c1">/// @param textInputContextProvider context provider for providing keyboard access to lenses</span>
+<span class="c1">/// @param agreementsPresentationContextProvider context provider for presenting agreements screens</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+                                  <span class="nf">arInput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span>
+                           <span class="nf">cameraPosition</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">cameraPosition</span>
+                         <span class="nf">videoOrientation</span><span class="p">:(</span><span class="n">AVCaptureVideoOrientation</span><span class="p">)</span><span class="nv">videoOrientation</span>
+                             <span class="nf">dataProvider</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/SCCameraKitDataProviderComponent.html">SCCameraKitDataProviderComponent</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">dataProvider</span>
+                             <span class="nf">hintDelegate</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensHintDelegate.html">SCCameraKitLensHintDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">hintDelegate</span>
+                 <span class="nf">textInputContextProvider</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitTextInputContextProvider.html">SCCameraKitTextInputContextProvider</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">textInputContextProvider</span>
+    <span class="nf">agreementsPresentationContextProvider</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAgreementsPresentationContextProvider.html">SCCameraKitAgreementsPresentationContextProvider</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">agreementsPresentationContextProvider</span>
+    <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">start</span><span class="p">(</span><span class="n">input</span><span class="o">:</span><span class="n">arInput</span><span class="o">:</span><span class="n">cameraPosition</span><span class="o">:</span><span class="n">videoOrientation</span><span class="o">:</span><span class="n">dataProvider</span><span class="o">:</span><span class="n">hintDelegate</span><span class="o">:</span><span class="n">textInputContextProvider</span><span class="o">:</span><span class="n">agreementsPresentationContextProvider</span><span class="o">:</span><span class="p">));</span>
+
+<span class="c1">/// End processing input frames.</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stop</span><span class="p">;</span>
+
+<span class="c1">/// End processing input frames.</span>
+<span class="c1">/// @param completion Block to be called after processing is finished and session is stopped</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">stopWithCompletion</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">completion</span> <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">stop</span><span class="p">(</span><span class="n">completion</span><span class="o">:</span><span class="p">));</span>
+
+<span class="c1">/// Add an output. Frames will still be processed if no outputs exist.</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addOutput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitOutput.html">SCCameraKitOutput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">output</span> <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="n">output</span><span class="o">:</span><span class="p">));</span>
+
+<span class="c1">/// Remove an output.</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeOutput</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitOutput.html">SCCameraKitOutput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">listener</span> <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">remove</span><span class="p">(</span><span class="n">output</span><span class="o">:</span><span class="p">));</span>
+
+<span class="c1">/// The camera position in use. Setting will automatically update the input.</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">AVCaptureDevicePosition</span> <span class="n">cameraPosition</span><span class="p">;</span>
+
+<span class="c1">/// The orientation for the outputted video buffers</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">AVCaptureVideoOrientation</span> <span class="n">videoOrientation</span><span class="p">;</span>
+
+<span class="c1">/// The active input. May be either standard camera input or the AR input, depending on lens requirements.</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span> <span class="n">activeInput</span><span class="p">;</span>
+
+<span class="c1">/// Store containing information above the acceptance state of terms of service</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAgreementsStore.html">SCCameraKitAgreementsStore</a></span><span class="o">&gt;</span> <span class="n">agreementsStore</span><span class="p">;</span>
+
+<span class="c1">/// Presents any agreements such as Terms of Service or Privacy Policy for CameraKit immediately, if needed.</span>
+<span class="c1">/// @note CameraKit will present this when the user applies a lens if they have new agreements to accept. You can call</span>
+<span class="c1">/// this explicitly if you wish to present the terms before then (eg during an onboarding experience, alongside your own</span>
+<span class="c1">/// app's Terms of Service)</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">presentAgreementsImmediately</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">CameraKitProtocol</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(py)lenses"></a>
+                    <a name="//apple_ref/swift/Property/lenses" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(py)lenses">lenses</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains lenses related objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensesComponent.html">SCCameraKitLensesComponent</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span> <span class="n">lenses</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(py)adjustments"></a>
+                    <a name="//apple_ref/swift/Property/adjustments" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(py)adjustments">adjustments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains adjustment related objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAdjustmentsComponent.html">SCCameraKitAdjustmentsComponent</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span> <span class="n">adjustments</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:"></a>
+                    <a name="//apple_ref/swift/Method/-startWithInput:arInput:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:">-startWithInput:<wbr>arInput:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin processing input frames with front camera position and portrait video orientation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+               <span class="nf">arInput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the input to configure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>arInput</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the ARKit input to configure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/-startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:">-startWithInput:<wbr>arInput:<wbr>cameraPosition:<wbr>videoOrientation:<wbr>dataProvider:<wbr>hintDelegate:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Deprecated. Use
+-startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:agreementsPresentationContextProvider:</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+               <span class="nf">arInput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span>
+        <span class="nf">cameraPosition</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">cameraPosition</span>
+      <span class="nf">videoOrientation</span><span class="p">:(</span><span class="n">AVCaptureVideoOrientation</span><span class="p">)</span><span class="nv">videoOrientation</span>
+          <span class="nf">dataProvider</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/SCCameraKitDataProviderComponent.html">SCCameraKitDataProviderComponent</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">dataProvider</span>
+          <span class="nf">hintDelegate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensHintDelegate.html">SCCameraKitLensHintDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">hintDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:agreementsPresentationContextProvider:"></a>
+                    <a name="//apple_ref/swift/Method/-startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:agreementsPresentationContextProvider:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:agreementsPresentationContextProvider:">-startWithInput:<wbr>arInput:<wbr>cameraPosition:<wbr>videoOrientation:<wbr>dataProvider:<wbr>hintDelegate:<wbr>agreementsPresentationContextProvider:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Deprecated. Use
+-startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:textInputContextProvider:agreementsPresentationContextProvider:</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+                                  <span class="nf">arInput</span><span class="p">:</span>
+                                      <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span>
+                           <span class="nf">cameraPosition</span><span class="p">:</span>
+                               <span class="p">(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">cameraPosition</span>
+                         <span class="nf">videoOrientation</span><span class="p">:</span>
+                             <span class="p">(</span><span class="n">AVCaptureVideoOrientation</span><span class="p">)</span><span class="nv">videoOrientation</span>
+                             <span class="nf">dataProvider</span><span class="p">:</span>
+                                 <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/SCCameraKitDataProviderComponent.html">SCCameraKitDataProviderComponent</a></span> <span class="o">*</span><span class="p">)</span>
+                                     <span class="n">dataProvider</span>
+                             <span class="n">hintDelegate</span><span class="o">:</span>
+                                 <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensHintDelegate.html">SCCameraKitLensHintDelegate</a></span><span class="o">&gt;</span><span class="p">)</span>
+                                     <span class="n">hintDelegate</span>
+    <span class="n">agreementsPresentationContextProvider</span><span class="o">:</span>
+        <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAgreementsPresentationContextProvider.html">SCCameraKitAgreementsPresentationContextProvider</a></span><span class="o">&gt;</span><span class="p">)</span>
+            <span class="n">agreementsPresentationContextProvider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:textInputContextProvider:agreementsPresentationContextProvider:"></a>
+                    <a name="//apple_ref/swift/Method/-startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:textInputContextProvider:agreementsPresentationContextProvider:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(im)startWithInput:arInput:cameraPosition:videoOrientation:dataProvider:hintDelegate:textInputContextProvider:agreementsPresentationContextProvider:">-startWithInput:<wbr>arInput:<wbr>cameraPosition:<wbr>videoOrientation:<wbr>dataProvider:<wbr>hintDelegate:<wbr>textInputContextProvider:<wbr>agreementsPresentationContextProvider:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin processing input frames.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startWithInput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">input</span>
+                                  <span class="nf">arInput</span><span class="p">:</span>
+                                      <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitARInput.html">SCCameraKitARInput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">arInput</span>
+                           <span class="nf">cameraPosition</span><span class="p">:</span>
+                               <span class="p">(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">cameraPosition</span>
+                         <span class="nf">videoOrientation</span><span class="p">:</span>
+                             <span class="p">(</span><span class="n">AVCaptureVideoOrientation</span><span class="p">)</span><span class="nv">videoOrientation</span>
+                             <span class="nf">dataProvider</span><span class="p">:</span>
+                                 <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/SCCameraKitDataProviderComponent.html">SCCameraKitDataProviderComponent</a></span> <span class="o">*</span><span class="p">)</span>
+                                     <span class="n">dataProvider</span>
+                             <span class="n">hintDelegate</span><span class="o">:</span>
+                                 <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitLensHintDelegate.html">SCCameraKitLensHintDelegate</a></span><span class="o">&gt;</span><span class="p">)</span>
+                                     <span class="n">hintDelegate</span>
+                 <span class="n">textInputContextProvider</span><span class="o">:</span>
+                     <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitTextInputContextProvider.html">SCCameraKitTextInputContextProvider</a></span><span class="o">&gt;</span><span class="p">)</span>
+                         <span class="n">textInputContextProvider</span>
+    <span class="n">agreementsPresentationContextProvider</span><span class="o">:</span>
+        <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAgreementsPresentationContextProvider.html">SCCameraKitAgreementsPresentationContextProvider</a></span><span class="o">&gt;</span><span class="p">)</span>
+            <span class="n">agreementsPresentationContextProvider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the input to configure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>arInput</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the ARKit input to configure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cameraPosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the camera position in use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoOrientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the orientation for the outputted video buffers</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataProvider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>data provider component to pass in custom data providers (optional &ndash; will create and handle
+data providers by default if nil)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hintDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>lens hint delegate to show/hide hints for applied lenses</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>textInputContextProvider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>context provider for providing keyboard access to lenses</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>agreementsPresentationContextProvider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>context provider for presenting agreements screens</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)stop"></a>
+                    <a name="//apple_ref/swift/Method/-stop" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(im)stop">-stop</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>End processing input frames.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)stopWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/-stopWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(im)stopWithCompletion:">-stopWithCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>End processing input frames.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">stopWithCompletion</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span> <span class="k">async</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Block to be called after processing is finished and session is stopped</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)addOutput:"></a>
+                    <a name="//apple_ref/swift/Method/-addOutput:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(im)addOutput:">-addOutput:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an output. Frames will still be processed if no outputs exist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addOutput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitOutput.html">SCCameraKitOutput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">output</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)removeOutput:"></a>
+                    <a name="//apple_ref/swift/Method/-removeOutput:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(im)removeOutput:">-removeOutput:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove an output.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeOutput</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitOutput.html">SCCameraKitOutput</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">listener</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(py)cameraPosition"></a>
+                    <a name="//apple_ref/swift/Property/cameraPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(py)cameraPosition">cameraPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The camera position in use. Setting will automatically update the input.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">AVCaptureDevicePosition</span> <span class="n">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(py)videoOrientation"></a>
+                    <a name="//apple_ref/swift/Property/videoOrientation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(py)videoOrientation">videoOrientation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The orientation for the outputted video buffers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">AVCaptureVideoOrientation</span> <span class="n">videoOrientation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">videoOrientation</span><span class="p">:</span> <span class="kt">AVCaptureVideoOrientation</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(py)activeInput"></a>
+                    <a name="//apple_ref/swift/Property/activeInput" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(py)activeInput">activeInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The active input. May be either standard camera input or the AR input, depending on lens requirements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitInput.html">SCCameraKitInput</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span> <span class="n">activeInput</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(py)agreementsStore"></a>
+                    <a name="//apple_ref/swift/Property/agreementsStore" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(py)agreementsStore">agreementsStore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Store containing information above the acceptance state of terms of service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SCCameraKitAgreementsStore.html">SCCameraKitAgreementsStore</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span> <span class="n">agreementsStore</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SCCameraKitProtocol(im)presentAgreementsImmediately"></a>
+                    <a name="//apple_ref/swift/Method/-presentAgreementsImmediately" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SCCameraKitProtocol(im)presentAgreementsImmediately">-presentAgreementsImmediately</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents any agreements such as Terms of Service or Privacy Policy for CameraKit immediately, if needed.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    CameraKit will present this when the user applies a lens if they have new agreements to accept. You can call
+this explicitly if you wish to present the terms before then (eg during an onboarding experience, alongside your own
+app&rsquo;s Terms of Service)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">presentAgreementsImmediately</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">presentAgreementsImmediately</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2022 <a class="link" href="https://kit.snapchat.com/camera-kit" target="_blank" rel="external noopener">Snap Inc.</a>. All rights reserved. (Last updated: 2022-06-30)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>
