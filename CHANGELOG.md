@@ -19,8 +19,16 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 - **Android:**  Improve ARCore performance
 - **Android:**  Fix possible crash when internal remote service is not available.
 
+<a name="1.14.1"></a>
+## [1.14.1] - 2022-06-30
+### Bug Fixes
+- **Android:**  Fix critical issues with lenses configuration introduced in 1.14.0
+
 <a name="1.14.0"></a>
 ## [1.14.0] - 2022-06-27
+### Notes
+- This version has critical issues on Android. Use version 1.14.1 instead.
+
 ### Features
 - Lens Studio 4.22 support
 - Add support for lenses with static assets
