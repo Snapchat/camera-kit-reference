@@ -24,6 +24,7 @@ import android.widget.ToggleButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import com.snap.camerakit.LegalProcessor
 import com.snap.camerakit.Session
@@ -71,12 +72,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var lensGroups: Array<String>
 
-    private var miniPreviewOutput: Closeable = Closeable {}
-    private var availableLensesQuery = Closeable {}
-    private var lensesProcessorEvents = Closeable {}
-    private var legalProcessorEvents = Closeable {}
-    private var lensesPrefetch: Closeable = Closeable {}
-    private var flashListenerCloseable = Closeable {}
+    private val closeOnDestroy = mutableListOf<Closeable>()
     private var useCustomLensesCarouselView = false
     private var muteAudio = false
 
@@ -174,7 +170,8 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             }
 
             // Attach listener for flash state changes. Returned is a closeable to detach the listener on close.
-            flashListenerCloseable = flashBehavior.attachOnFlashChangedListener(OnFlashChangedListener(window))
+            flashBehavior.attachOnFlashChangedListener(OnFlashChangedListener(window))
+              .addTo(closeOnDestroy)
         }
 
         cameraLayout.onSessionAvailable { session ->
@@ -195,31 +192,50 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                     }
                 }
             }
-            
+
+            var appliedLens: LensesComponent.Lens? = null
             val lensAttribution = findViewById<TextView>(R.id.lens_attribution)
             // This block demonstrates how to receive and react to lens lifecycle events. When Applied event is received
             // we keep the ID of applied lens to persist and restore it via savedInstanceState later on.
-            lensesProcessorEvents = session.lenses.processor.observe { event ->
+            session.lenses.processor.observe { event ->
                 Log.d(TAG, "Observed lenses processor event: $event")
                 runOnUiThread {
                     event.whenApplied { event ->
                         reApplyLensWithVendorData(event.lens)
                         lensAttribution.text = event.lens.name
+                        appliedLens = event.lens
                     }
                     event.whenIdle {
                         lensAttribution.text = null
+                        appliedLens = null
+                    }
+                }
+            }.addTo(closeOnDestroy)
+
+            // By default, CameraKit does not reset lens state when app is backgrounded and resumed, however it is
+            // possible to do so by simply tracking the last applied lens and applying it with the "reset" flag set
+            // to true when app resumes to match the behavior of the Snapchat app.
+            val lifecycleObserver = object : DefaultLifecycleObserver {
+                override fun onResume(owner: LifecycleOwner) {
+                    appliedLens?.let { lens ->
+                        session.lenses.processor.apply(lens, reset = true)
                     }
                 }
             }
+            lifecycle.addObserver(lifecycleObserver)
+            Closeable {
+                lifecycle.removeObserver(lifecycleObserver)
+            }.addTo(closeOnDestroy)
+
             // When CameraKit presents a legal prompt dialog, application may want to know if user has dismissed it
             // in order to de-activate lenses carousel for example.
             // The following block demonstrates how to observe and optionally handle LegalProcessor results:
-            legalProcessorEvents = session.processor.observe { result ->
+            session.processor.observe { result ->
                 Log.d(TAG, "Observed legal processor result: $result")
                 if (result is LegalProcessor.Input.Result.Dismissed) {
                     session.lenses.carousel.deactivate()
                 }
-            }
+            }.addTo(closeOnDestroy)
 
             // Custom lenses carousel View could be provided only during Session setup process. That is why recreate()
             // method is called to restart activity with updated BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL argument.
@@ -234,6 +250,8 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             // While CameraKit is capable (and does) render camera preview into an internal view, this demonstrates how
             // to connect another TextureView as rendering output.
             val miniPreview = cameraLayout.findViewById<TextureView>(R.id.mini_preview)
+            var miniPreviewOutput = Closeable {}
+            Closeable { miniPreviewOutput.close() }.addTo(closeOnDestroy)
             val setupMiniPreview = { connectOutput: Boolean ->
                 miniPreviewOutput.close()
                 if (connectOutput) {
@@ -275,8 +293,10 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
             // This block demonstrates how the Prefetcher exposed from the LensesComponent can be used to prefetch
             // content of select list of lenses on demand.
+            var lensesPrefetch = Closeable {}
+            Closeable { lensesPrefetch.close() }.addTo(closeOnDestroy)
             rootLayout.findViewById<Button>(R.id.lenses_prefetch_button).setOnClickListener {
-                availableLensesQuery = session.lenses.repository.observe(Available(*lensGroups)) { available ->
+                session.lenses.repository.observe(Available(*lensGroups)) { available ->
                     available.whenHasSome { lenses ->
                         // Cancel any running prefetch operation before submitting new one
                         lensesPrefetch.close()
@@ -285,7 +305,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                             Log.d(TAG, "Finished prefetch of [${lenses.size}] lenses with success: $success")
                         }
                     }
-                }
+                }.addTo(closeOnDestroy)
             }
 
             // CameraKit prompts user to agree to Snap's legal terms using a built-in dialog which is presented
@@ -413,12 +433,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     }
 
     override fun onDestroy() {
-        miniPreviewOutput.close()
-        availableLensesQuery.close()
-        lensesProcessorEvents.close()
-        legalProcessorEvents.close()
-        lensesPrefetch.close()
-        flashListenerCloseable.close()
+        closeOnDestroy.forEach { it.close() }
         super.onDestroy()
     }
 
