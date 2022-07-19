@@ -1,0 +1,1195 @@
+{
+  "warnings": [
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 10,
+      "symbol": "CameraControllerUIDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 286,
+      "symbol": "CameraController.PointOfInterestOptions.exposure",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 289,
+      "symbol": "CameraController.PointOfInterestOptions.focus",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 374,
+      "symbol": "CameraController.repository(_:didUpdateLenses:forGroupID:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 393,
+      "symbol": "CameraController.repository(_:didFailToUpdateLensesForGroupID:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 400,
+      "symbol": "CameraController.prefetcher(_:didUpdate:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 566,
+      "symbol": "CameraController.lensProcessor(_:shouldDisplayHint:for:autohide:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 572,
+      "symbol": "CameraController.lensProcessor(_:shouldHideAllHintsFor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 846,
+      "symbol": "CameraController.FlashMode.standard",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 847,
+      "symbol": "CameraController.FlashMode.ring",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 852,
+      "symbol": "CameraController.FlashState.off",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Camera/CameraController.swift",
+      "line": 853,
+      "symbol": "CameraController.FlashState.on(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 30,
+      "symbol": "CameraButton.Constants",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 117,
+      "symbol": "CameraButton.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 122,
+      "symbol": "CameraButton.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 127,
+      "symbol": "CameraButton.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 145,
+      "symbol": "CameraButton.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 158,
+      "symbol": "CameraButton.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 164,
+      "symbol": "CameraButton.willMove(toSuperview:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 203,
+      "symbol": "CameraButton.gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 216,
+      "symbol": "CameraButton.gestureRecognizer(_:shouldReceive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraButton/CameraButton.swift",
+      "line": 333,
+      "symbol": "CameraButton.animationDidStop(_:finished:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 6,
+      "symbol": "AdjustmentControlViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 16,
+      "symbol": "AdjustmentControlView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 21,
+      "symbol": "AdjustmentControlView.Variant.portrait",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 21,
+      "symbol": "AdjustmentControlView.Variant.tone",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 93,
+      "symbol": "AdjustmentControlView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 110,
+      "symbol": "AdjustmentControlView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 119,
+      "symbol": "AdjustmentControlView.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/AdjustmentControlView.swift",
+      "line": 191,
+      "symbol": "AdjustmentControlView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/ControlSlider.swift",
+      "line": 6,
+      "symbol": "ControlSliderDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/ControlSlider.swift",
+      "line": 17,
+      "symbol": "ControlSlider",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/ControlSlider.swift",
+      "line": 54,
+      "symbol": "ControlSlider.setValue(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/ControlSlider.swift",
+      "line": 89,
+      "symbol": "ControlSlider.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraAdjustments/ControlSlider.swift",
+      "line": 100,
+      "symbol": "ControlSlider.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraActionsView.swift",
+      "line": 6,
+      "symbol": "CameraActionsView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraActionsView.swift",
+      "line": 23,
+      "symbol": "CameraActionsView.flashToggleButtonBaseSelectedImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraActionsView.swift",
+      "line": 148,
+      "symbol": "CameraActionsView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraActionsView.swift",
+      "line": 153,
+      "symbol": "CameraActionsView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraConfigurableActionView.swift",
+      "line": 76,
+      "symbol": "CameraConfigurableActionView.collapse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraConfigurableActionView.swift",
+      "line": 82,
+      "symbol": "CameraConfigurableActionView.expand()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraConfigurableActionView.swift",
+      "line": 89,
+      "symbol": "CameraConfigurableActionView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraConfigurableActionView.swift",
+      "line": 94,
+      "symbol": "CameraConfigurableActionView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraControlStrip/CameraConfigurableActionView.swift",
+      "line": 99,
+      "symbol": "CameraConfigurableActionView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 26,
+      "symbol": "CameraView.hintLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 165,
+      "symbol": "CameraView.activityIndicator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 178,
+      "symbol": "CameraView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 183,
+      "symbol": "CameraView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 187,
+      "symbol": "CameraView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 355,
+      "symbol": "CameraView.showMessage(text:numberOfLines:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 399,
+      "symbol": "CameraView.setupActivityIndicator()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 556,
+      "symbol": "CameraView.isAnyControlVisible",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 567,
+      "symbol": "CameraView.hideAllControls()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraView.swift",
+      "line": 586,
+      "symbol": "CameraView.drawTapAnimationView(at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 56,
+      "symbol": "CameraViewController.cameraView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 58,
+      "symbol": "CameraViewController.loadView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 62,
+      "symbol": "CameraViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 67,
+      "symbol": "CameraViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 72,
+      "symbol": "CameraViewController.viewDidDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 114,
+      "symbol": "CameraViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 139,
+      "symbol": "CameraViewController.viewWillTransition(to:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 408,
+      "symbol": "CameraViewController.processorUpdatedAdjustmentsAvailability(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/CameraViewController.swift",
+      "line": 655,
+      "symbol": "CameraViewController.presentationControllerWillDismiss(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashControlView.swift",
+      "line": 6,
+      "symbol": "FlashControlViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashControlView.swift",
+      "line": 28,
+      "symbol": "FlashControlView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashControlView.swift",
+      "line": 155,
+      "symbol": "FlashControlView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashControlView.swift",
+      "line": 180,
+      "symbol": "FlashControlView.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashControlView.swift",
+      "line": 283,
+      "symbol": "FlashControlView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashControlView.swift",
+      "line": 299,
+      "symbol": "FlashControlView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashControlView.swift",
+      "line": 319,
+      "symbol": "FlashControlView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashModeSelectionView.swift",
+      "line": 7,
+      "symbol": "FlashModeSelectionViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashModeSelectionView.swift",
+      "line": 17,
+      "symbol": "FlashModeSelectionView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/FlashModeSelectionView.swift",
+      "line": 99,
+      "symbol": "FlashModeSelectionView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 6,
+      "symbol": "RingLightColorSelectionViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 16,
+      "symbol": "RingLightColorSelectionView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 70,
+      "symbol": "RingLightColorSelectionView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 78,
+      "symbol": "RingLightColorSelectionView.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 89,
+      "symbol": "RingLightColorSelectionView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 112,
+      "symbol": "RingLightColorSelectionView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 114,
+      "symbol": "RingLightColorSelectionView.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 122,
+      "symbol": "RingLightColorSelectionView.collectionView(_:didDeselectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 131,
+      "symbol": "RingLightColorSelectionView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 133,
+      "symbol": "RingLightColorSelectionView.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionView.swift",
+      "line": 137,
+      "symbol": "RingLightColorSelectionView.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionViewCell.swift",
+      "line": 6,
+      "symbol": "RingLightColorSelectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionViewCell.swift",
+      "line": 7,
+      "symbol": "RingLightColorSelectionViewCell.reuseIdentifer",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionViewCell.swift",
+      "line": 61,
+      "symbol": "RingLightColorSelectionViewCell.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightColorSelectionViewCell.swift",
+      "line": 67,
+      "symbol": "RingLightColorSelectionViewCell.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightGradientView.swift",
+      "line": 6,
+      "symbol": "RingLightGradientView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightGradientView.swift",
+      "line": 76,
+      "symbol": "RingLightGradientView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightGradientView.swift",
+      "line": 81,
+      "symbol": "RingLightGradientView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightView.swift",
+      "line": 6,
+      "symbol": "RingLightView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightView.swift",
+      "line": 56,
+      "symbol": "RingLightView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/CameraUI/Flash/RingLight/RingLightView.swift",
+      "line": 61,
+      "symbol": "RingLightView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselCollectionViewCell.swift",
+      "line": 8,
+      "symbol": "CarouselCollectionViewCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselCollectionViewCell.swift",
+      "line": 27,
+      "symbol": "CarouselCollectionViewCell.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselCollectionViewCell.swift",
+      "line": 32,
+      "symbol": "CarouselCollectionViewCell.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselCollectionViewCell.swift",
+      "line": 37,
+      "symbol": "CarouselCollectionViewCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselCollectionViewLayout.swift",
+      "line": 61,
+      "symbol": "CarouselCollectionViewLayout.layoutAttributesForElements(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselImageLoader.swift",
+      "line": 19,
+      "symbol": "DefaultCarouselImageLoader.urlSession",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselImageLoader.swift",
+      "line": 23,
+      "symbol": "DefaultCarouselImageLoader.init(urlSession:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselImageLoader.swift",
+      "line": 60,
+      "symbol": "DefaultCarouselImageLoader.cancelImageLoad(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselItem.swift",
+      "line": 46,
+      "symbol": "EmptyItem.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 147,
+      "symbol": "CarouselView.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 151,
+      "symbol": "CarouselView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 211,
+      "symbol": "CarouselView.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 215,
+      "symbol": "CarouselView.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 252,
+      "symbol": "CarouselView.collectionView(_:willDisplay:forItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 262,
+      "symbol": "CarouselView.collectionView(_:didEndDisplaying:forItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 271,
+      "symbol": "CarouselView.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Carousel/CarouselView.swift",
+      "line": 278,
+      "symbol": "CarouselView.scrollViewDidScroll(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Helper/UIColor+Hex.swift",
+      "line": 7,
+      "symbol": "UIColor.init(hex:alpha:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Keyboard/KeyboardInputAccessoryViewProvider.swift",
+      "line": 10,
+      "symbol": "KeyboardAccessoryViewProvider.textView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Keyboard/KeyboardInputAccessoryViewProvider.swift",
+      "line": 11,
+      "symbol": "KeyboardAccessoryViewProvider.accessoryView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Keyboard/KeyboardInputAccessoryViewProvider.swift",
+      "line": 12,
+      "symbol": "KeyboardAccessoryViewProvider.placeholderText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Keyboard/KeyboardInputAccessoryViewProvider.swift",
+      "line": 20,
+      "symbol": "KeyboardAccessoryViewProvider.maximumHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/MediaPicker/MediaPickerView.swift",
+      "line": 25,
+      "symbol": "MediaPickerView.provider",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/MediaPicker/MediaPickerView.swift",
+      "line": 102,
+      "symbol": "MediaPickerView.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/MediaPicker/MediaPickerView.swift",
+      "line": 106,
+      "symbol": "MediaPickerView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/MediaPicker/MediaPickerView.swift",
+      "line": 175,
+      "symbol": "MediaPickerView.mediaPickerProviderRequestedUIPresentation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/MediaPicker/MediaPickerView.swift",
+      "line": 193,
+      "symbol": "MediaPickerView.mediaPickerProviderRequestedUIDismissal(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Preview/ImagePreviewViewController.swift",
+      "line": 37,
+      "symbol": "ImagePreviewViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Preview/PreviewViewController.swift",
+      "line": 75,
+      "symbol": "PreviewViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Preview/VideoPreviewViewController.swift",
+      "line": 50,
+      "symbol": "VideoPreviewViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Recorder/Recorder.swift",
+      "line": 69,
+      "symbol": "Recorder.startRecording()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Recorder/Recorder.swift",
+      "line": 74,
+      "symbol": "Recorder.finishRecording(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Snapchat/Snapchat.swift",
+      "line": 9,
+      "symbol": "SnapchatScreen.profile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Snapchat/Snapchat.swift",
+      "line": 10,
+      "symbol": "SnapchatScreen.lens(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Snapchat/Snapchat.swift",
+      "line": 11,
+      "symbol": "SnapchatScreen.photo(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Snapchat/Snapchat.swift",
+      "line": 12,
+      "symbol": "SnapchatScreen.video(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 23,
+      "symbol": "CameraBottomBarElements.closeButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 30,
+      "symbol": "CameraElements.lensLabel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 31,
+      "symbol": "CameraElements.flipCameraButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 32,
+      "symbol": "CameraElements.flashToggleButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 33,
+      "symbol": "CameraElements.flashConfigurationButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 34,
+      "symbol": "CameraElements.flashControl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 35,
+      "symbol": "CameraElements.flashControlDismissalHint",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 36,
+      "symbol": "CameraElements.toneMapToggleButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 37,
+      "symbol": "CameraElements.toneMapConfigurationButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 38,
+      "symbol": "CameraElements.toneMapControl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 39,
+      "symbol": "CameraElements.toneMapControlDismissalHint",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 40,
+      "symbol": "CameraElements.portraitToggleButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 41,
+      "symbol": "CameraElements.portraitConfigurationButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 42,
+      "symbol": "CameraElements.portraitControl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 43,
+      "symbol": "CameraElements.portraitControlDismissalHint",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 44,
+      "symbol": "CameraElements.ringLightView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 45,
+      "symbol": "CameraElements.photoLibraryButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 46,
+      "symbol": "CameraElements.cameraButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 51,
+      "symbol": "CameraElements.CameraFlip",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 52,
+      "symbol": "CameraElements.CameraFlip.front",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 53,
+      "symbol": "CameraElements.CameraFlip.back",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 62,
+      "symbol": "CarouselElements.collectionView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 63,
+      "symbol": "CarouselElements.lensCell",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 64,
+      "symbol": "CarouselElements.facadeSelectionRingView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 71,
+      "symbol": "PreviewElements.closeButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 71,
+      "symbol": "PreviewElements.imageView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 71,
+      "symbol": "PreviewElements.playerControllerView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 71,
+      "symbol": "PreviewElements.shareButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 71,
+      "symbol": "PreviewElements.snapchatButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 78,
+      "symbol": "MessageNotificationElements.label",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 85,
+      "symbol": "FlashControlElements.flashModeSelector",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 86,
+      "symbol": "FlashControlElements.ringLightColorSelector",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 87,
+      "symbol": "FlashControlElements.ringLightIntensitySlider",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 94,
+      "symbol": "OtherElements.noOpButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 95,
+      "symbol": "OtherElements.arkitButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 96,
+      "symbol": "OtherElements.agreementsButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 97,
+      "symbol": "OtherElements.tapToFocusView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Support/Testable.swift",
+      "line": 98,
+      "symbol": "OtherElements.pairingButton",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Views/MessageNotificationView.swift",
+      "line": 20,
+      "symbol": "MessageNotificationView.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/UIKit/Views/TapAnimationView.swift",
+      "line": 35,
+      "symbol": "TapAnimationView.init(center:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/private/var/lib/jenkins/workspace/phantom"
+}
