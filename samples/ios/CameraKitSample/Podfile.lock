@@ -1,17 +1,17 @@
 PODS:
-  - SCSDKCameraKit (1.15.0)
-  - SCSDKCameraKitReferenceSwiftUI (1.15.0):
-    - SCSDKCameraKitReferenceUI (~> 1.15.0)
-  - SCSDKCameraKitReferenceUI (1.15.0):
-    - SCSDKCameraKit (~> 1.15.0)
+  - SCSDKCameraKit (1.15.1)
+  - SCSDKCameraKitReferenceSwiftUI (1.15.1):
+    - SCSDKCameraKitReferenceUI (~> 1.15.1)
+  - SCSDKCameraKitReferenceUI (1.15.1):
+    - SCSDKCameraKit (~> 1.15.1)
   - SnapSDK/SCSDKCoreKit (1.14.0)
   - SnapSDK/SCSDKCreativeKit (1.14.0):
     - SnapSDK/SCSDKCoreKit
 
 DEPENDENCIES:
-  - SCSDKCameraKit (= 1.15.0)
-  - SCSDKCameraKitReferenceSwiftUI (= 1.15.0)
-  - SCSDKCameraKitReferenceUI (= 1.15.0)
+  - SCSDKCameraKit (= 1.15.1)
+  - SCSDKCameraKitReferenceSwiftUI (= 1.15.1)
+  - SCSDKCameraKitReferenceUI (= 1.15.1)
   - SnapSDK/SCSDKCreativeKit (= 1.14.0)
 
 SPEC REPOS:
@@ -22,11 +22,11 @@ SPEC REPOS:
     - SnapSDK
 
 SPEC CHECKSUMS:
-  SCSDKCameraKit: 58f3ad7338736bfae5f70bc3efb04e03b8410122
-  SCSDKCameraKitReferenceSwiftUI: b0aa81b51b2f6f32b8013cea03a2cdca01ec0654
-  SCSDKCameraKitReferenceUI: d1b9718b6ac7a2ceb5a717574394b3998bd0a140
+  SCSDKCameraKit: 83add004e657e577b62942d47d8226546b23019e
+  SCSDKCameraKitReferenceSwiftUI: c4c190ce3d20d66bde05c4189ceffb49a947b776
+  SCSDKCameraKitReferenceUI: 56dc1c0354c1d1ccac53edaedb1ef9ce9216fef9
   SnapSDK: 1ced78c16c1263ef3f67458c90d4e9eb1be89bc6
 
-PODFILE CHECKSUM: b3105aaada4c1e5871fb70fae7ac795cca186596
+PODFILE CHECKSUM: f81b137f901f8f4f7cf69f46f6cd7463b7805c77
 
 COCOAPODS: 1.10.2
