@@ -8,6 +8,13 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.16.0"></a>
+## [1.16.0] - 2022-09-09
+### Features
+- Lens Studio 4.28.x support
+- Add support for Connected Lenses (Closed Beta)
+- **iOS** Add support for arm64 simulators
+
 <a name="1.15.1"></a>
 ## [1.15.1] - 2022-07-20
 ### Bug Fixes
@@ -69,7 +76,7 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 - **Android:**  Further binary size reduction of about 500KB
 
 ### Bug Fixes
-- **Android:**  Missing `android.permission.ACCESS_COARSE_LOCATION` permission added to the `camerakit-support-gms-location` artifact to support apps targeting Android API 31
+- **Android:**  Missing `android.permission.ACCESS_COARSE_LOCATION` permission added to the `REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE-gms-location` artifact to support apps targeting Android API 31
 - **Android:**  Image capture of certain lenses results in an unexpected alpha channel
 - **Android:**  Race condition of incorrectly evicting currently applied lens content from cache while prefetching other lenses
 - **iOS:**  `LensProcessor.setAudioMuted` doesn't mute/unmute audio coming from lenses
