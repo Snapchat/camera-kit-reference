@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     }
 
     var window: UIWindow?
-
     fileprivate var supportedOrientations: UIInterfaceOrientationMask = .allButUpsideDown
 
     let snapAPI = SCSDKSnapAPI()
     let cameraController = SampleCameraController()
+    
     // This is how you configure properties for a CameraKit Session
     // Pass in applicationID and apiToken through a SessionConfig which will override the ones stored in the app's Info.plist
     // which is useful to dynamically update your apiToken in case it ever gets revoked.
@@ -31,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        
         cameraController.groupIDs = [SCCameraKitLensRepositoryBundledGroup, Constants.partnerGroupId]
         
         // If you want to support sharing to Snapchat (via CreativeKit) you can set this delegate below.
@@ -40,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
         // approved in production and/or your Snapchat username is allowlisted in SnapKit dashboard.
         // See https://docs.snap.com/snap-kit/creative-kit/Tutorials/ios
         cameraController.snapchatDelegate = self
-        
         let cameraViewController = CameraViewController(cameraController: cameraController)
         cameraViewController.appOrientationDelegate = self
         window?.rootViewController = cameraViewController
@@ -55,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
 
         return true
     }
-
+    
     func cameraKitViewController(_ viewController: UIViewController, openSnapchat screen: SnapchatScreen) {
         switch screen {
         case .profile, .lens(_):
