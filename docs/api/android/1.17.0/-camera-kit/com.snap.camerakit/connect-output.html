@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>connectOutput</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../scripts/main.js" async="async"></script>  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn"><a href="../../index.html">
+          <div id="logo"></div>
+        </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+<script type="text/javascript" src="../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit//connectOutput/TypeParam(bounds=[com.snap.camerakit.ImageProcessor])#android.view.TextureView#kotlin.collections.Set[com.snap.camerakit.ImageProcessor.Output.Option]/PointingToDeclaration//1404709923">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">CameraKit</a>/<a href="index.html">com.snap.camerakit</a>/<a href="connect-output.html">connectOutput</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>connect</span><wbr></wbr><span>Output</span></h1>
+          </div>
+<div class="divergent-group" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html">CheckResult</a>()</div><div class="block">@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html">JvmOverloads</a>()</div></div>fun &lt;<a href="connect-output.html">P</a> : <a href="-image-processor/index.html">ImageProcessor</a>&gt; <a href="connect-output.html">P</a>.<a href="connect-output.html">connectOutput</a>(textureView: <a href="https://developer.android.com/reference/kotlin/android/view/TextureView.html">TextureView</a>, outputOptions: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a>&lt;<a href="-image-processor/-output/-option/index.html">ImageProcessor.Output.Option</a>&gt; = Collections.emptySet()): <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<p class="paragraph">Allows to connect <a href="https://developer.android.com/reference/kotlin/android/view/TextureView.html">TextureView</a> as output to <a href="-image-processor/index.html">ImageProcessor</a>.</p></div>
+<div class="divergent-group" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html">CheckResult</a>()</div><div class="block">@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html">JvmOverloads</a>()</div></div>fun &lt;<a href="connect-output.html">P</a> : <a href="-image-processor/index.html">ImageProcessor</a>&gt; <a href="connect-output.html">P</a>.<a href="connect-output.html">connectOutput</a>(file: <a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a>, width: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, height: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>, captureAudio: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false): <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<p class="paragraph">Records <a href="-image-processor/index.html">ImageProcessor</a> output into the provided <a href="connect-output.html">file</a>. Video recording is implemented using both Android and Snap specific media frameworks. It is expected that the requested <a href="connect-output.html">width</a> and <a href="connect-output.html">height</a> dimensions are supported by the device, see <a href="https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.html">android.media.MediaCodecInfo</a> for information how to query for device media capabilities. If the dimensions are not supported then the implementation will attempt to find the best match based on device capabilities and, as a result, the final video dimensions might not match the ones provided originally.</p><p class="paragraph">Recording starts after calling this method, as soon as the underlying media recorder becomes available. To stop video recording, call <a href="../com.snap.camerakit.lenses/-lenses-component/-remote-api-service/-call/-ongoing/index.html#358956095%2FFunctions%2F1404709923">Closeable.close</a> on the returned <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a>.</p><p class="paragraph">It is expected that this method and the <a href="../com.snap.camerakit.lenses/-lenses-component/-remote-api-service/-call/-ongoing/index.html#358956095%2FFunctions%2F1404709923">Closeable.close</a> will be called on a background thread as the media recorder operations may block for significant amount of time.</p><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">captureAudio</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">when True, implementation will attempt to use <a href="https://developer.android.com/reference/kotlin/android/media/AudioRecord.html">android.media.AudioRecord</a> to capture device microphone audio together with video. If caller has no <a href="https://developer.android.com/reference/kotlin/android/Manifest.permission.html#record_audio">android.Manifest.permission.RECORD_AUDIO</a> permission granted the recording will fail resulting in no video file being produced.</p></div></div></div></div></div></div></div></div></div></div></div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
