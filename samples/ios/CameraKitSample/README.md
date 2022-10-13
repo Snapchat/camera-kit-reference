@@ -125,3 +125,6 @@ cameraKit.lenses.processor?.clear() { success in
 ```
 
 The preview view should once again be showing camera input with no lenses applied.
+
+#### Push To Device (P2D)
+Applications can receive lenses from Lens Studio using the P2D feature. See [P2D Integration](./P2D.md).

@@ -15,6 +15,8 @@ Table of contents
       * [Lifecycle](#lifecycle)
       * [Java or Kotlin?](#java-or-kotlin)
       * [Proguard](#proguard)
+   * [Development](#development)
+      * [Push to Device](#push-to-device-p2d)
    * [Troubleshooting](#troubleshooting)
 <!--te-->
 
@@ -195,6 +197,12 @@ public final class BasicActivity extends AppCompatActivity implements LifecycleO
 ### Proguard
 
 The Camera Kit SDK artifacts ship with consumer Proguard rules which cover all of the Camera Kit specific cases without being too broad. Camera Kit is tested against the R8 optimizer running in full mode, enabled in [gradle.properties](./gradle.properties).
+
+## Development
+
+### Push To Device (P2D)
+
+Applications can receive lenses from Lens Studio using the P2D feature. See [P2D Integration](./P2D.md).
 
 ## Troubleshooting
 
