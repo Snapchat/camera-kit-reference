@@ -69,7 +69,7 @@ To integrate P2D:
 
 To integrate Login Kit, which is a dependency for Camera Kit extensions like P2D:
 
-1. Add the following build dependency: `debugImplementation "com.snap.camerakit:camera-kit-extension-auth-token-provider-loginkit:$cameraKitVersion"`
+1. Add the following build dependency: `debugImplementation "com.snap.camerakit:camerakit-extension-auth-token-provider-loginkit:$cameraKitVersion"`
 2. Add the following array where scopes are requested. The below example includes the scope required for P2D.
 
     ```xml
