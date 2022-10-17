@@ -91,44 +91,44 @@ To integrate Login Kit, which is a dependency for Camera Kit extensions like P2D
     ]
    ```
 
-4. In your application's `AndroidManifest.xml`, add the following. This allows your application to properly receive auth results.
-
-    ```xml
-    <meta-data
-        android:name="com.snap.kit.clientId"
-        android:value="${loginKitClientId}"
-        />
-    <meta-data
-        android:name="com.snap.kit.redirectUrl"
-        android:value="${loginKitRedirectUrl}"
-        />
-    <meta-data
-        android:name="com.snap.kit.scopes"
-        android:resource="@array/snap_kit_scopes"
-        />
-    ```
-
-    ```xml
-    <activity
-      android:name="com.snap.corekit.SnapKitActivity"
-      android:launchMode="singleTask"
-      android:exported="true"
-      >
-
-      <intent-filter>
-          <action android:name="android.intent.action.VIEW" />
-
-          <category android:name="android.intent.category.DEFAULT" />
-          <category android:name="android.intent.category.BROWSABLE" />
-
-          <data
-              android:scheme="${loginKitScheme}"
-              android:host="${loginKitHost}"
-              android:path="${loginKitPath}"
-              />
-      </intent-filter>
-    </activity>
-    ```
+4. Update your application's `AndroidManifest.xml`, with the two steps below. This will allow your application to properly receive auth results.
+    1. Add the following metadata:
+       ```xml
+       <meta-data
+           android:name="com.snap.kit.clientId"
+           android:value="${loginKitClientId}"
+           />
+       <meta-data
+           android:name="com.snap.kit.redirectUrl"
+           android:value="${loginKitRedirectUrl}"
+           />
+       <meta-data
+           android:name="com.snap.kit.scopes"
+           android:resource="@array/snap_kit_scopes"
+           />
+       ```
+    2. Add this activity:
+       ```xml
+       <activity
+         android:name="com.snap.corekit.SnapKitActivity"
+         android:launchMode="singleTask"
+         android:exported="true"
+         >
+   
+         <intent-filter>
+             <action android:name="android.intent.action.VIEW" />
+   
+             <category android:name="android.intent.category.DEFAULT" />
+             <category android:name="android.intent.category.BROWSABLE" />
+   
+             <data
+                 android:scheme="${loginKitScheme}"
+                 android:host="${loginKitHost}"
+                 android:path="${loginKitPath}"
+                 />
+         </intent-filter>
+       </activity>
+       ```
 
 5. Now you can use it as such: `val loginKitAuthTokenProvider = LoginKitAuthTokenProvider(applicationContext)`
 
@@ -142,6 +142,9 @@ To integrate Login Kit, which is a dependency for Camera Kit extensions like P2D
 - Make sure you are using the `staging` oAuth2 client ID, and not the `production` version. P2D only works on the former.
 - Make sure you have added your username to the `Demo Users` list on `kit.snapchat.com/manage/apps/<your-app-id>`.
 
+### I entered my Snap credentials but when it goes back to my app, the icon turns grey (and not green)
+- Make sure you have followed the [Login Kit Integration](#Login-Kit-Integration) section entirely. 
+
 ### I tried to push a lens, but nothing is received on my device
 - Make sure that your device has internet connectivity.
 - Ensure that you have paired successfully. The P2D icon should be a green gear icon.
@@ -150,3 +153,8 @@ To integrate Login Kit, which is a dependency for Camera Kit extensions like P2D
 
 ### I don't see the P2D icon
 - Currently P2D is only supported if your application uses the built-in lenses carousel.
+
+### How do I log out and use another Snap account for P2D?
+- Clear your app's storage. Then:
+    - If auth was via web browser, clear its cookies. If you have multiple browsers installed, make sure to clear the correct one.
+    - If auth was via the Snapchat app, log out of the original account and log in to the new account that you want to use.
