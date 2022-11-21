@@ -1,6 +1,6 @@
 allprojects {
     ext {
-        kotlinVersion = '1.6.0'
+        kotlinVersion = '1.6.21'
         ktxVersion = '1.7.0'
         exoPlayerVersion = '2.16.1'
         appCompatVersion = '1.4.0'
@@ -34,7 +34,7 @@ allprojects {
 
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:4.2.2'
+            classpath 'com.android.tools.build:gradle:7.3.0'
             classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         }
     }
@@ -54,7 +54,12 @@ allprojects {
             resolutionStrategy {
                 eachDependency { DependencyResolveDetails details ->
                     if (details.requested.group == 'com.snap.camerakit') {
-                        details.useVersion details.requested.version.replaceAll("@aar", "")
+                        details.useVersion details.requested.version
+                                .replaceAll("@aar", "")
+                                // Version might get appended with " (1)", " (2)" etc. which also
+                                // need to be removed:
+                                .split(" ")
+                                .first()
                     }
                 }
             }
