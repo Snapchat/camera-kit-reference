@@ -8,6 +8,23 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.18.0"></a>
+## [1.18.0] - 2022-11-21
+### Features
+- Lens Studio 4.34 support
+- [Custom Location AR](https://docs.snap.com/lens-studio/references/templates/landmarker/custom-landmarker) (Beta feature) support
+
+### Updates
+- Snap attribition support as per [Design Guidelines](https://docs.snap.com/snap-kit/camera-kit/release/design-guide)
+- Staging Watermark applies on staging builds of Camera Kit integrations
+- **iOS:** Xcode 14 or above required
+- **iOS:** Discontinued support on iOS 11 and lower
+- **Android:**  Update CameraX dependencies to 1.1.0
+- **Android:**  Update sample app project to the latest Gradle/AGP 7+ and Kotlin 1.6.21 versions
+
+### Bug Fixes
+- **Android:** Fix crash due to exceeded number of listeners registered via `TelephonyRegistryManager`
+
 <a name="1.17.0"></a>
 ## [1.17.0] - 2022-10-12
 ### Features
