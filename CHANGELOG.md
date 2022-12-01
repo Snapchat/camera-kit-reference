@@ -8,6 +8,11 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.18.1"></a>
+## [1.18.1] - 2022-11-30
+### Bug Fixes
+- **Android:**  Fix an issue where touch gestures are not be processed by lenses if no `View` is provided to `LensesComponent.Builder#dispatchTouchEventsTo`
+
 <a name="1.18.0"></a>
 ## [1.18.0] - 2022-11-21
 ### Features
@@ -24,6 +29,11 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 
 ### Bug Fixes
 - **Android:** Fix crash due to exceeded number of listeners registered via `TelephonyRegistryManager`
+
+<a name="1.17.1"></a>
+## [1.17.1] - 2022-11-30
+### Bug Fixes
+- **Android:**  Fix an issue where touch gestures are not be processed by lenses if no `View` is provided to `LensesComponent.Builder#dispatchTouchEventsTo`
 
 <a name="1.17.0"></a>
 ## [1.17.0] - 2022-10-12
