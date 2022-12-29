@@ -51,6 +51,12 @@
 	<string>REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE</string>
 	<key>SCSDKClientId</key>
 	<string>[Enter the OAuth2 client ID you get from the Snap Kit developer portal]</string>
+	<key>SCSDKRedirectUrl</key>
+	<string>REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE</string>
+	<key>SCSDKScopes</key>
+	<array>
+		<string>https://auth.snapchat.com/oauth2/api/camkit_lens_push_to_device</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

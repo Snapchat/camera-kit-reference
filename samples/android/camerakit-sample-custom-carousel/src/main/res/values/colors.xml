@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FFEE58</color>
+    <color name="bottom_sheet_color">#1E1E1E</color>
+    <color name="lens_card_background_color">#343434</color>
+    <color name="selected_lens_container_background">#4D16191C</color>
+</resources>

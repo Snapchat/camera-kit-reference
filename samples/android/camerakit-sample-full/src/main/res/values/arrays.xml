@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="snap_kit_scopes">
+        <item>https://auth.snapchat.com/oauth2/api/camkit_lens_push_to_device</item>
+    </array>
+</resources>

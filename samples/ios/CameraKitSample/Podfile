@@ -1,23 +1,30 @@
 target 'CameraKitSample' do
-	pod 'SCSDKCameraKit', '1.18.1'
-	pod 'SCSDKCameraKitReferenceUI', '1.18.1'
-	pod 'SCSDKCameraKitReferenceSwiftUI', '1.18.1'
-	pod 'SnapSDK', '1.14.0', :subspecs => ['SCSDKCreativeKit']
+	pod 'SCSDKCameraKit', '1.19.0'
+	pod 'SCSDKCameraKitReferenceUI', '1.19.0'
+	pod 'SCSDKCameraKitReferenceSwiftUI', '1.19.0'
+	pod 'SnapSDK', '2.4.0', :subspecs => ['SCSDKCreativeKit']
 
 	target 'CameraKitSampleTests' do
 		inherit! :search_paths
 	end
+
+	# Only include Push to Device in non-App Store configurations using `, :configurations => ['Debug']`, eg:
+  # pod 'SCSDKCameraKitPushToDeviceExtension', '1.19.0', :configurations => ['Debug']
+	pod 'SCSDKCameraKitBaseExtension', '1.19.0'
+	pod 'SCSDKCameraKitPushToDeviceExtension', '1.19.0'
+	pod 'SCSDKCameraKitLoginKitAuth', '1.19.0'
+
 end
 
-# https://github.com/CocoaPods/CocoaPods/issues/11402#issuecomment-1149585364
-# Developers seem to have encountered an issue with using CocoaPods from Xcode 14.
-# We might no longer require this work-around in a future version of CocoaPods.
 
 post_install do |installer|
   installer.generated_projects.each do |project|
     project.targets.each do |target|
       target.build_configurations.each do |config|
-        config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+        # https://github.com/CocoaPods/CocoaPods/issues/11402#issuecomment-1149585364
+        # Developers seem to have encountered an issue with using CocoaPods from Xcode 14.
+        # We might no longer require this work-around in a future version of CocoaPods.
+        config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'        
       end
     end
   end

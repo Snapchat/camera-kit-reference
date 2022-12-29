@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     fileprivate var supportedOrientations: UIInterfaceOrientationMask = .allButUpsideDown
 
     let snapAPI = SCSDKSnapAPI()
-    let cameraController = SampleCameraController()
+    let cameraController = CustomizedCameraController()
     
     // This is how you configure properties for a CameraKit Session
     // Pass in applicationID and apiToken through a SessionConfig which will override the ones stored in the app's Info.plist
@@ -31,7 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        cameraController.groupIDs = [SCCameraKitLensRepositoryBundledGroup, Constants.partnerGroupId]
+        if let previousGroupIDs = UserDefaults.standard.object(forKey: UpdateLensGroupViewController.Constants.lensGroupIDsKey) as? [String] {
+            cameraController.groupIDs = previousGroupIDs
+        } else {
+            cameraController.groupIDs = [SCCameraKitLensRepositoryBundledGroup, Constants.partnerGroupId]
+        }
         
         // If you want to support sharing to Snapchat (via CreativeKit) you can set this delegate below.
         // Note that you need to make sure CreativeKit is set up correctly in your app, which includes
@@ -39,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
         // approved in production and/or your Snapchat username is allowlisted in SnapKit dashboard.
         // See https://docs.snap.com/snap-kit/creative-kit/Tutorials/ios
         cameraController.snapchatDelegate = self
-        let cameraViewController = CameraViewController(cameraController: cameraController)
+        let cameraViewController = CustomizedCameraViewController(cameraController: cameraController)
         cameraViewController.appOrientationDelegate = self
         window?.rootViewController = cameraViewController
         
@@ -100,14 +104,4 @@ extension AppDelegate: AppOrientationDelegate {
         supportedOrientations = .allButUpsideDown
     }
 
-}
-
-// MARK: Data Provider
-
-class SampleCameraController: CameraController {
-    override func configureDataProvider() -> DataProviderComponent {
-        DataProviderComponent(
-            deviceMotion: nil, userData: UserDataProvider(), lensHint: nil, location: nil,
-            mediaPicker: lensMediaProvider, remoteApiServiceProviders: [CatFactRemoteApiServiceProvider()])
-    }
 }

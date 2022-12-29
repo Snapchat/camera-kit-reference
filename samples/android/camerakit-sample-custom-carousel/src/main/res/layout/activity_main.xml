@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/camera_layout_scene"
+    tools:showPaths="true">
+
+    <FrameLayout
+        android:id="@+id/snap_attribution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp">
+
+        <include
+            layout="@layout/camera_kit_snap_attribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/selected_lens_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/camera_secondary_control_margin"
+        android:background="@drawable/round_selected_lens_container_background"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/selected_lens_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="8dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/selected_lens_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            tools:text="Lens Name" />
+
+        <ImageButton
+            android:id="@+id/button_cancel_effect"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_button"
+            android:src="@drawable/close_24x24" />
+    </LinearLayout>
+
+    <com.snap.camerakit.support.widget.SnapButtonView
+        android:id="@+id/capture_button"
+        android:layout_width="@dimen/camera_capture_button_size"
+        android:layout_height="@dimen/camera_capture_button_size"
+        android:layout_marginBottom="@dimen/camera_capture_button_margin_bottom"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/lenses_explore_button"
+        android:layout_width="@dimen/camera_secondary_control_size"
+        android:layout_height="@dimen/camera_secondary_control_size"
+        android:layout_marginEnd="@dimen/camera_secondary_control_margin"
+        android:background="@drawable/rounded_button"
+        android:elevation="10dp"
+        android:src="@drawable/lens_explore_44x44"
+        app:layout_constraintBottom_toBottomOf="@+id/capture_button"
+        app:layout_constraintEnd_toStartOf="@+id/capture_button"
+        app:layout_constraintTop_toTopOf="@+id/capture_button" />
+
+    <ImageButton
+        android:id="@+id/camera_flip_button"
+        android:layout_width="@dimen/camera_secondary_control_size"
+        android:layout_height="@dimen/camera_secondary_control_size"
+        android:background="@drawable/rounded_button"
+        android:elevation="10dp"
+        android:src="@drawable/camera_flip_44x44" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/camera_preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        app:cardCornerRadius="@dimen/camera_preview_corner_radius">
+
+        <View
+            android:id="@+id/preview_gesture_handler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ViewStub
+            android:id="@+id/camera_kit_stub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/lenses_carousel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/divider_background" />
+
+            <View
+                android:layout_width="58dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center"
+                android:background="@drawable/divider_handle" />
+
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lenses_list_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lenses_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bottom_sheet_color"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    tools:itemCount="10"
+                    tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    tools:listitem="@layout/lens_item"
+                    tools:orientation="vertical"
+                    tools:scrollbars="vertical"
+                    tools:spanCount="3" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
