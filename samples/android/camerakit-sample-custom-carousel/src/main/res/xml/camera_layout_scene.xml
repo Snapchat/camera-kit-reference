@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@+id/lenses_selector_collapsed"
+        motion:constraintSetEnd="@+id/lenses_selector_expanded"
+        motion:duration="250">
+        <OnSwipe
+            motion:touchAnchorId="@+id/lenses_carousel_container"
+            motion:touchAnchorSide="top"
+            motion:dragDirection="dragUp"
+            />
+
+        <OnClick
+            motion:targetId="@+id/lenses_explore_button"
+            motion:clickAction="toggle"
+            />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/lenses_selector_collapsed">
+
+        <Constraint
+            android:id="@+id/camera_preview_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHeight_default="percent"
+            motion:layout_constraintHeight_percent="1.0"
+            motion:layout_constraintDimensionRatio="W,9:16">
+
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="0dp"/>
+
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/lenses_carousel_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/camera_preview_container"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHeight_default="percent"
+            motion:layout_constraintHeight_percent="0.0"/>
+
+        <Constraint
+            android:id="@id/camera_flip_button"
+            android:layout_width="@dimen/camera_secondary_control_size"
+            android:layout_height="@dimen/camera_secondary_control_size"
+            android:layout_marginStart="@dimen/camera_secondary_control_margin"
+            motion:layout_constraintStart_toEndOf="@+id/capture_button"
+            motion:layout_constraintBottom_toBottomOf="@+id/capture_button"
+            motion:layout_constraintTop_toTopOf="@+id/capture_button"
+            motion:flow_verticalAlign="center"
+            />
+
+        <Constraint
+            android:id="@+id/lenses_explore_button"
+            android:alpha="1.0"
+            android:layout_width="@dimen/camera_secondary_control_size"
+            android:layout_height="@dimen/camera_secondary_control_size"
+            android:layout_marginEnd="@dimen/camera_secondary_control_margin"
+            motion:layout_constraintBottom_toBottomOf="@+id/capture_button"
+            motion:layout_constraintEnd_toStartOf="@+id/capture_button"
+            motion:layout_constraintTop_toTopOf="@+id/capture_button"
+            />
+
+        <Constraint
+            android:id="@+id/selected_lens_container"
+            android:alpha="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/camera_secondary_control_margin"
+            motion:layout_constraintBottom_toTopOf="@+id/capture_button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:visibilityMode="ignore"
+            />
+
+        <Constraint
+            android:id="@+id/capture_button"
+            android:alpha="1.0"
+            android:layout_width="@dimen/camera_capture_button_size"
+            android:layout_height="@dimen/camera_capture_button_size"
+            android:layout_marginBottom="@dimen/camera_capture_button_margin_bottom"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/snap_attribution"
+            android:alpha="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/camera_snap_attribution_margin_top"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/lenses_selector_expanded">
+
+        <Constraint
+            android:id="@+id/camera_preview_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHeight_default="percent"
+            motion:layout_constraintHeight_percent="0.5"
+            motion:layout_constraintDimensionRatio="W,9:16">
+
+            <CustomAttribute
+                motion:attributeName="radius"
+                motion:customDimension="@dimen/camera_preview_corner_radius"/>
+
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/lenses_carousel_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/camera_preview_container"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHeight_default="percent"
+            motion:layout_constraintHeight_percent="0.5"/>
+
+        <Constraint
+            android:id="@id/camera_flip_button"
+            android:layout_width="@dimen/camera_secondary_control_size"
+            android:layout_height="@dimen/camera_secondary_control_size"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toTopOf="@+id/lenses_carousel_container"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/lenses_explore_button"
+            android:alpha="0.0"
+            android:layout_width="@dimen/camera_secondary_control_size"
+            android:layout_height="@dimen/camera_secondary_control_size"
+            android:layout_marginEnd="@dimen/camera_secondary_control_margin"
+            motion:layout_constraintBottom_toBottomOf="@+id/capture_button"
+            motion:layout_constraintEnd_toStartOf="@+id/capture_button"
+            motion:layout_constraintTop_toBottomOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/selected_lens_container"
+            android:alpha="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/camera_secondary_control_margin"
+            motion:layout_constraintBottom_toTopOf="@+id/capture_button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:visibilityMode="ignore"
+            />
+
+        <Constraint
+            android:id="@+id/capture_button"
+            android:alpha="0.0"
+            android:layout_width="@dimen/camera_capture_button_size"
+            android:layout_height="@dimen/camera_capture_button_size"
+            android:layout_marginBottom="@dimen/camera_capture_button_margin_bottom"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/snap_attribution"
+            android:alpha="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/camera_snap_attribution_margin_top"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toTopOf="parent"
+            />
+
+    </ConstraintSet>
+
+</MotionScene>

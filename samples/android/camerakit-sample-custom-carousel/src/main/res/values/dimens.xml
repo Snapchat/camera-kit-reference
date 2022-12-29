@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="camera_lens_item_corner_radius">12dp</dimen>
+    <dimen name="camera_secondary_control_size">44dp</dimen>
+    <dimen name="camera_secondary_control_margin">24dp</dimen>
+    <dimen name="camera_capture_button_size">80dp</dimen>
+    <dimen name="camera_capture_button_margin_bottom">88dp</dimen>
+    <dimen name="camera_snap_attribution_margin_top">40dp</dimen>
+    <dimen name="camera_preview_corner_radius">16dp</dimen>
+</resources>

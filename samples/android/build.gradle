@@ -1,0 +1,85 @@
+buildscript {
+    repositories {
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.0'
+    }
+}
+
+plugins {
+    alias libs.plugins.kotlin apply false
+    alias libs.plugins.ktlint apply false
+}
+
+allprojects {
+    ext {
+        kotlinVersion = libs.versions.kotlin.get()
+        ktxVersion = '1.7.0'
+        exoPlayerVersion = '2.16.1'
+        appCompatVersion = '1.4.0'
+        constraintLayoutVersion = '2.1.2'
+        materialVersion = '1.4.0'
+        recyclerViewVersion = '1.2.1'
+        drawerLayoutVersion = '1.1.1'
+        glideVersion = '4.11.0'
+        gmsVisionVersion = '16.2.0'
+
+        androidMinSdkVersion = 21
+        androidCompileSdkVersion = 31
+        androidTargetSdkVersion = androidCompileSdkVersion
+
+        cameraKitDistributionVersion = rootProject.file('../../VERSION').text.trim()
+        cameraKitDistributionCode = 1
+        cameraKitVersion = "$cameraKitDistributionVersion"
+        // NOTE: replace the value with an ID specific to your application
+        cameraKitApplicationId = property('com.snap.camerakit.application.id')
+        // NOTE: replace the value with a token specific to your application
+        cameraKitApiToken = property('com.snap.camerakit.api.token')
+        // NOTE: replace the value with a lenses group ID specific to your application
+        cameraKitLensesGroupId = property('com.snap.camerakit.lenses.group.id')
+        cameraKitLensesGroupIdArCore = property('com.snap.camerakit.lenses.group.id.arcore')
+    }
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+subprojects {
+    // AS has a bug where it incorrectly constructs a dependency version string for an artifact that
+    // is published with .aar extension (Maven packaging) when executing a "download sources" task
+    // that is built-in, see similar issue: https://youtrack.jetbrains.com/issue/IDEA-234036.
+    // We fix it for Camera Kit artifacts by removing @aar extension from version name using
+    // a custom resolutionStrategy:
+    configurations.all {
+        if (it.name.startsWith('downloadSources')) {
+            resolutionStrategy {
+                eachDependency { DependencyResolveDetails details ->
+                    if (details.requested.group == 'com.snap.camerakit') {
+                        details.useVersion details.requested.version
+                                .replaceAll("@aar", "")
+                                // Version might get appended with " (1)", " (2)" etc. which also
+                                // need to be removed:
+                                .split(" ")
+                                .first()
+                    }
+                }
+            }
+        }
+    }
+
+    tasks.whenTaskAdded { task ->
+        if (task.class.name.contains('PackagedDependenciesWriterTask')) {
+            task.outputs.doNotCacheIf('https://issuetracker.google.com/196847356')  {
+                true
+            }
+        }
+    }
+
+    apply plugin: libs.plugins.ktlint.get().pluginId
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

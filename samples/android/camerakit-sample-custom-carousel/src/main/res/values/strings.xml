@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Camera Kit Custom Carousel</string>
+    <string name="transition_shared_dummy">transition_shared_dummy</string>
+    <string name="share_video">Share video</string>
+    <string name="share_image">Share image</string>
+    <string name="camera_kit_not_supported">Camera Kit not supported on this device</string>
+</resources>
