@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
@@ -53,6 +54,11 @@ import java.util.Date
 private const val TAG = "MainActivity"
 private const val BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL = "use_custom_lenses_carousel"
 private const val BUNDLE_ARG_MUTE_AUDIO = "mute_audio"
+private const val BUNDLE_ARG_ENABLE_DIAGNOSTICS = "enable_diagnostics"
+private const val CONFIG_KEY_DIAGNOSTICS_ENABLE = "com.snap.camerakit.diagnostics.enable"
+private const val CONFIG_VALUE_DIAGNOSTICS_ENABLE =
+    "MEUCIQCzXSKUlMwq2l9+wS6L4cnbEXP11jQPlCyXuAFMNsr9SgIgFYO+C44ddwekBcsBY5Ti6C9ZV5OwFdaWDEQ5AlqQx5A="
+private const val ACTION_DIAGNOSTICS_DUMP = "com.snap.camerakit.diagnostics.DUMP"
 private val LENS_GROUPS = arrayOf(
     LENS_GROUP_ID_BUNDLED, // lens group for bundled lenses available in lenses-bundle artifact.
     LensPushToDeviceService.LENS_GROUP_ID, // lens group for lenses obtained using Push to Device functionality.
@@ -79,6 +85,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     private val closeOnDestroy = mutableListOf<Closeable>()
     private var useCustomLensesCarouselView = false
     private var muteAudio = false
+    private var enableDiagnostics = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -102,6 +109,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             }
         useCustomLensesCarouselView = savedInstanceState?.getBoolean(BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL) ?: false
         muteAudio = savedInstanceState?.getBoolean(BUNDLE_ARG_MUTE_AUDIO) ?: false
+        enableDiagnostics = savedInstanceState?.getBoolean(BUNDLE_ARG_ENABLE_DIAGNOSTICS) ?: false
 
         // OPTIONAL: For front flash, we change status and navigation bar colors to add extra illumination on subject.
         // In order for system bar colors to change, we need to change window flags to the following.
@@ -122,7 +130,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             userDisplayName = "Jane Doe",
             userBirthDate = Date(136985835000L)
         )
-
         // This sample uses the CameraLayout helper view that consolidates most common CameraKit use cases
         // into a single class that takes care of runtime permissions and managing CameraKit Session built
         // with default options that can be tweaked using the exposed configure* methods.
@@ -141,6 +148,11 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             // is created internally and made available via the onSessionAvailable callback below.
             configureSession {
                 userProcessorSource(mockUserProcessorSource)
+                // To provide Camera Kit developers with valuable diagnostics information, the Session can be configured
+                // with a special signature that can be obtained from the Camera Kit support:
+                if (enableDiagnostics) {
+                    configureWith(CONFIG_KEY_DIAGNOSTICS_ENABLE, CONFIG_VALUE_DIAGNOSTICS_ENABLE)
+                }
             }
 
             configureLenses {
@@ -153,11 +165,10 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                 // Pass a factory which provides a demo service which handles remote API requests from lenses.
                 remoteApiServiceFactory(CatFactRemoteApiService.Factory)
 
+                val loginKitAuthTokenProvider = LoginKitAuthTokenProvider(applicationContext)
                 // Configure Push to Device extension providing Login Kit based authentication token provider.
                 configurePushToDevice {
-                    authTokenProvider(
-                        LoginKitAuthTokenProvider(applicationContext)
-                    )
+                    authTokenProvider(loginKitAuthTokenProvider)
                 }
             }
 
@@ -228,9 +239,10 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             // to true when app resumes to match the behavior of the Snapchat app.
             val lifecycleObserver = object : DefaultLifecycleObserver {
                 override fun onResume(owner: LifecycleOwner) {
-                    appliedLens?.let { lens ->
-                        session.lenses.processor.apply(lens, reset = true)
-                    }
+                    appliedLens
+                        ?.let { lens ->
+                            session.lenses.processor.apply(lens, reset = true)
+                        }
                 }
             }
             lifecycle.addObserver(lifecycleObserver)
@@ -435,11 +447,30 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                 })
             }
         }
+
+        // If diagnostics information collection is enabled, the "dump" button triggers a broadcast which requests
+        // Camera Kit to dump all the collected information into an archive which is saved into a location that user
+        // specifies using the standard Android file chooser dialog.
+        val diagnosticsDump = rootLayout.findViewById<Button>(R.id.trigger_diagnostics_dump).apply {
+            isEnabled = enableDiagnostics
+            setOnClickListener {
+                sendBroadcast(Intent(ACTION_DIAGNOSTICS_DUMP))
+            }
+        }
+        rootLayout.findViewById<ToggleButton>(R.id.enable_diagnostics_toggle).apply {
+            isChecked = enableDiagnostics
+            setOnCheckedChangeListener { _, isChecked ->
+                enableDiagnostics = isChecked
+                diagnosticsDump.isEnabled = isChecked
+                recreate()
+            }
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putBoolean(BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL, useCustomLensesCarouselView)
         outState.putBoolean(BUNDLE_ARG_MUTE_AUDIO, muteAudio)
+        outState.putBoolean(BUNDLE_ARG_ENABLE_DIAGNOSTICS, enableDiagnostics)
         super.onSaveInstanceState(outState)
     }
 

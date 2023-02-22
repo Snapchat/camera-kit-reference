@@ -36,17 +36,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/ghost_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@drawable/button_background"
-        android:fitsSystemWindows="true"
-        android:foreground="?attr/selectableItemBackground"
-        android:src="@drawable/snap_ghost_24x24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/export_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +45,6 @@
         android:src="@drawable/ic_export_32x32"
         android:tint="@color/disabled_selector"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ghost_button" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

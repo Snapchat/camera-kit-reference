@@ -6,11 +6,13 @@
     <string name="title_capture_with">Capture with:</string>
     <string name="title_play_with">Play with:</string>
     <string name="label_multiple_lenses">Multiple lenses</string>
+    <string name="label_multiple_lenses_wo_control_strip">Multiple lenses w/o control strip</string>
     <string name="label_multiple_lenses_apply_by_id">Multiple lenses &amp; apply by ID</string>
     <string name="label_multiple_lenses_prefetch_all">Multiple lenses &amp; prefetch all</string>
     <string name="label_multiple_lenses_idle_state">Multiple lenses with idle state</string>
     <string name="label_multiple_lenses_camera_facing_back">Multiple lenses &amp; back camera</string>
     <string name="label_lens">Single lens</string>
+    <string name="label_lens_wo_control_strip">Single lens w/o control strip</string>
     <string name="label_lens_no_icon">Single lens with no icon</string>
     <string name="label_result_none">No result</string>
     <string name="label_result_completed">Completed</string>

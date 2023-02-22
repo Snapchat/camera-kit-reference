@@ -5,6 +5,9 @@ import UIKit
 import SCSDKCameraKit
 import SCSDKCameraKitReferenceUI
 import SCSDKCreativeKit
+#if CAMERAKIT_PUSHTODEVICE
+    import SCSDKLoginKit
+#endif
 // Reenable if using SwiftUI reference UI
 //import SCSDKCameraKitReferenceSwiftUI
 //import SwiftUI
@@ -90,6 +93,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         return supportedOrientations
     }
+    
+#if CAMERAKIT_PUSHTODEVICE
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool
+    {
+        return SCSDKLoginClient.application(app, open: url, options: options)
+    }
+#endif
+    
 }
 
 // MARK: Helper Orientation Methods

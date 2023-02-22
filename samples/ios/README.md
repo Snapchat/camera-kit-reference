@@ -130,5 +130,8 @@ This directory includes sample apps that demonstrate different approaches to int
 - [CameraKitSample](./CameraKitSample) contains a fully functioning camera capture with lenses and preview flow.
 - [CameraKitAlternateCarouselSample](./CameraKitAlternateCarouselSample) demonstrates how to build your own carousel and preview screen.
 
+### How to Support `SceneDelegate`
+For applications that are deployed to iOS 13 and up, please see [How to Support `SceneDelegate`](./SceneDelegate.md) for information to support the modern `SceneDelegate` life-cycle.
+
 ### Push To Device (P2D)
 Applications can receive lenses from Lens Studio using the P2D feature. See [P2D Integration](./P2D.md).

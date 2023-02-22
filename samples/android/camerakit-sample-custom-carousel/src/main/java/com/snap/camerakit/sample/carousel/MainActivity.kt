@@ -230,8 +230,10 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
     private fun flipCamera() {
-        imageProcessorSource.startPreview(!isCameraFacingFront)
-        isCameraFacingFront = !isCameraFacingFront
+        runOnUiThread {
+            imageProcessorSource.startPreview(!isCameraFacingFront)
+            isCameraFacingFront = !isCameraFacingFront
+        }
     }
 
     override fun onDestroy() {

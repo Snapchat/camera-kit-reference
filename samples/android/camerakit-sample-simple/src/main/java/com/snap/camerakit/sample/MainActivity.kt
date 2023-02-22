@@ -77,6 +77,21 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
+        findViewById<Button>(R.id.button_capture_lenses_wo_control_strip).setOnClickListener {
+            captureLauncher.launch(
+                CameraActivity.Configuration.WithLenses(
+                    lensGroupIds = LENS_GROUP_IDS,
+                    cameraAdjustmentsConfiguration = CameraActivity.AdjustmentsConfiguration(
+                        toneAdjustmentEnabled = false,
+                        portraitAdjustmentEnabled = false
+                    ),
+                    cameraFacingBasedOnLens = true,
+                    cameraFacingFlipEnabled = false,
+                    cameraFlashEnabled = false
+                )
+            )
+        }
+
         findViewById<Button>(R.id.button_capture_lenses_apply_by_id).setOnClickListener {
             captureLauncher.launch(
                 CameraActivity.Configuration.WithLenses(
@@ -119,6 +134,22 @@ class MainActivity : AppCompatActivity() {
                 CameraActivity.Configuration.WithLens(
                     lensGroupId = LENS_GROUP_IDS.first(),
                     lensId = APPLY_LENS_BY_ID
+                )
+            )
+        }
+
+        findViewById<Button>(R.id.button_capture_lens_wo_control_strip).setOnClickListener {
+            captureLauncher.launch(
+                CameraActivity.Configuration.WithLens(
+                    lensGroupId = LENS_GROUP_IDS.first(),
+                    lensId = APPLY_LENS_BY_ID,
+                    cameraAdjustmentsConfiguration = CameraActivity.AdjustmentsConfiguration(
+                        toneAdjustmentEnabled = false,
+                        portraitAdjustmentEnabled = false
+                    ),
+                    cameraFacingFront = true,
+                    cameraFacingFlipEnabled = false,
+                    cameraFlashEnabled = false
                 )
             )
         }

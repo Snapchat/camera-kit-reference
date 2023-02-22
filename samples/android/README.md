@@ -223,5 +223,5 @@ The following is a list of common issues and suggestions on how to troubleshoot 
 - Attach debugger to your app, enable Java exception breakpoints and build a `Session` while checking that there are no unexpected exceptions with stacktraces related to Camera Kit.
 - Attach debugger to your app, pause all threads and export their state into a text file - check that there are no deadlocked threads related to Camera Kit.
 - Capture Android bug report with `adb bugreport` and send it to Camera Kit developers for further investigation.
-- Check Camera Kit [FAQ page](https://docs.snap.com/docs/snap-kit/camera-kit/faq)
-- Reach out to your Camera Kit partner at Snap or fill out [this form](https://docs.snap.com/docs/snap-kit/support) to reach us directly.
+- Check Camera Kit [FAQ page](https://docs.snap.com/camera-kit/faq).
+- Reach out to your Camera Kit partner at Snap or fill out [this form](https://docs.snap.com/camera-kit/support) to reach us directly.
