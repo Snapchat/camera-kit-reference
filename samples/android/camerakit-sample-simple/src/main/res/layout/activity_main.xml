@@ -88,6 +88,13 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_capture_lenses_wo_control_strip"
+                android:layout_width="@dimen/column_use_case_width"
+                android:layout_height="wrap_content"
+                android:text="@string/label_multiple_lenses_wo_control_strip"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_capture_lenses_apply_by_id"
                 android:layout_width="@dimen/column_use_case_width"
                 android:layout_height="wrap_content"
@@ -120,6 +127,13 @@
                 android:layout_width="@dimen/column_use_case_width"
                 android:layout_height="wrap_content"
                 android:text="@string/label_lens"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_capture_lens_wo_control_strip"
+                android:layout_width="@dimen/column_use_case_width"
+                android:layout_height="wrap_content"
+                android:text="@string/label_lens_wo_control_strip"
                 />
 
             <androidx.appcompat.widget.AppCompatButton

@@ -20,6 +20,9 @@
     <string name="custom_lenses_carousel_on">Custom Carousel ON</string>
     <string name="mute_audio_off">Mute Audio OFF</string>
     <string name="mute_audio_on">Mute Audio ON</string>
+    <string name="diagnostics_off">Diagnostics OFF</string>
+    <string name="diagnostics_on">Diagnostics ON</string>
+    <string name="dump_diagnostics">Dump</string>
     <string name="share_video">Share video</string>
     <string name="share_image">Share image</string>
     <string name="button_camera_flip_content_description">Flip camera</string>
