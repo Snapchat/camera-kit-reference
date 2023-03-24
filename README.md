@@ -4,4 +4,4 @@
 
 </br>
 
-This repository contains [documentation](./docs) as well as [sample applications](./samples) demonstrating how to integrate the 1.20.0 version of the [Camera Kit](https://kit.snapchat.com/camera-kit) SDK.
+This repository contains [documentation](./docs) as well as [sample applications](./samples) demonstrating how to integrate the 1.21.0 version of the [Camera Kit](https://kit.snapchat.com/camera-kit) SDK.
