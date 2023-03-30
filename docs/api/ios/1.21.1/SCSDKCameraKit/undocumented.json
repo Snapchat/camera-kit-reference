@@ -1,0 +1,348 @@
+{
+  "warnings": [
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKit.h",
+      "line": 29,
+      "symbol": "SCCameraKitProtocol",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAVWriterOutput.h",
+      "line": 32,
+      "symbol": "SCCameraKitAVWriterOutput.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAdjustmentsComponent.h",
+      "line": 13,
+      "symbol": "SCCameraKitAdjustmentsComponentErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAdjustmentsComponent.h",
+      "line": 17,
+      "symbol": "SCCameraKitAdjustmentsComponentError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAdjustmentsComponent.h",
+      "line": 17,
+      "symbol": "SCCameraKitAdjustmentsComponentError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAdjustmentsComponent.h",
+      "line": 20,
+      "symbol": "SCCameraKitAdjustmentsComponentError.SCCameraKitAdjustmentsComponentErrorUnsupportedAdjustment",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAgreementsStore.h",
+      "line": 16,
+      "symbol": "SCCameraKitAgreementsStore.requiresNewAgreementAcceptance",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAgreementsStore.h",
+      "line": 17,
+      "symbol": "SCCameraKitAgreementsStore.newestAvailableAgreements",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAgreementsStore.h",
+      "line": 18,
+      "symbol": "SCCameraKitAgreementsStore.-acceptAgreements:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitAgreementsStore.h",
+      "line": 19,
+      "symbol": "SCCameraKitAgreementsStore.-declineAgreements:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitErrorCodes.h",
+      "line": 8,
+      "symbol": "SCCameraKitErrorUnspecified",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitErrorCodes.h",
+      "line": 9,
+      "symbol": "SCCameraKitErrorLensMetadataNotFound",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitErrorCodes.h",
+      "line": 10,
+      "symbol": "SCCameraKitErrorLensContentNotFound",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitErrorCodes.h",
+      "line": 11,
+      "symbol": "SCCameraKitErrorLensContentUrlMissing",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitErrorCodes.h",
+      "line": 12,
+      "symbol": "SCCameraKitErrorLensChecksumMissing",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitErrorCodes.h",
+      "line": 13,
+      "symbol": "SCCameraKitErrorCannotWriteToFile",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitExplicitViewportProvider.h",
+      "line": 36,
+      "symbol": "SCCameraKitExplicitViewportProvider.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLens.h",
+      "line": 10,
+      "symbol": "SCCameraKitLensFacingPreference.SCCameraKitLensFacingPreferenceNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLens.h",
+      "line": 11,
+      "symbol": "SCCameraKitLensFacingPreference.SCCameraKitLensFacingPreferenceFront",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLens.h",
+      "line": 12,
+      "symbol": "SCCameraKitLensFacingPreference.SCCameraKitLensFacingPreferenceBack",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 16,
+      "symbol": "SCCameraKitLensMediaPickerProviderAllowedMediaType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 17,
+      "symbol": "SCCameraKitLensMediaPickerProviderAllowedMediaType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 19,
+      "symbol": "SCCameraKitLensMediaPickerProviderAllowedMediaType.SCCameraKitLensMediaPickerProviderAllowedMediaTypeNoneSpecified",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 22,
+      "symbol": "SCCameraKitLensMediaPickerProviderAllowedMediaType.SCCameraKitLensMediaPickerProviderAllowedMediaTypeImage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 27,
+      "symbol": "SCCameraKitLensMediaPickerProviderAllowedMediaType.SCCameraKitLensMediaPickerProviderAllowedMediaTypeImageCroppedToFace",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 30,
+      "symbol": "SCCameraKitLensMediaPickerProviderAllowedMediaType.SCCameraKitLensMediaPickerProviderAllowedMediaTypeVideo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 34,
+      "symbol": "SCCameraKitLensMediaPickerProvider",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 89,
+      "symbol": "SCCameraKitLensMediaPickerProviderPhotoLibrary.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 93,
+      "symbol": "SCCameraKitLensMediaPickerAssetType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 94,
+      "symbol": "SCCameraKitLensMediaPickerAssetType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 95,
+      "symbol": "SCCameraKitLensMediaPickerAssetType.SCCameraKitLensMediaPickerAssetTypeImage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 96,
+      "symbol": "SCCameraKitLensMediaPickerAssetType.SCCameraKitLensMediaPickerAssetTypeVideo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 120,
+      "symbol": ".faceRect",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensMediaPickerProvider.h",
+      "line": 120,
+      "symbol": "SCCameraKitLensMediaPickerAssetMetadata..faceRect",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensPrefetcher.h",
+      "line": 16,
+      "symbol": "SCCameraKitLensFetchStatus.SCCameraKitLensFetchStatusUnloaded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensPrefetcher.h",
+      "line": 17,
+      "symbol": "SCCameraKitLensFetchStatus.SCCameraKitLensFetchStatusLoading",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensPrefetcher.h",
+      "line": 18,
+      "symbol": "SCCameraKitLensFetchStatus.SCCameraKitLensFetchStatusLoaded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensRemoteApiService.h",
+      "line": 98,
+      "symbol": "SCCameraKitLensRemoteApiResponse.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensesComponent.h",
+      "line": 16,
+      "symbol": "SCCameraKitLensRepositoryBundledGroup",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitLensesComponent.h",
+      "line": 102,
+      "symbol": "SCCameraKitLensesComponentErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitPhotoCaptureOutput.h",
+      "line": 16,
+      "symbol": "SCCameraKitPhotoCaptureOutput.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitPhotoCaptureOutput.h",
+      "line": 17,
+      "symbol": "SCCameraKitPhotoCaptureOutput.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitPreviewView.h",
+      "line": 12,
+      "symbol": "SCCameraKitPreviewViewContentMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitPreviewView.h",
+      "line": 12,
+      "symbol": "SCCameraKitPreviewViewContentMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitPreviewView.h",
+      "line": 13,
+      "symbol": "SCCameraKitPreviewViewContentMode.SCCameraKitPreviewViewContentModeScaleToFill",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitPreviewView.h",
+      "line": 14,
+      "symbol": "SCCameraKitPreviewViewContentMode.SCCameraKitPreviewViewContentModeAspectFill",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitPreviewView.h",
+      "line": 15,
+      "symbol": "SCCameraKitPreviewViewContentMode.SCCameraKitPreviewViewContentModeAspectFit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitSessionConfig.h",
+      "line": 44,
+      "symbol": "SCCameraKitSessionConfig.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/phantom/SDKs/CameraKit/.buildscript/build/iphonesimulator_archive.xcarchive/Products/Library/Frameworks/SCSDKCameraKit.framework/Headers/SCCameraKitUserData.h",
+      "line": 27,
+      "symbol": "SCCameraKitUserData.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/private/var/lib/jenkins/workspace/phantom"
+}

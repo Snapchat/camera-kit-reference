@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SCSDKCameraKitReferenceSwiftUI  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="SCSDKCameraKitReferenceSwiftUI  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          SCSDKCameraKitReferenceSwiftUI 1.21.1 Docs
+        </a>
+         (0% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">SCSDKCameraKitReferenceSwiftUI Reference</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      SCSDKCameraKitReferenceSwiftUI  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions.html#/Captured">Captured</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='camerakit-reference-swiftui-ios' class='heading'>CameraKit Reference SwiftUI iOS</h1>
+<h2 id='overview' class='heading'>Overview</h2>
+
+<p><code>SCSDKCameraKitReferenceSwiftUI</code> is an optional SDK that provides SwiftUI wrappers around the UIKit elements provided in <code>SCSDKCameraKitReferenceUI</code>. As with <code>SCSDKCameraKitReferenceUI</code> this SDK also provides a fully-functional Camera view to use that has CameraKit set up and working with sample lenses.</p>
+<h3 id='usage-philosophy' class='heading'>Usage Philosophy</h3>
+
+<p>In general, <code>SCSDKCameraKitReferenceSwiftUI</code> follows the same design and usage philosophy as <code>SCSDKCameraKitReferenceUI</code>. This means that the UI elements in <code>SCSDKCameraKitReferenceSwiftUI</code> are intended to be used out-of-the-box and they provide customizations to tailor the behavior slightly (eg. changing the recording duration of the camera button). While the elements in <code>SCSDKCameraKitReferenceSwiftUI</code> are intended to be used in a modular fashion (eg. using carousel, camera buttuon, and recorder but own video preview), the elements aren&rsquo;t designed to be as extensible and changeable as they are in <code>SCSDKCameraKitReferenceUI</code> since the SwiftUI elements are mostly wrappers around the UIKit elements.</p>
+<h2 id='getting-started' class='heading'>Getting Started</h2>
+<h3 id='requirements' class='heading'>Requirements</h3>
+
+<p><code>SCSDKCameraKitReferenceSwiftUI</code> requires Swift, a minimum of iOS 13 (although some elements like the carousel require 14), and a 64 bit processor.</p>
+<h3 id='dependency-management' class='heading'>Dependency Management</h3>
+
+<p>CameraKit currently supports CocoaPods and Swift Package Manager.</p>
+<h4 id='cocoapods' class='heading'>CocoaPods</h4>
+
+<p>Add this line to your <code>Podfile</code>:
+<code>pod &#39;SCSDKCameraKitReferenceSwiftUI&#39;, :path =&gt; &#39;CameraKit/CameraKitReferenceSwiftUI&#39;</code>
+where <code>:path</code> points to the directory that contains the camera kit sdk, podspec, etc.</p>
+
+<p>Run <code>pod install</code> and open up your <code>xcworkspace</code>.</p>
+<h4 id='swift-package-manager' class='heading'>Swift Package Manager</h4>
+
+<ul>
+<li>Drag and drop the <code>CameraKit/CameraKitReferenceSwiftUI</code> directory into your project or workspace.</li>
+<li>Click the + button in the &ldquo;Frameworks, Libraries, and Embedded Content&rdquo; section, select <code>SCSDKCameraKitReferenceSwiftUI</code>, and add it as a dependency.</li>
+</ul>
+
+<p>More detail can be found in <a href="https://developer.apple.com/documentation/swift_packages/organizing_your_code_with_local_packages">Apple&rsquo;s documentation</a>.</p>
+<h3 id='showing-the-camera' class='heading'>Showing the Camera</h3>
+
+<p>At its most simplest form, <code>SCSDKCameraKitReferenceUI</code> contains a fully-setup camera that contains all UI elements (carousel, camera button, recorder, etc.) and hooks up to the core <code>SCSDKCameraKit</code> sdk to fetch and apply lenses to the camera. If you would like your app&rsquo;s root view to be the camera, you can do so by doing the following in your app or scene delegate:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">cameraController</span> <span class="o">=</span> <span class="kt">CameraController</span><span class="p">()</span>
+<span class="n">cameraController</span><span class="o">.</span><span class="n">groupIDs</span> <span class="o">=</span> <span class="p">[</span><span class="s">"REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">view</span> <span class="o">=</span> <span class="kt">CameraView</span><span class="p">(</span><span class="nv">cameraController</span><span class="p">:</span> <span class="kt">CameraController</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">cameraViewController</span> <span class="o">=</span> <span class="kt">UIHostingController</span><span class="p">(</span><span class="nv">rootView</span><span class="p">:</span> <span class="n">view</span><span class="p">)</span>
+<span class="n">window</span><span class="p">?</span><span class="o">.</span><span class="n">rootViewController</span> <span class="o">=</span> <span class="n">cameraViewController</span>
+</code></pre>
+
+<p>where <code>repoGroups</code> is the list of group IDs added in Lens Scheduler to show in the carousel.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2023 <a class="link" href="https://kit.snapchat.com/camera-kit" target="_blank" rel="external noopener">Snap Inc.</a>. All rights reserved. (Last updated: 2023-03-29)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>
