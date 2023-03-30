@@ -8,6 +8,12 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.21.1"></a>
+## [1.21.1] - 2023-03-29
+### Bug Fixes
+- **iOS:** Fixed issue where photos of certain lenses could output a blank image
+- **iOS:** Fixed issue where touch handling could be processed incorrectly
+
 <a name="1.21.0"></a>
 ## [1.21.0] - 2023-03-24
 ### Features
