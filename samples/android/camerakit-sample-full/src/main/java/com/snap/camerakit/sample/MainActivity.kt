@@ -29,6 +29,7 @@ import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import com.snap.camerakit.LegalProcessor
 import com.snap.camerakit.Session
+import com.snap.camerakit.UnauthorizedApplicationException
 import com.snap.camerakit.connectOutput
 import com.snap.camerakit.extension.auth.loginkit.LoginKitAuthTokenProvider
 import com.snap.camerakit.extension.lens.p2d.service.LensPushToDeviceService
@@ -70,6 +71,7 @@ private val LENS_GROUPS_ARCORE_AVAILABLE = arrayOf(
 )
 private const val PREFS_CAMERA_KIT_SAMPLE = "camera_kit_sample"
 private const val KEY_LENS_GROUPS = "lens_groups"
+private const val KEY_API_TOKEN = "api_token"
 
 /**
  * A simple activity which demonstrates how to use CameraKit to apply/remove lenses onto a camera preview.
@@ -83,6 +85,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     private lateinit var lensGroups: Array<String>
 
     private val closeOnDestroy = mutableListOf<Closeable>()
+    private var apiToken: String? = null
     private var useCustomLensesCarouselView = false
     private var muteAudio = false
     private var enableDiagnostics = false
@@ -100,7 +103,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         }
 
         sharedPreferences = getSharedPreferences(PREFS_CAMERA_KIT_SAMPLE, MODE_PRIVATE)
-
+        apiToken = sharedPreferences.getString(KEY_API_TOKEN, null) ?: cameraKitApiToken
         lensGroups = sharedPreferences.getStringSet(KEY_LENS_GROUPS, null)?.toTypedArray()
             ?: if (arCoreSourceAvailable) {
                 LENS_GROUPS_ARCORE_AVAILABLE
@@ -147,6 +150,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             // CameraLayout provides a way to register callbacks for configuring CameraKit Session that
             // is created internally and made available via the onSessionAvailable callback below.
             configureSession {
+                apiToken(apiToken)
                 userProcessorSource(mockUserProcessorSource)
                 // To provide Camera Kit developers with valuable diagnostics information, the Session can be configured
                 // with a special signature that can be obtained from the Camera Kit support:
@@ -363,6 +367,10 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                 )
                 is CameraLayout.Failure.DeviceNotSupported -> getString(R.string.camera_kit_unsupported)
                 else -> {
+                    // Try to clear user provided but invalid API token to avoid crash on re-launch.
+                    if (error is UnauthorizedApplicationException && error.apiToken == apiToken) {
+                        sharedPreferences.edit().putString(KEY_API_TOKEN, null).apply()
+                    }
                     if (!BuildConfig.DEBUG) {
                         // This allows app to catch unrecoverable errors and not cause app to crash in production. It is
                         // recommended to propagate this event to your crash reporter of choice for monitoring on the
@@ -443,6 +451,50 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
                     override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                         updatedLensGroups = s.toString().split(", ").filter { it.isNotBlank() }.toTypedArray()
+                    }
+                })
+            }
+        }
+
+        // Setup a way to change API token for easier testing via debug side-menu.
+        findViewById<Button>(R.id.update_api_token_button).setOnClickListener {
+            var updatedApiToken = apiToken
+
+            fun updateApiTokenNeeded(newApiToken: String?) {
+                if (!newApiToken.isNullOrEmpty() && newApiToken != apiToken) {
+                    apiToken = newApiToken
+                    sharedPreferences.edit().putString(KEY_API_TOKEN, newApiToken).apply()
+                    recreate()
+                }
+            }
+
+            val dialog = AlertDialog.Builder(this)
+                .setView(R.layout.dialog_api_token_edit)
+                .setCancelable(true)
+                .setPositiveButton(android.R.string.ok) { _, _ ->
+                    updateApiTokenNeeded(updatedApiToken)
+                }
+                .setNegativeButton(android.R.string.cancel) { dialog, _ ->
+                    dialog.cancel()
+                }
+                .setNeutralButton(R.string.reset) { _, _ ->
+                    updateApiTokenNeeded(cameraKitApiToken)
+                }
+                .create()
+                .apply {
+                    show()
+                }
+
+            dialog.findViewById<EditText>(R.id.api_token_field)!!.apply {
+                setText(updatedApiToken)
+                addTextChangedListener(object : TextWatcher {
+
+                    override fun afterTextChanged(s: Editable) {}
+
+                    override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+
+                    override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                        updatedApiToken = s.toString()
                     }
                 })
             }

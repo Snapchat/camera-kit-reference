@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     // which is useful to dynamically update your apiToken in case it ever gets revoked.
     // let cameraController = CameraController(
     //    sessionConfig: SessionConfig(
-    //        applicationID: "application_id_here", apiToken: "api_token_here"))
+    //        apiToken: "api_token_here"))
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)

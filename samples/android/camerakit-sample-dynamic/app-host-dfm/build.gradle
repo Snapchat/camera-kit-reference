@@ -14,7 +14,6 @@ android {
         versionName cameraKitDistributionVersion
 
         manifestPlaceholders = [
-                'cameraKitApplicationId': cameraKitApplicationId,
                 'cameraKitApiToken': cameraKitApiToken
         ]
 

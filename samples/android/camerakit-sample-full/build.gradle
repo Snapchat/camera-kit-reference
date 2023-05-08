@@ -13,7 +13,6 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [
-            'cameraKitApplicationId': cameraKitApplicationId,
             'cameraKitApiToken': cameraKitApiToken,
 
             // Snap Kit parameters for the Lens Push To Device authentication via Login Kit:

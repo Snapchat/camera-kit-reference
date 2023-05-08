@@ -10,9 +10,9 @@ In general, Camera Kit attaches to your existing camera workflow. You are still 
 
 Camera Kit requires a minimum of iOS 12, and a 64 bit processor. Camera Kit will compile, but not run on a Simulator (due to lack of AVCaptureSession support).
 
-Make sure you also update `SCCameraKitClientID` and `SCCameraKitAPIToken` in your application's `Info.plist` with the application ID and API token from the Snap Kit developer portal. Note that you can also pass in these values when creating a session like:
+Make sure you also update `SCCameraKitAPIToken` in your application's `Info.plist` with the API token from the Snap Kit developer portal. Note that you can also pass in these values when creating a session like:
 ```swift
-let sessionConfig = SessionConfig(applicationID: "application_id_here", apiToken: "api_token_here")
+let sessionConfig = SessionConfig(apiToken: "api_token_here")
 let session = Session(sessionConfig: sessionConfig, lensesConfig: nil, errorHandler: nil)
 ```
 This is useful in case you need to dynamically update your API token which may happen in the case where your API token gets revoked for some reason.
