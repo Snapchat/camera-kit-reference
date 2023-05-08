@@ -61,3 +61,13 @@ internal fun Context.cacheJpegOf(bitmap: Bitmap): File {
         }
     }
 }
+
+/**
+ * Attempts to read the Camera Kit API token value from the app's manifest metadata.
+ */
+internal val Context.cameraKitApiToken: String? get() {
+    return packageManager.getPackageInfo(packageName, PackageManager.GET_META_DATA)
+        ?.applicationInfo
+        ?.metaData
+        ?.getString("com.snap.camerakit.api.token")
+}

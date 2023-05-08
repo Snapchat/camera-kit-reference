@@ -12,7 +12,6 @@ android {
         versionName cameraKitDistributionVersion
 
         buildConfigField 'String', "LENS_GROUP_ID_TEST", "\"$cameraKitLensesGroupId\""
-        buildConfigField 'String', "CAMERA_KIT_APP_ID", "\"$cameraKitApplicationId\""
         buildConfigField 'String', "CAMERA_KIT_API_TOKEN", "\"$cameraKitApiToken\""
     }
 

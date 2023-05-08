@@ -131,7 +131,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         // case (recommended) or it can be hardcoded in AndroidManifest.xml file.
         cameraKitSession = Session(this) {
             apiToken(BuildConfig.CAMERA_KIT_API_TOKEN)
-            applicationId(BuildConfig.APPLICATION_ID)
             imageProcessorSource(imageProcessorSource)
             attachTo(findViewById(R.id.camera_kit_stub))
             safeRenderAreaProcessorSource(SafeRenderAreaProcessorSource(this@MainActivity))

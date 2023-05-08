@@ -16,7 +16,6 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [
-            'cameraKitApplicationId': cameraKitApplicationId,
             'cameraKitApiToken': cameraKitApiToken,
             'cameraKitDynamicPluginApplicationId': cameraKitDynamicPluginApplicationId
         ]
