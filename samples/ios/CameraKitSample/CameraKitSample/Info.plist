@@ -47,8 +47,6 @@
 	<string>CameraKit Sample uses photo library to save captured photos and recorded videos</string>
 	<key>SCCameraKitAPIToken</key>
 	<string>REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE</string>
-	<key>SCCameraKitClientID</key>
-	<string>REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE</string>
 	<key>SCSDKClientId</key>
 	<string>[Enter the OAuth2 client ID you get from the Snap Kit developer portal]</string>
 	<key>SCSDKRedirectUrl</key>
