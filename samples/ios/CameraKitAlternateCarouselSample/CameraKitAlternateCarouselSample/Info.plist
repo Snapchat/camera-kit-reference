@@ -47,8 +47,6 @@
 	<string>CameraKit Sample uses photo library to save captured photos and recorded videos</string>
 	<key>SCCameraKitAPIToken</key>
 	<string>REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE</string>
-	<key>SCCameraKitClientID</key>
-	<string>REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE</string>
 	<key>SCSDKClientId</key>
 	<string>REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE</string>
 	<key>UILaunchStoryboardName</key>
