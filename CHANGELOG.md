@@ -8,6 +8,29 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.23.0"></a>
+## [1.23.0] - 2023-05-17
+### Features
+- Lens Studio 4.47 support
+- **Android:** Add a new API to get lens preview sequences - `LensesComponent.Lens.Media.Sequence`, usage example:
+    ```kotlin
+    session.lenses.repository.get(LensesComponent.Repository.QueryCriteria.Available("lens-group-id")) { result ->
+    	result.whenHasFirst { lens -> 
+			(lens.previews.find { preview -> 
+	        		preview is LensesComponent.Lens.Media.Sequence.Webp 
+	    		} as? LensesComponent.Lens.Media.Sequence.Webp)?.let { webpSequence ->
+	       			webpSequence.values.forEach { imageUri ->
+		    			// do something with each image
+				}
+	    		}
+		}
+    }
+    ```
+- **Android:** Prompt users to install a new ArCore version when available when using lenses that require it
+
+### Bug Fixes
+- **iOS:** Fix share button working as save button in the reference UI
+    
 <a name="1.22.0"></a>
 ## [1.22.0] - 2023-05-08
 ### Updates
