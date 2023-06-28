@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Builder</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>CameraKit</span>
+            </a>
+    </div>
+    <div>
+1.24.0    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit/Session.Builder///PointingToDeclaration//1404709923">
+  <div class="breadcrumbs"><a href="../../../../index.html">CameraKit</a><span class="delimiter">/</span><a href="../../index.html">com.snap.camerakit</a><span class="delimiter">/</span><a href="../index.html">Session</a><span class="delimiter">/</span><span class="current">Builder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Builder</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1538876124%2FFunctions%2F1404709923" anchor-label="apiToken" id="1538876124%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="api-token.html"><span>api</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1538876124%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="api-token.html"><span class="token function">apiToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided API token <a href="api-token.html">value</a> to associate with <a href="../index.html">Session</a>. When no value is provided then the application's Android manifest will be queried for <code class="lang-kotlin">com.snap.camerakit.api.token</code> meta-data field. If no value is provided or found in the manifest, CameraKit will attempt to use built-in authorization token however it is scheduled to be removed in future releases, making this a required property to provide.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1040319858%2FFunctions%2F1404709923" anchor-label="applicationId" id="1040319858%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="application-id.html"><span>application</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1040319858%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="application-id.html"><span class="token function"><strike>applicationId</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided application ID <a href="application-id.html">value</a> to associate with <a href="../index.html">Session</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1110639881%2FFunctions%2F1404709923" anchor-label="attachTo" id="1110639881%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="attach-to.html"><span>attach</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1110639881%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="attach-to.html"><span class="token function">attachTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewStub<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewStub.html">ViewStub</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="attach-to.html">viewStub</a> with a non-null parent view to inflate view hierarchy of <a href="../index.html">Session</a> which includes rendering camera preview with lenses. If no <a href="attach-to.html">viewStub</a> is provided then <a href="../index.html">Session</a> does not attempt to render any views while the output of camera preview can be attached to using <a href="../../-image-processor/connect-output.html">ImageProcessor.connectOutput</a>.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="attach-to.html"><span class="token function">attachTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewStub<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewStub.html">ViewStub</a><span class="token punctuation">, </span></span><span class="parameter ">withPreview<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="attach-to.html">viewStub</a> with a non-null parent view to inflate view hierarchy of <a href="../index.html">Session</a>. If <a href="attach-to.html">withPreview</a> is false then <a href="../index.html">Session</a> will not render camera preview within the inflated view hierarchy. To render camera preview, an output can be attached explicitly using <a href="../../-image-processor/connect-output.html">ImageProcessor.connectOutput</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1210281228%2FFunctions%2F1404709923" anchor-label="audioProcessorSource" id="1210281228%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="audio-processor-source.html"><span>audio</span><wbr></wbr><span>Processor</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1210281228%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="audio-processor-source.html"><span class="token function">audioProcessorSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-audio-processor/index.html">AudioProcessor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="audio-processor-source.html">value</a> to attach the <a href="../index.html">Session</a> audio processing pipeline to once built. The provided <a href="../../-source/index.html">Source</a> is normally attached to when audio input is required to either mutate it by applying audio effects (lenses voice changer) or/and process it to detect loudness, spectrum information etc. Providing the <a href="../../-source/index.html">Source</a> is optional as it is possible to connect input to <a href="../processor.html">Session.processor</a> manually, once <a href="../index.html">Session</a> is built and running, if required.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1843463888%2FFunctions%2F1404709923" anchor-label="build" id="1843463888%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1843463888%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">Session</a></div><div class="brief "><p class="paragraph">Builds an instance of <a href="../index.html">Session</a> with the configuration of this builder and starts the internal lifecycle which can be disposed by calling <a href="../close.html">Session.close</a>. If configuration issues are detected then it should be expected that this method will throw an exception or deliver it to an error handler provided via <a href="handle-errors-with.html">handleErrorsWith</a>, if any.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="184473107%2FFunctions%2F1404709923" anchor-label="configureLenses" id="184473107%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-lenses.html"><span>configure</span><wbr></wbr><span><span>Lenses</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="184473107%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-lenses.html"><span class="token function">configureLenses</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">withBuilder<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-suppress-wildcards/index.html"><span class="token annotation builtin">JvmSuppressWildcards</span></a> </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../com.snap.camerakit.lenses/-lenses-component/-builder/index.html">LensesComponent.Builder</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Allows to pre-configure <a href="../../../com.snap.camerakit.lenses/-lenses-component/index.html">LensesComponent</a> with options that are applied to build the final <a href="../../../com.snap.camerakit.lenses/-lenses-component/index.html">LensesComponent</a> available through <a href="../lenses.html">Session.lenses</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1910534537%2FFunctions%2F1404709923" anchor-label="configureWith" id="-1910534537%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-with.html"><span>configure</span><wbr></wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1910534537%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-with.html"><span class="token function">configureWith</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="configure-with.html">key</a> associated with a <a href="configure-with.html">value</a> to configure additional <a href="../index.html">Session</a> parameters which are typically internal and/or experimental.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1222174833%2FFunctions%2F1404709923" anchor-label="handleErrorsWith" id="-1222174833%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="handle-errors-with.html"><span>handle</span><wbr></wbr><span>Errors</span><wbr></wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1222174833%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="handle-errors-with.html"><span class="token function">handleErrorsWith</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">errorHandler<span class="token operator">: </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Allows to provide a custom error handler that will be notified when this session and/or its sub-components encounter issues that are most likely unrecoverable. If no custom error handler is provided here, then all errors will be re-thrown to the main thread, leading to an immediate crash.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="594389804%2FFunctions%2F1404709923" anchor-label="imageProcessorSource" id="594389804%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="image-processor-source.html"><span>image</span><wbr></wbr><span>Processor</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="594389804%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="image-processor-source.html"><span class="token function">imageProcessorSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="image-processor-source.html">value</a> to attach the <a href="../index.html">Session</a> image processing pipeline to once built. The provided <a href="../../-source/index.html">Source</a> will be attached to as soon as <a href="../index.html">Session</a> is created and de-attached from once the <a href="../index.html">Session</a> is closed. Providing a <a href="../../-source/index.html">Source</a> is optional as it is possible to connect input to <a href="../processor.html">Session.processor</a> manually, if required.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1220016148%2FFunctions%2F1404709923" anchor-label="legalProcessorSource" id="-1220016148%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="legal-processor-source.html"><span>legal</span><wbr></wbr><span>Processor</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1220016148%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="legal-processor-source.html"><span class="token function">legalProcessorSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-legal-processor/index.html">LegalProcessor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="legal-processor-source.html">value</a> to attach the <a href="../index.html">Session</a> legal processing pipeline to once built. The provided <a href="../../-source/index.html">Source</a> is normally attached to when legal prompts are to be presented and de-attached once legal prompt response is obtained.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-970580492%2FFunctions%2F1404709923" anchor-label="locationProcessorSource" id="-970580492%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="location-processor-source.html"><span>location</span><wbr></wbr><span>Processor</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-970580492%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="location-processor-source.html"><span class="token function">locationProcessorSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-location-processor/index.html">LocationProcessor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="location-processor-source.html">value</a> to attach the <a href="../index.html">Session</a> optional location data processing pipeline to once built. The provided <a href="../../-source/index.html">Source</a> is normally attached to when location data is required to be presented as part of image processing and de-attached once the location data is not needed anymore. Providing the <a href="../../-source/index.html">Source</a> is optional as location data is optional, it does not change the any aspect of business logic. The main advantage of providing the <a href="../../-source/index.html">Source</a> of location data is to enable certain types of location specific content such as Landmarker lenses that augment real life objects pinned to geographic co-ordinates.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-82917428%2FFunctions%2F1404709923" anchor-label="mediaProcessorSource" id="-82917428%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="media-processor-source.html"><span>media</span><wbr></wbr><span>Processor</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-82917428%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="media-processor-source.html"><span class="token function">mediaProcessorSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-media-processor/index.html">MediaProcessor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="media-processor-source.html">value</a> to attach the <a href="../index.html">Session</a> optional media data processing pipeline to once built. The provided <a href="../../-source/index.html">Source</a> is normally attached to when media data is required to be presented as part of image processing and de-attached once the media data is not needed anymore. Providing the <a href="../../-source/index.html">Source</a> is optional as media data is optional, it does not change the any aspect of business logic. The main advantage of providing the <a href="../../-source/index.html">Source</a> of media data is to enable certain content such as Image Picker lenses.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="241313214%2FFunctions%2F1404709923" anchor-label="safeRenderAreaProcessorSource" id="241313214%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="safe-render-area-processor-source.html"><span>safe</span><wbr></wbr><span>Render</span><wbr></wbr><span>Area</span><wbr></wbr><span>Processor</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="241313214%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="safe-render-area-processor-source.html"><span class="token function">safeRenderAreaProcessorSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-safe-render-area-processor/index.html">SafeRenderAreaProcessor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="safe-render-area-processor-source.html">value</a> to attach the <a href="../index.html">Session</a> optional safe render area processing pipeline to once built. The provided <a href="../../-source/index.html">Source</a> is normally attached to as soon as the <a href="../index.html">Session</a> is built and de-attached when <a href="../index.html">Session</a> is closed. Providing the <a href="../../-source/index.html">Source</a> is optional however certain content such as UI elements in lenses will be rendered without any consideration for the client's UI, possibly interfering with it, when no <a href="../../-source/index.html">Source</a> is provided.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="748087752%2FFunctions%2F1404709923" anchor-label="userProcessorSource" id="748087752%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="user-processor-source.html"><span>user</span><wbr></wbr><span>Processor</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="748087752%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="user-processor-source.html"><span class="token function">userProcessorSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../-user-processor/index.html">UserProcessor</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="user-processor-source.html">value</a> to attach the <a href="../index.html">Session</a> optional user data processing pipeline to once built. The provided <a href="../../-source/index.html">Source</a> is normally attached to when user data is required to be presented as part of image processing and de-attached once the user data is not needed anymore. Providing the <a href="../../-source/index.html">Source</a> is optional as user data is optional, it does not change the any aspect of business logic. The main advantage of providing the <a href="../../-source/index.html">Source</a> of user data is to get extra personalization in generated content such as displaying user name in lenses.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

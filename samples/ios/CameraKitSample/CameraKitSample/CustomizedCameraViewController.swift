@@ -1,6 +1,8 @@
 import Foundation
 import SCSDKCameraKit
 import SCSDKCameraKitReferenceUI
+import SwiftUI
+import Combine
 
 // WARNING: Push to Device support cannot be shipped to the App Store.
 // Push to Device must be compiled out before submission.
@@ -43,6 +45,14 @@ class CustomizedCameraViewController: CameraViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    private var debugStore: (any DebugStoreProtocol)? = nil
+    private var debugCancellables: Set<AnyHashable> = []
+    
+    init(cameraController: CameraController, debugStore: (any DebugStoreProtocol)?) {
+        self.debugStore = debugStore
+        super.init(cameraController: cameraController)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,12 +75,24 @@ class CustomizedCameraViewController: CameraViewController {
     /// The user has tapped the debug sheet button.
     /// - Parameter sender: the button that was tapped
     @objc func lensDebugSheetAction(_ sender: UIButton) {
-        let vc = DebugViewController(cameraController: cameraController, carouselView: cameraView.carouselView)
-        let nav = UINavigationController(rootViewController: vc)
-        if #available(iOS 15.0, *) {
-            nav.sheetPresentationController?.detents = [.medium()]
+        if #available(iOS 13.0.0, *) {
+            guard let debugStore = debugStore as? DebugStore else { return }
+            let vc = UIHostingController(rootView: DebugView(store: debugStore))
+            let cancellable = debugStore.$groupIDs.sink { [weak self] groupIDs in
+                guard let self = self else { return }
+                guard self.cameraController.groupIDs != groupIDs else { return }
+                self.cameraController.groupIDs = groupIDs
+                self.cameraView.carouselView.selectItem(EmptyItem())
+                self.cameraController.clearLens()
+                self.cameraView.carouselView.reloadData()
+            }
+            _ = debugCancellables.insert(cancellable)
+            let nav = UINavigationController(rootViewController: vc)
+            if #available(iOS 15.0, *) {
+                nav.sheetPresentationController?.detents = [.medium()]
+            }
+            present(nav, animated: true, completion: nil)
         }
-        present(nav, animated: true, completion: nil)
     }
 }
 

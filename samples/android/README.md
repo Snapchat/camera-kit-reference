@@ -17,6 +17,7 @@ Table of contents
       * [Proguard](#proguard)
    * [Development](#development)
       * [Push to Device](#push-to-device-p2d)
+      * [Profiling](#profiling)
    * [Troubleshooting](#troubleshooting)
 <!--te-->
 
@@ -203,6 +204,10 @@ The Camera Kit SDK artifacts ship with consumer Proguard rules which cover all o
 ### Push To Device (P2D)
 
 Applications can receive lenses from Lens Studio using the P2D feature. See [P2D Integration](./P2D.md).
+
+### Profiling
+
+Applications can monitor the Camera Kit performance using the Profiling extension. See [Profiling](./Profiling.md).
 
 ## Troubleshooting
 

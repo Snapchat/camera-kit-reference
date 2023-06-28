@@ -21,7 +21,16 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>camerakitsample</string>
 				<string>camerakitsandbox</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>camerakitsample</string>
 			</array>
 		</dict>
 	</array>

@@ -7,6 +7,7 @@ struct ApplicationInfo {
     private struct Constants {
         static let buildKey = "CFBundleVersion"
         static let versionKey = "CFBundleShortVersionString"
+        static let apiToken = "SCCameraKitAPIToken"
     }
     
     static var build: String? {
@@ -15,5 +16,10 @@ struct ApplicationInfo {
     
     static var version: String? {
         return Bundle.main.infoDictionary?[Constants.versionKey] as? String
+    }
+    
+    static var apiToken: String? {
+        return Bundle.main.infoDictionary?[Constants.apiToken] as? String
+        
     }
 }
