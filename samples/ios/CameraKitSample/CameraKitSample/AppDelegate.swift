@@ -23,7 +23,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     fileprivate var supportedOrientations: UIInterfaceOrientationMask = .allButUpsideDown
 
     let snapAPI = SCSDKSnapAPI()
-    let cameraController = CustomizedCameraController()
+    lazy var cameraController = {
+        if let token = debugStore?.apiToken {
+            return CustomizedCameraController(sessionConfig: SessionConfig(apiToken: token))
+        } else {
+            return CustomizedCameraController()
+        }
+    }()
+    private let debugStore: (any DebugStoreProtocol)? = {
+        if #available(iOS 13, *) {
+            return DebugStore(defaultGroupIDs: [SCCameraKitLensRepositoryBundledGroup, Constants.partnerGroupId])
+        } else {
+            return nil
+        }
+    }()
     
     // This is how you configure properties for a CameraKit Session
     // Pass in applicationID and apiToken through a SessionConfig which will override the ones stored in the app's Info.plist
@@ -34,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        if let previousGroupIDs = UserDefaults.standard.object(forKey: UpdateLensGroupViewController.Constants.lensGroupIDsKey) as? [String] {
+        if let previousGroupIDs = debugStore?.groupIDs {
             cameraController.groupIDs = previousGroupIDs
         } else {
             cameraController.groupIDs = [SCCameraKitLensRepositoryBundledGroup, Constants.partnerGroupId]
@@ -46,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
         // approved in production and/or your Snapchat username is allowlisted in SnapKit dashboard.
         // See https://docs.snap.com/snap-kit/creative-kit/Tutorials/ios
         cameraController.snapchatDelegate = self
-        let cameraViewController = CustomizedCameraViewController(cameraController: cameraController)
+        let cameraViewController = CustomizedCameraViewController(cameraController: cameraController, debugStore: debugStore)
         cameraViewController.appOrientationDelegate = self
         window?.rootViewController = cameraViewController
         
@@ -94,12 +107,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
         return supportedOrientations
     }
     
-#if CAMERAKIT_PUSHTODEVICE
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool
     {
+        debugStore?.processDeepLink(url)
+#if CAMERAKIT_PUSHTODEVICE
         return SCSDKLoginClient.application(app, open: url, options: options)
-    }
 #endif
+    }
     
 }
 

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Input</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>CameraKit</span>
+            </a>
+    </div>
+    <div>
+1.24.0    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit/AudioProcessor.Input///PointingToDeclaration//1404709923">
+  <div class="breadcrumbs"><a href="../../../../index.html">CameraKit</a><span class="delimiter">/</span><a href="../../index.html">com.snap.camerakit</a><span class="delimiter">/</span><a href="../index.html">AudioProcessor</a><span class="delimiter">/</span><span class="current">Input</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Input</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Input</a></div><p class="paragraph">Defines the audio input source model that is available to be read from by the processor.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="503962725%2FClasslikes%2F1404709923" anchor-label="Frame" id="503962725%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-frame/index.html"><span><span>Frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="503962725%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-frame/index.html">Frame</a></div><div class="brief "><p class="paragraph">Defines the properties of a single audio input <a href="-frame/index.html">Frame</a>. The <a href="-frame/buffer.html">buffer</a> in each <a href="-frame/index.html">Frame</a> is mutable which allows to apply audio processing operations to the input audio before it gets written / played somewhere else.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1965306816%2FFunctions%2F1404709923" anchor-label="subscribeTo" id="-1965306816%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="subscribe-to.html"><span>subscribe</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1965306816%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="subscribe-to.html"><span class="token function">subscribeTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onFrameAvailable<span class="token operator">: </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-frame/index.html">AudioProcessor.Input.Frame</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Subscribes to the provided <a href="subscribe-to.html">onFrameAvailable</a> to be notified when a new <a href="-frame/index.html">Frame</a> is available for this input. The returned <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a> must be closed when done working with this input otherwise underlying resources will be leaked.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-581461862%2FProperties%2F1404709923" anchor-label="bufferSize" id="-581461862%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="buffer-size.html"><span>buffer</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-581461862%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="-581461862%2FProperties%2F1404709923" anchor-label="bufferSize" id="-581461862%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="buffer-size.html">bufferSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><a data-name="-581461862%2FProperties%2F1404709923" anchor-label="bufferSize" id="-581461862%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Size of audio data expected to be delivered per frame.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-254896245%2FProperties%2F1404709923" anchor-label="channels" id="-254896245%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="channels.html"><span><span>channels</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-254896245%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="-254896245%2FProperties%2F1404709923" anchor-label="channels" id="-254896245%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="channels.html">channels</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><a data-name="-254896245%2FProperties%2F1404709923" anchor-label="channels" id="-254896245%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Number of channels in audio data.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="803464049%2FProperties%2F1404709923" anchor-label="sampleRate" id="803464049%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="sample-rate.html"><span>sample</span><wbr></wbr><span><span>Rate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="803464049%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="803464049%2FProperties%2F1404709923" anchor-label="sampleRate" id="803464049%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="sample-rate.html">sampleRate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><a data-name="803464049%2FProperties%2F1404709923" anchor-label="sampleRate" id="803464049%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Number of samples for each audio channel per second, typically 44100Hz.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

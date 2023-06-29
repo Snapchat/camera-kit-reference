@@ -4,5 +4,11 @@
 
 "camera_kit_debug_nav_title" = "Debug";
 "camera_kit_done_button" = "Done";
-"camera_kit_group_id_textfield_placeholder" = "Group ID";
-"camera_kit_update_lens_group_button" = "Update Lens Group";
+"camera_kit_group_id_textfield_placeholder" = "New Group ID";
+"camera_kit_group_id_add_button" = "Add";
+"camera_kit_update_api_token_button" = "API Token";
+"camera_kit_update_api_token_placeholder" = "API Token";
+"camera_kit_update_api_token_restart_prompt" = "Restart Camera Kit Sample to use the new API Token.";
+"camera_kit_update_api_token_quit_button" = "Quit";
+"camera_kit_update_lens_group_button" = "Lens Group IDs";
+"camera_kit_debug_reset_button" = "Reset";
