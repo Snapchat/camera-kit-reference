@@ -17,10 +17,11 @@
 		0FF07EF023D79DC500CFFA3F /* CameraKitSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF07EEF23D79DC500CFFA3F /* CameraKitSampleUITests.swift */; };
 		0FF07F0223D7BFC100CFFA3F /* lenses in Resources */ = {isa = PBXBuildFile; fileRef = 0FF07F0123D7BFC100CFFA3F /* lenses */; };
 		5093DB202943E2A40092D8F2 /* CustomizedCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093DB1F2943E2A40092D8F2 /* CustomizedCameraViewController.swift */; };
+		50F8ED132A032D2800430FAF /* DebugStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8ED122A032D2800430FAF /* DebugStore.swift */; };
+		50F8ED152A0334F300430FAF /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8ED142A0334F300430FAF /* DebugView.swift */; };
+		50F8ED172A03392600430FAF /* LensGroupIDsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8ED162A03392600430FAF /* LensGroupIDsView.swift */; };
+		50F8ED192A033FF400430FAF /* APITokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8ED182A033FF400430FAF /* APITokenView.swift */; };
 		8E9270C37100DC880799AD50 /* libPods-CameraKitSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2936A4A58C121E055261F97 /* libPods-CameraKitSampleTests.a */; };
-		A6786285293925A400F5AF06 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6786284293925A400F5AF06 /* DebugViewController.swift */; };
-		A6786289293F187800F5AF06 /* UpdateLensGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6786288293F187800F5AF06 /* UpdateLensGroupViewController.swift */; };
-		A678628B293F190200F5AF06 /* UpdateLensGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A678628A293F190200F5AF06 /* UpdateLensGroupTableViewCell.swift */; };
 		A678629229419A8D00F5AF06 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A678629429419A8D00F5AF06 /* Localizable.strings */; };
 		D2833CE1F34D4609C778B956 /* libPods-CameraKitSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6D0305DD89DAA0AF3CB771 /* libPods-CameraKitSample.a */; };
 /* End PBXBuildFile section */
@@ -63,12 +64,13 @@
 		0FF07F0123D7BFC100CFFA3F /* lenses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lenses; sourceTree = "<group>"; };
 		102E255BE3ECAD766E9F184B /* Pods-CameraKitSampleTests.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKitSampleTests.enterprise.xcconfig"; path = "Target Support Files/Pods-CameraKitSampleTests/Pods-CameraKitSampleTests.enterprise.xcconfig"; sourceTree = "<group>"; };
 		5093DB1F2943E2A40092D8F2 /* CustomizedCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedCameraViewController.swift; sourceTree = "<group>"; };
+		50F8ED122A032D2800430FAF /* DebugStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugStore.swift; sourceTree = "<group>"; };
+		50F8ED142A0334F300430FAF /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		50F8ED162A03392600430FAF /* LensGroupIDsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensGroupIDsView.swift; sourceTree = "<group>"; };
+		50F8ED182A033FF400430FAF /* APITokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITokenView.swift; sourceTree = "<group>"; };
 		5BF194BD9CAB638B7CF8B766 /* Pods-CameraKitSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKitSampleTests.release.xcconfig"; path = "Target Support Files/Pods-CameraKitSampleTests/Pods-CameraKitSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A27A7977E990FF3BA7D2F75 /* Pods-CameraKitSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKitSample.release.xcconfig"; path = "Target Support Files/Pods-CameraKitSample/Pods-CameraKitSample.release.xcconfig"; sourceTree = "<group>"; };
 		9E2C4409553480641E55EB29 /* Pods-CameraKitSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKitSample.debug.xcconfig"; path = "Target Support Files/Pods-CameraKitSample/Pods-CameraKitSample.debug.xcconfig"; sourceTree = "<group>"; };
-		A6786284293925A400F5AF06 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
-		A6786288293F187800F5AF06 /* UpdateLensGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLensGroupViewController.swift; sourceTree = "<group>"; };
-		A678628A293F190200F5AF06 /* UpdateLensGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLensGroupTableViewCell.swift; sourceTree = "<group>"; };
 		A678629329419A8D00F5AF06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC6D0305DD89DAA0AF3CB771 /* libPods-CameraKitSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CameraKitSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4844B22C684FC739EE48139 /* Pods-CameraKitSample.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKitSample.enterprise.xcconfig"; path = "Target Support Files/Pods-CameraKitSample/Pods-CameraKitSample.enterprise.xcconfig"; sourceTree = "<group>"; };
@@ -184,19 +186,12 @@
 		A6786286293F183B00F5AF06 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
-				A6786284293925A400F5AF06 /* DebugViewController.swift */,
-				A6786287293F186A00F5AF06 /* UpdateLensGroup */,
+				50F8ED122A032D2800430FAF /* DebugStore.swift */,
+				50F8ED162A03392600430FAF /* LensGroupIDsView.swift */,
+				50F8ED182A033FF400430FAF /* APITokenView.swift */,
+				50F8ED142A0334F300430FAF /* DebugView.swift */,
 			);
 			path = Debug;
-			sourceTree = "<group>";
-		};
-		A6786287293F186A00F5AF06 /* UpdateLensGroup */ = {
-			isa = PBXGroup;
-			children = (
-				A6786288293F187800F5AF06 /* UpdateLensGroupViewController.swift */,
-				A678628A293F190200F5AF06 /* UpdateLensGroupTableViewCell.swift */,
-			);
-			path = UpdateLensGroup;
 			sourceTree = "<group>";
 		};
 		B26871F2CD561A2368C2180C /* Pods */ = {
@@ -430,13 +425,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A678628B293F190200F5AF06 /* UpdateLensGroupTableViewCell.swift in Sources */,
-				A6786289293F187800F5AF06 /* UpdateLensGroupViewController.swift in Sources */,
+				50F8ED192A033FF400430FAF /* APITokenView.swift in Sources */,
 				5093DB202943E2A40092D8F2 /* CustomizedCameraViewController.swift in Sources */,
+				50F8ED152A0334F300430FAF /* DebugView.swift in Sources */,
 				0FF07ECE23D79DC400CFFA3F /* AppDelegate.swift in Sources */,
+				50F8ED172A03392600430FAF /* LensGroupIDsView.swift in Sources */,
 				0F5219222832D18C00CFDC26 /* CatFactLensRemoteApi.swift in Sources */,
 				0F16357923F1E30900DA79A0 /* ApplicationInfo.swift in Sources */,
-				A6786285293925A400F5AF06 /* DebugViewController.swift in Sources */,
+				50F8ED132A032D2800430FAF /* DebugStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

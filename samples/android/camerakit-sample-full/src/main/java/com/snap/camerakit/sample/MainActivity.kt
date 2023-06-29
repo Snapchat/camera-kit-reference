@@ -89,6 +89,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     private var useCustomLensesCarouselView = false
     private var muteAudio = false
     private var enableDiagnostics = false
+    private var shouldReapplyLensOnActivityResume = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -537,6 +538,15 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         } else {
             super.dispatchKeyEvent(event)
         }
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        // If a lens requests a permission and it triggers a system dialog that makes this activity to pause,
+        // we don't want to re-apply that lens when activity is resumed as it might cause a re-apply loop -
+        // a lens asks for a permission which gets denied, activity is resumed, lens is re-applied asking for it again
+        // and again.
+        shouldReapplyLensOnActivityResume = false
     }
 }
 

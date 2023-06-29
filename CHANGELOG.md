@@ -8,6 +8,31 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.24.0"></a>
+## [1.24.0] - 2023-06-27
+### Features
+- Lens Studio 4.49 support
+- **Android:** Add a Profiling Extension to monitor the Camera Kit performance. See [Profiling](./samples/android/Profiling.md).
+- **Android:** Add a new API to get lens snapcode image and deep link URIs, usage example:
+    ```kotlin
+     session.lenses.repository.get(LensesComponent.Repository.QueryCriteria.Available("lens-group-id")) { result ->
+    	result.whenHasFirst { lens -> 
+			  val snapcodePngUri = lens.snapcodes.find { it is LensesComponent.Lens.Media.Image.Png }?.uri
+			  val snapcodeDeepLinkUri = lens.snapcodes.any { it is LensesComponent.Lens.Media.DeepLink }?.uri
+		}
+    }
+    ```
+
+### Updates
+- **iOS:** Add a debug dialog to swap API token for testing
+- **iOS:** Add support for configuring debug dialogs via deep links/qr codes.
+- **Android:** Added `android.Manifest.permission.READ_MEDIA_VIDEO` and `android.Manifest.permission.READ_MEDIA_IMAGES` permissions for the 
+`camerakit-sample-full` and `camerakit-sample-simple` apps. Those are the permissions required to access media files on devices when using the 
+Media Picker lenses feature.
+
+### Bug Fixes
+- **iOS:** Fix a bug where certain assets could be loaded later than expected, potentially causing the lens to fail to load entirely if device was offline.
+
 <a name="1.23.0"></a>
 ## [1.23.0] - 2023-05-17
 ### Features
