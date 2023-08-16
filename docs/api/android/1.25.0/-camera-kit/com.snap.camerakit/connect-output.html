@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>connectOutput</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>CameraKit</span>
+            </a>
+    </div>
+    <div>
+1.25.0    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit//connectOutput/TypeParam(bounds=[com.snap.camerakit.ImageProcessor])#android.view.TextureView#kotlin.collections.Set[com.snap.camerakit.ImageProcessor.Output.Option]/PointingToDeclaration//1404709923">
+  <div class="breadcrumbs"><a href="../../index.html">CameraKit</a><span class="delimiter">/</span><a href="index.html">com.snap.camerakit</a><span class="delimiter">/</span><span class="current">connectOutput</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>connect</span><wbr></wbr><span><span>Output</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="connect-output.html">P</a><span class="token operator"> : </span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt; </span><a href="connect-output.html">P</a><span class="token punctuation">.</span><a href="connect-output.html"><span class="token function">connectOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">textureView<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/TextureView.html">TextureView</a><span class="token punctuation">, </span></span><span class="parameter ">outputOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/-output/-option/index.html">ImageProcessor.Output.Option</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Collections.emptySet()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><p class="paragraph">Allows to connect <a href="https://developer.android.com/reference/kotlin/android/view/TextureView.html">TextureView</a> as output to <a href="-image-processor/index.html">ImageProcessor</a>.</p><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="connect-output.html">P</a><span class="token operator"> : </span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt; </span><a href="connect-output.html">P</a><span class="token punctuation">.</span><a href="connect-output.html"><span class="token function">connectOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">captureAudio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><p class="paragraph">Records <a href="-image-processor/index.html">ImageProcessor</a> output into the provided <a href="connect-output.html">file</a>. Video recording is implemented using both Android and Snap specific media frameworks. It is expected that the requested <a href="connect-output.html">width</a> and <a href="connect-output.html">height</a> dimensions are supported by the device, see <a href="https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.html">android.media.MediaCodecInfo</a> for information how to query for device media capabilities. If the dimensions are not supported then the implementation will attempt to find the best match based on device capabilities and, as a result, the final video dimensions might not match the ones provided originally.</p><p class="paragraph">Recording starts after calling this method, as soon as the underlying media recorder becomes available. To stop video recording, call <a href="-image-processor/-input/-pausable/index.html#358956095%2FFunctions%2F1404709923">Closeable.close</a> on the returned <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a>.</p><p class="paragraph">It is expected that this method and the <a href="-image-processor/-input/-pausable/index.html#358956095%2FFunctions%2F1404709923">Closeable.close</a> will be called on a background thread as the media recorder operations may block for significant amount of time.</p><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>capture</span><wbr></wbr><span><span>Audio</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">when True, implementation will attempt to use <a href="https://developer.android.com/reference/kotlin/android/media/AudioRecord.html">android.media.AudioRecord</a> to capture device microphone audio together with video. If caller has no <a href="https://developer.android.com/reference/kotlin/android/Manifest.permission.html#record_audio">android.Manifest.permission.RECORD_AUDIO</a> permission granted the recording will fail resulting in no video file being produced.</p></div></div></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
