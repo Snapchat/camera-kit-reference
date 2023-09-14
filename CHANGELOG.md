@@ -8,6 +8,23 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.26.0"></a>
+## [1.26.0] - 2023-09-13 - [_LTS_](https://docs.snap.com/camera-kit/changelog/lts)
+### Features
+- Lens Studio 4.55 support
+
+### Updates
+- **Android:** Helper method to record `ImageProcessor` output into a video file, `connectOutput(file: File, width: Int, height: Int, captureAudio: Boolean)`, has been moved into a separate Maven artifact,  `com.snap.camerakit:support-media-recording`. This artifact can now be excluded from an app&#39;s dependencies if the provided video recording functionality is not needed. Note that the `com.snap.camerakit:support-camerax`  and  `com.snap.camerakit:support-arcore` now depend on this new artifact transitively in order to implement the `com.snap.camerakit.support.camera.AllowsVideoCapture` interface.
+- **Android:** Helper method to create an instance of `Source<MediaProcessor>` based on `android.provider.MediaStore`, `mediaStoreSourceFor(context: Context, executorService: ExecutorService): Source<MediaProcessor>`, has been moved into a separate Maven artifact, `com.snap.camerakit:support-media-picker-source`. This artifact can now be excluded from an app&#39;s dependencies if the provided media source functionality is not needed. Note that the `com.snap.camerakit:support-camera-layout` now depends on this new artifact transitively in order to obtain media for media picker lenses.
+- **Android:** Default lenses carousel UI has been removed from the core `com.snap.camerakit:camerakit` artifact. Instead, `com.snap.camerakit:support-lenses-carousel` artifact should be added to app dependencies to use default lenses carousel UI. Note that the `com.snap.camerakit:support-camera-layout` now depends on this artifact transitively in order to show lenses carousel UI.
+- **Android:** Default media picker UI has been moved from the core `com.snap.camerakit:camerakit` artifact, and moved into a separate Maven artifact, `com.snap.camerakit:support-media-picker-ui`. This new artifact should be added to app dependencies to use default media picker UI. Note that the `com.snap.camerakit:support-camera-layout` now depends on this new artifact transitively in order to show media picker UI.
+
+### Bug Fixes
+- **iOS:** Wrong camera orientation after device rotation on iOS 16 and later
+
+### Known Issues
+- Lens UI elements assinged to the overlay render target can get incorrectly positioned when device camera input frame does not match preview preview frame aspect ratio
+
 <a name="1.25.0"></a>
 ## [1.25.0] - 2023-08-15
 ### Features

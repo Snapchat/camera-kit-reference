@@ -15,6 +15,7 @@ import com.snap.camerakit.AudioProcessor;
 import com.snap.camerakit.AudioProcessors;
 import com.snap.camerakit.ImageProcessor;
 import com.snap.camerakit.ImageProcessors;
+import com.snap.camerakit.MediaRecordingImageProcessors;
 import com.snap.camerakit.Session;
 import com.snap.camerakit.Sessions;
 import com.snap.camerakit.Source;
@@ -193,7 +194,7 @@ public final class DefaultPlugin extends Plugin {
             int height,
             boolean captureAudio
     ) {
-        return ImageProcessors.connectOutput(processor, file, width, height, captureAudio);
+        return MediaRecordingImageProcessors.connectOutput(processor, file, width, height, captureAudio);
     }
 
     @NonNull

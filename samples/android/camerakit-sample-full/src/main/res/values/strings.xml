@@ -17,8 +17,6 @@
     <string name="capture_photo_on">Photo Capture ON</string>
     <string name="ring_flash_off">Ring Flash OFF</string>
     <string name="ring_flash_on">Ring Flash ON</string>
-    <string name="custom_lenses_carousel_off">Custom Carousel OFF</string>
-    <string name="custom_lenses_carousel_on">Custom Carousel ON</string>
     <string name="mute_audio_off">Mute Audio OFF</string>
     <string name="mute_audio_on">Mute Audio ON</string>
     <string name="diagnostics_off">Diagnostics OFF</string>

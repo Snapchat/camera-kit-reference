@@ -5,7 +5,7 @@
 - [**Android**](./android/latest)
 - [**iOS**](./ios/latest)
 
-<a name="1.25.0"></a>
-## 1.25.0
-- [**Android**](./android/1.25.0)
-- [**iOS**](./ios/1.25.0)
+<a name="1.26.0"></a>
+## 1.26.0
+- [**Android**](./android/1.26.0)
+- [**iOS**](./ios/1.26.0)

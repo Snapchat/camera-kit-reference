@@ -27,4 +27,5 @@ android {
 dependencies {
     api "com.snap.camerakit:camerakit-plugin-api:$cameraKitVersion"
     api "com.snap.camerakit:camerakit:$cameraKitVersion"
+    api "com.snap.camerakit:support-media-recording:$cameraKitVersion"
 }

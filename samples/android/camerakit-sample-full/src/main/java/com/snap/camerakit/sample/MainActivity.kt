@@ -46,14 +46,12 @@ import com.snap.camerakit.lenses.whenApplied
 import com.snap.camerakit.lenses.whenHasSome
 import com.snap.camerakit.lenses.whenIdle
 import com.snap.camerakit.support.widget.CameraLayout
-import com.snap.camerakit.support.widget.LensesCarouselView
 import com.snap.camerakit.support.widget.arCoreSupportedAndInstalled
 import com.snap.camerakit.versionFrom
 import java.io.Closeable
 import java.util.Date
 
 private const val TAG = "MainActivity"
-private const val BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL = "use_custom_lenses_carousel"
 private const val BUNDLE_ARG_MUTE_AUDIO = "mute_audio"
 private const val BUNDLE_ARG_ENABLE_DIAGNOSTICS = "enable_diagnostics"
 private const val CONFIG_KEY_DIAGNOSTICS_ENABLE = "com.snap.camerakit.diagnostics.enable"
@@ -86,7 +84,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
     private val closeOnDestroy = mutableListOf<Closeable>()
     private var apiToken: String? = null
-    private var useCustomLensesCarouselView = false
     private var muteAudio = false
     private var enableDiagnostics = false
     private var shouldReapplyLensOnActivityResume = true
@@ -111,7 +108,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             } else {
                 LENS_GROUPS
             }
-        useCustomLensesCarouselView = savedInstanceState?.getBoolean(BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL) ?: false
         muteAudio = savedInstanceState?.getBoolean(BUNDLE_ARG_MUTE_AUDIO) ?: false
         enableDiagnostics = savedInstanceState?.getBoolean(BUNDLE_ARG_ENABLE_DIAGNOSTICS) ?: false
 
@@ -141,13 +137,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         // requirements and architecture. However, consider working with the CameraKit Session directly to
         // avoid locking your app's design into one that is driven by what's available in the CameraLayout.
         cameraLayout = findViewById<CameraLayout>(R.id.camera_layout).apply {
-            if (useCustomLensesCarouselView) {
-                // Inflate layout with LensesCarouseView and ViewStub for CameraKit widgets into CameraLayout to use it
-                // instead of internal carousel view implementation.
-                layoutInflater.inflate(R.layout.lenses_carousel_widget_layout, this, true)
-                // CaptureButton should be in front to overlap the lenses carousel.
-                captureButton.bringToFront()
-            }
             // CameraLayout provides a way to register callbacks for configuring CameraKit Session that
             // is created internally and made available via the onSessionAvailable callback below.
             configureSession {
@@ -161,12 +150,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             }
 
             configureLenses {
-                // If custom carousel view is inflated then CameraKit will attach lenses widgets to the
-                // lenses_widgets_stub ViewStub. Custom ViewStub for widgets is required when custom lenses carousel
-                // view is used.
-                if (useCustomLensesCarouselView) {
-                    attachWidgetsTo(findViewById(R.id.lenses_widgets_stub))
-                }
                 // Pass a factory which provides a demo service which handles remote API requests from lenses.
                 remoteApiServiceFactory(CatFactRemoteApiService.Factory)
 
@@ -179,12 +162,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
             configureLensesCarousel {
                 observedGroupIds = linkedSetOf(*lensGroups)
-                // If custom carousel view is inflated then LensesCarouselView will be used otherwise CameraKit will
-                // use an internal implementation. LensesCarouseView can be configured to customize appearance of the
-                // lenses carousel.
-                if (useCustomLensesCarouselView) {
-                    view = findViewById<LensesCarouselView>(R.id.lenses_carousel)
-                }
                 // A lambda passed to configureEachItem can be used to customize position or appearance of each
                 // item in the lenses carousel.
                 configureEachItem {
@@ -264,16 +241,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                     session.lenses.carousel.deactivate()
                 }
             }.addTo(closeOnDestroy)
-
-            // Custom lenses carousel View could be provided only during Session setup process. That is why recreate()
-            // method is called to restart activity with updated BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL argument.
-            findViewById<ToggleButton>(R.id.custom_lenses_carousel_view_toggle).apply {
-                isChecked = useCustomLensesCarouselView
-                setOnCheckedChangeListener { _, isChecked ->
-                    useCustomLensesCarouselView = isChecked
-                    recreate()
-                }
-            }
 
             // While CameraKit is capable (and does) render camera preview into an internal view, this demonstrates how
             // to connect another TextureView as rendering output.
@@ -521,7 +488,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        outState.putBoolean(BUNDLE_ARG_USE_CUSTOM_LENSES_CAROUSEL, useCustomLensesCarouselView)
         outState.putBoolean(BUNDLE_ARG_MUTE_AUDIO, muteAudio)
         outState.putBoolean(BUNDLE_ARG_ENABLE_DIAGNOSTICS, enableDiagnostics)
         super.onSaveInstanceState(outState)
