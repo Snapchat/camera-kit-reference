@@ -87,8 +87,6 @@ dependencies {
     // depth and other ArCore specific features in lenses that require them.
     // Used by the support-camera-layout but can be safely removed if not needed.
     implementation "com.snap.camerakit:support-arcore:$cameraKitVersion"
-    // Optional dependency that provides customizable lenses carousel view.
-    implementation "com.snap.camerakit:support-lenses-carousel:$cameraKitVersion"
     implementation "com.snap.camerakit:lenses-bundle:$cameraKitVersion"
     // Optional dependency that provides Lens Push to Device functionality.
     implementation "com.snap.camerakit:camerakit-extension-lens-push-to-device:$cameraKitVersion"
