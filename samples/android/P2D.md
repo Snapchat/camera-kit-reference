@@ -148,7 +148,7 @@ To integrate Login Kit, which is a dependency for Camera Kit extensions like P2D
 ### I tried to push a lens, but nothing is received on my device
 - Make sure that your device has internet connectivity.
 - Ensure that you have paired successfully. The P2D icon should be a green gear icon.
-- If pairing is successful, tap on the gear icon to see if any error occurred. This may happen sometimes, for example when Lens Studio and your Camera Kit application versions are [incompatible](https://docs.snap.com/snap-kit/camera-kit/lens-studio-compatibility/#camera-kit-version-parity).
+- If pairing is successful, tap on the gear icon to see if any error occurred. This may happen sometimes, for example when Lens Studio and your Camera Kit application versions are [incompatible](https://docs.snap.com/camera-kit/ar-content/lens-studio-compatibility#camera-kit-version-parity).
 - If the push succeeded (e.g. system notification) but the lens is not showing up in your carousel, ensure that your application is subscribed to `LensPushToDeviceService.LENS_GROUP_ID`
 
 ### I don't see the P2D icon

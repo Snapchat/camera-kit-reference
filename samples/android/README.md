@@ -58,7 +58,7 @@ allprojects {
 }
 ```
 
-All of the Camera Kit artifacts are published under a single version (see [CHANGELOG](../../../CHANGELOG.md) for a summary of changes in each release) and it is possible to pick and choose the dependencies necessary for your specific project:
+All of the Camera Kit artifacts are published under a single version (see [CHANGELOG](../../CHANGELOG.md) for a summary of changes in each release) and it is possible to pick and choose the dependencies necessary for your specific project:
 
 ```groovy
     implementation "com.snap.camerakit:camerakit:$cameraKitVersion"
