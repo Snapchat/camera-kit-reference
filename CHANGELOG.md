@@ -8,6 +8,14 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.26.1"></a>
+## [1.26.1] - 2023-10-12
+### Bug Fixes
+- Lens elements that use overlay render target may be get incorrectly positioned when camera input does not match preview output aspect ratio
+- **Android:** Lens audio playback is not muted when app is paused
+- **Android:** [HIGH_SAMPLING_RATE_SENSORS](https://developer.android.com/reference/android/Manifest.permission#HIGH_SAMPLING_RATE_SENSORS) permission declaration is missing in the core SDK manifest
+- **Android:** Early display rotation notification causing incorrect input processing size calculation on Android 14
+
 <a name="1.26.0"></a>
 ## [1.26.0] - 2023-09-13 - [_LTS_](https://docs.snap.com/camera-kit/changelog/lts)
 ### Features

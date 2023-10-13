@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>LensesComponent</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>CameraKit</span>
+            </a>
+    </div>
+    <div>
+1.26.1    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit.lenses/LensesComponent///PointingToDeclaration//1404709923">
+  <div class="breadcrumbs"><a href="../../../index.html">CameraKit</a><span class="delimiter">/</span><a href="../index.html">com.snap.camerakit.lenses</a><span class="delimiter">/</span><span class="current">LensesComponent</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Lenses</span><wbr></wbr><span><span>Component</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">LensesComponent</a> : <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><p class="paragraph">Provides access to all available features of lenses. Normally, an instance of a component is acquired through <a href="../../com.snap.camerakit/-session/index.html">com.snap.camerakit.Session</a> which manages the lifecycle of the component.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="303124615%2FClasslikes%2F1404709923" anchor-label="Audio" id="303124615%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-audio/index.html"><span><span>Audio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="303124615%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-audio/index.html">Audio</a></div><div class="brief "><p class="paragraph">Provides control over the lenses audio.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1031624350%2FClasslikes%2F1404709923" anchor-label="Builder" id="-1031624350%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1031624350%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-builder/index.html">Builder</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1668450725%2FClasslikes%2F1404709923" anchor-label="Cache" id="-1668450725%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-cache/index.html"><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1668450725%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-cache/index.html">Cache</a></div><div class="brief "><p class="paragraph">Provides ability to interact with lenses content cache used by <a href="index.html">LensesComponent</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="351404005%2FClasslikes%2F1404709923" anchor-label="Carousel" id="351404005%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-carousel/index.html"><span><span>Carousel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="351404005%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-carousel/index.html">Carousel</a></div><div class="brief "><p class="paragraph">Provides ability to interact with lenses carousel feature which can be enabled with <a href="-carousel/-configuration/index.html">Configuration</a> supplied to <a href="-builder/configure-carousel.html">LensesComponent.Builder.configureCarousel</a> method.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="219585105%2FClasslikes%2F1404709923" anchor-label="Hints" id="219585105%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-hints/index.html"><span><span>Hints</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="219585105%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-hints/index.html">Hints</a></div><div class="brief "><p class="paragraph">Provides ability to interact with lens hints feature which can be enabled with <a href="-hints/-configuration/index.html">Configuration</a> supplied to <a href="-builder/configure-hints.html">LensesComponent.Builder.configureHints</a> method.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="444897287%2FClasslikes%2F1404709923" anchor-label="Lens" id="444897287%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-lens/index.html"><span><span>Lens</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="444897287%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-lens/index.html">Lens</a></div><div class="brief "><p class="paragraph">Defines the data model of a lens that is available to be used by <a href="index.html">LensesComponent</a> exposed features.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1066360495%2FClasslikes%2F1404709923" anchor-label="LoadingOverlay" id="-1066360495%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-loading-overlay/index.html"><span>Loading</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1066360495%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-loading-overlay/index.html">LoadingOverlay</a></div><div class="brief "><p class="paragraph">Provides ability to interact with lens loading overlay feature which can be enabled with <a href="-loading-overlay/-configuration/index.html">Configuration</a> supplied to <a href="-builder/configure-loading-overlay.html">LensesComponent.Builder.configureLoadingOverlay</a> method. If enabled, loading overlay is shown when a lens that is being applied via <a href="-processor/apply.html">Processor.apply</a> or selected via <a href="-carousel/index.html">Carousel</a> is loading resources from network or other sources.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-333189813%2FClasslikes%2F1404709923" anchor-label="MediaPicker" id="-333189813%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-media-picker/index.html"><span>Media</span><wbr></wbr><span><span>Picker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-333189813%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-media-picker/index.html">MediaPicker</a></div><div class="brief "><p class="paragraph">Provides ability to interact with lens media picker feature which can be enabled with <a href="-media-picker/-configuration/index.html">Configuration</a> supplied to <a href="-builder/configure-media-picker.html">LensesComponent.Builder.configureMediaPicker</a> method. If enabled, media picker is shown when an applied lens requires media data and displays media items which <a href="../../com.snap.camerakit/-media-processor/index.html">MediaProcessor</a> receives from <a href="../../com.snap.camerakit/-media-processor/-input/index.html">MediaProcessor.Input</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="152289827%2FClasslikes%2F1404709923" anchor-label="Noop" id="152289827%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-noop/index.html"><span><span>Noop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="152289827%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-noop/index.html">Noop</a> : <a href="index.html">LensesComponent</a></div><div class="brief "><p class="paragraph">Implementation of <a href="index.html">LensesComponent</a> which does nothing.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1815393957%2FClasslikes%2F1404709923" anchor-label="Preferences" id="1815393957%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-preferences/index.html"><span><span>Preferences</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1815393957%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-preferences/index.html">Preferences</a></div><div class="brief "><p class="paragraph">Provides ability to interact with storage used by lenses to store user specific data such as game or on-boarding state, options etc.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1742455839%2FClasslikes%2F1404709923" anchor-label="Prefetcher" id="-1742455839%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-prefetcher/index.html"><span><span>Prefetcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1742455839%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-prefetcher/index.html">Prefetcher</a></div><div class="brief "><p class="paragraph">Provides ability to prefetch content of lenses before they are applied using a <a href="-processor/index.html">Processor</a>. The amount of lenses content that gets prefetched is limited by the <a href="-cache/-configuration/index.html">Cache.Configuration</a> provided to <a href="index.html">LensesComponent</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="833361227%2FClasslikes%2F1404709923" anchor-label="Processor" id="833361227%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-processor/index.html"><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="833361227%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-processor/index.html">Processor</a> : <a href="../../com.snap.camerakit/-image-processor/index.html">ImageProcessor</a>, <a href="../../com.snap.camerakit/-audio-processor/index.html">AudioProcessor</a>, <a href="../../com.snap.camerakit/-user-processor/index.html">UserProcessor</a>, <a href="../../com.snap.camerakit/-location-processor/index.html">LocationProcessor</a>, <a href="../../com.snap.camerakit/-safe-render-area-processor/index.html">SafeRenderAreaProcessor</a>, <a href="../../com.snap.camerakit/-media-processor/index.html">MediaProcessor</a></div><div class="brief "><p class="paragraph">Extension of <a href="../../com.snap.camerakit/-image-processor/index.html">ImageProcessor</a> that allows to apply and remove lenses on top of the incoming image and audio input stream rendered to connected outputs.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1318490180%2FClasslikes%2F1404709923" anchor-label="RemoteApiService" id="1318490180%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-remote-api-service/index.html"><span>Remote</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1318490180%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-remote-api-service/index.html">RemoteApiService</a> : <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Provides ability to handle remote API requests that originate within lenses. Lifecycle of a <a href="-remote-api-service/index.html">RemoteApiService</a> is scoped to a lifecycle of a single lens. To provide <a href="-remote-api-service/index.html">RemoteApiService</a> instances, register a <a href="-remote-api-service/-factory/index.html">RemoteApiService.Factory</a> via the <a href="-builder/remote-api-service-factory.html">Builder.remoteApiServiceFactory</a> method.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-460051397%2FClasslikes%2F1404709923" anchor-label="Repository" id="-460051397%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-repository/index.html"><span><span>Repository</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-460051397%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-repository/index.html">Repository</a></div><div class="brief "><p class="paragraph">Provides ability to query lenses that are available to interact with by specific criteria.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="2108678738%2FFunctions%2F1404709923" anchor-label="close" id="2108678738%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="close.html"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2108678738%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Closes all resources allocated for this <a href="index.html">LensesComponent</a>. Overridden to indicate that calling <a href="close.html">close</a> will not throw.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1820121652%2FProperties%2F1404709923" anchor-label="audio" id="1820121652%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="audio.html"><span><span>audio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1820121652%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="1820121652%2FProperties%2F1404709923" anchor-label="audio" id="1820121652%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="audio.html">audio</a><span class="token operator">: </span><a href="-audio/index.html">LensesComponent.Audio</a></div><div class="brief "><a data-name="1820121652%2FProperties%2F1404709923" anchor-label="audio" id="1820121652%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Provides control over the lenses audio. If this <a href="index.html">LensesComponent</a> is closed then the returned <a href="-audio/index.html">Audio</a> is expected to be no-op.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1022792112%2FProperties%2F1404709923" anchor-label="carousel" id="1022792112%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="carousel.html"><span><span>carousel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1022792112%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="1022792112%2FProperties%2F1404709923" anchor-label="carousel" id="1022792112%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="carousel.html">carousel</a><span class="token operator">: </span><a href="-carousel/index.html">LensesComponent.Carousel</a></div><div class="brief "><a data-name="1022792112%2FProperties%2F1404709923" anchor-label="carousel" id="1022792112%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Provides a <a href="-carousel/index.html">Carousel</a> of lenses available to interact with during this component lifecycle. If this <a href="index.html">LensesComponent</a> is closed or if this <a href="index.html">LensesComponent</a> was not configured to enable carousel using <a href="-builder/configure-carousel.html">LensesComponent.Builder.configureCarousel</a> then the returned <a href="-carousel/index.html">Carousel</a> is expected to be no-op.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="934339474%2FProperties%2F1404709923" anchor-label="preferences" id="934339474%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="preferences.html"><span><span>preferences</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="934339474%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="934339474%2FProperties%2F1404709923" anchor-label="preferences" id="934339474%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="preferences.html">preferences</a><span class="token operator">: </span><a href="-preferences/index.html">LensesComponent.Preferences</a></div><div class="brief "><a data-name="934339474%2FProperties%2F1404709923" anchor-label="preferences" id="934339474%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Provides a <a href="-preferences/index.html">Preferences</a> of lenses available to interact with during this component lifecycle. If this <a href="index.html">LensesComponent</a> is closed then the returned <a href="-preferences/index.html">Preferences</a> is expected to be no-op.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="392739308%2FProperties%2F1404709923" anchor-label="prefetcher" id="392739308%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="prefetcher.html"><span><span>prefetcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="392739308%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="392739308%2FProperties%2F1404709923" anchor-label="prefetcher" id="392739308%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="prefetcher.html">prefetcher</a><span class="token operator">: </span><a href="-prefetcher/index.html">LensesComponent.Prefetcher</a></div><div class="brief "><a data-name="392739308%2FProperties%2F1404709923" anchor-label="prefetcher" id="392739308%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Provides a <a href="-prefetcher/index.html">Prefetcher</a> of lenses available to interact with during this component lifecycle. If this <a href="index.html">LensesComponent</a> is closed then the returned <a href="-prefetcher/index.html">Prefetcher</a> is expected to be no-op.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1818928760%2FProperties%2F1404709923" anchor-label="processor" id="1818928760%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="processor.html"><span><span>processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1818928760%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="1818928760%2FProperties%2F1404709923" anchor-label="processor" id="1818928760%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="processor.html">processor</a><span class="token operator">: </span><a href="-processor/index.html">LensesComponent.Processor</a></div><div class="brief "><a data-name="1818928760%2FProperties%2F1404709923" anchor-label="processor" id="1818928760%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Provides lenses specific <a href="-processor/index.html">Processor</a> which allows to process image and audio input with applied lenses while rendering results to connected outputs. If this <a href="index.html">LensesComponent</a> is closed then the returned <a href="-processor/index.html">Processor</a> is expected to be no-op.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1675143750%2FProperties%2F1404709923" anchor-label="repository" id="1675143750%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="repository.html"><span><span>repository</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1675143750%2FProperties%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><a data-name="1675143750%2FProperties%2F1404709923" anchor-label="repository" id="1675143750%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="repository.html">repository</a><span class="token operator">: </span><a href="-repository/index.html">LensesComponent.Repository</a></div><div class="brief "><a data-name="1675143750%2FProperties%2F1404709923" anchor-label="repository" id="1675143750%2FProperties%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a><p class="paragraph">Provides a <a href="-repository/index.html">Repository</a> of lenses available to interact with during this component lifecycle. If this <a href="index.html">LensesComponent</a> is closed then the returned <a href="-repository/index.html">Repository</a> is expected to be no-op.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="152289827%2FInheritors%2F1404709923" anchor-label="Noop" id="152289827%2FInheritors%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-noop/index.html">Noop</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="152289827%2FInheritors%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
