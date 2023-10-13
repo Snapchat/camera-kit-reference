@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.snap.camerakit</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>CameraKit</span>
+            </a>
+    </div>
+    <div>
+1.26.1    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit////PointingToDeclaration//1404709923">
+  <div class="breadcrumbs"><a href="../../index.html">CameraKit</a><span class="delimiter">/</span><span class="current">com.snap.camerakit</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="1318323104%2FClasslikes%2F1404709923" anchor-label="AudioProcessor" id="1318323104%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-audio-processor/index.html"><span>Audio</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1318323104%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-audio-processor/index.html">AudioProcessor</a> : <a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Defines a <a href="-processor/index.html">Processor</a> that is able to take <a href="-audio-processor/-input/index.html">AudioProcessor.Input</a> and run audio processing operations that analyze data to detect patterns and/or mutate the provided <a href="-audio-processor/-input/-frame/index.html">AudioProcessor.Input.Frame</a>s to apply effects such as filtering, pitch correction etc.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1827728300%2FClasslikes%2F1404709923" anchor-label="Experimental" id="-1827728300%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-experimental/index.html"><span><span>Experimental</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1827728300%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">annotation class </span><a href="-experimental/index.html">Experimental</a></div><div class="brief "><p class="paragraph">Indicates that the annotated feature is experimental: it may be removed, its signature or behavior may be changed without warning from one release to the next.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1679388645%2FClasslikes%2F1404709923" anchor-label="ImageProcessor" id="1679388645%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-image-processor/index.html"><span>Image</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1679388645%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-image-processor/index.html">ImageProcessor</a> : <a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Defines a <a href="-processor/index.html">Processor</a> that is able to take <a href="-image-processor/-input/index.html">ImageProcessor.Input</a>, run some image processing operations on it and render the final result to <a href="-image-processor/-output/index.html">ImageProcessor.Output</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1088967107%2FClasslikes%2F1404709923" anchor-label="LegalProcessor" id="1088967107%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-legal-processor/index.html"><span>Legal</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1088967107%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-legal-processor/index.html">LegalProcessor</a> : <a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Defines a <a href="-processor/index.html">Processor</a> that subscribes to <a href="-legal-processor/-input/index.html">LegalProcessor.Input</a> to receive results from a user responding to a <a href="-legal-processor/-input/-prompt/index.html">LegalProcessor.Input.Prompt</a> for a legal agreement.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1794823863%2FClasslikes%2F1404709923" anchor-label="LocationProcessor" id="-1794823863%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-location-processor/index.html"><span>Location</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1794823863%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-location-processor/index.html">LocationProcessor</a> : <a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Defines a <a href="-processor/index.html">Processor</a> that subscribes to <a href="-location-processor/-input/index.html">LocationProcessor.Input</a> to receive information about the current device <a href="https://developer.android.com/reference/kotlin/android/location/Location.html">Location</a>, when available.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="94065710%2FClasslikes%2F1404709923" anchor-label="MediaProcessor" id="94065710%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-media-processor/index.html"><span>Media</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="94065710%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-media-processor/index.html">MediaProcessor</a> : <a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Defines a <a href="-processor/index.html">Processor</a> that subscribes to <a href="-media-processor/-input/index.html">MediaProcessor.Input</a> to receive <a href="-media-processor/-media/index.html">Media</a> data.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="90365876%2FClasslikes%2F1404709923" anchor-label="Processor" id="90365876%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-processor/index.html"><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="90365876%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Marker interface for all processors that can be attached to a specific <a href="-source/index.html">Source</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1336708668%2FClasslikes%2F1404709923" anchor-label="SafeRenderAreaProcessor" id="-1336708668%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-safe-render-area-processor/index.html"><span>Safe</span><wbr></wbr><span>Render</span><wbr></wbr><span>Area</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1336708668%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-safe-render-area-processor/index.html">SafeRenderAreaProcessor</a> : <a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Defines a <a href="-processor/index.html">Processor</a> that subscribes to <a href="-safe-render-area-processor/-input/index.html">SafeRenderAreaProcessor.Input</a> to receive updates on the area that the client considers to be safe for rendering content such as lens UI elements where they can not overlap or interfere with the client's own UI.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1702569840%2FClasslikes%2F1404709923" anchor-label="Session" id="1702569840%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-session/index.html"><span><span>Session</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1702569840%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-session/index.html">Session</a> : <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Entry point to all CameraKit features. To obtain <a href="-session/index.html">Session</a> implementations must provide methods to get a new instance of <a href="-session/-builder/index.html">Builder</a> which exposes options to customize <a href="-session/index.html">Session</a> instance once it is built by calling <a href="-session/-builder/build.html">Builder.build</a>. Once done using an instance of <a href="-session/index.html">Session</a>, <a href="-session/close.html">Session.close</a> must be called to avoid leaking resources.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1076650815%2FClasslikes%2F1404709923" anchor-label="Source" id="-1076650815%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-source/index.html"><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1076650815%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-source/index.html">P</a><span class="token operator"> : </span><a href="-processor/index.html">Processor</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Defines a provider of generic inputs that a <a href="-processor/index.html">Processor</a> of type <a href="-source/index.html">P</a> can be attached to process over.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1965359063%2FClasslikes%2F1404709923" anchor-label="UnauthorizedApplicationException" id="-1965359063%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-unauthorized-application-exception/index.html"><span>Unauthorized</span><wbr></wbr><span>Application</span><wbr></wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1965359063%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-unauthorized-application-exception/index.html">UnauthorizedApplicationException</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>applicationId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>apiToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>packageName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html">RuntimeException</a></div><div class="brief "><p class="paragraph">If application with a specific ID and package name is not authorized to use CameraKit this exception will be thrown, normally ending up in the error handler provided via <a href="-session/-builder/handle-errors-with.html">Session.Builder.handleErrorsWith</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1434559071%2FClasslikes%2F1404709923" anchor-label="UserProcessor" id="1434559071%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-user-processor/index.html"><span>User</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1434559071%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-user-processor/index.html">UserProcessor</a> : <a href="-processor/index.html">Processor</a></div><div class="brief "><p class="paragraph">Defines a <a href="-processor/index.html">Processor</a> that subscribes to <a href="-user-processor/-input/index.html">UserProcessor.Input</a> to receive information about the current user, when available.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-44090514%2FClasslikes%2F1404709923" anchor-label="Version" id="-44090514%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-version/index.html"><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-44090514%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-version/index.html">Version</a> <span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a> </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>major<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>minor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>patch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>qualifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html">Comparable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-version/index.html">Version</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Represents a version of the CameraKit library. Versions are <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html">Comparable</a> between each other by following the <a href="https://semver.org/spec/v2.0.0.html">SemVer 2.0.0</a> specification.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1130534965%2FFunctions%2F1404709923" anchor-label="arCoreInput" id="-1130534965%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="ar-core-input.html"><span>ar</span><wbr></wbr><span>Core</span><wbr></wbr><span><span>Input</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1130534965%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.html"><span class="token annotation builtin">RestrictTo</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.Scope.LIBRARY_GROUP.html">RestrictTo.Scope.LIBRARY_GROUP</a></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="ar-core-input.html"><span class="token function">arCoreInput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">mp4DataSetFile<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-processor/-input/-pausable/index.html">ImageProcessor.Input.Pausable</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Creates a <a href="-image-processor/-input/-pausable/index.html">ImageProcessor.Input.Pausable</a> instance that uses ARCore development kit to provide surface tracking capabilities. Uses a <a href="ar-core-input.html">mp4DataSetFile</a> to play back instead of using the live camera feed and IMU sensor data.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.html"><span class="token annotation builtin">RestrictTo</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RestrictTo.Scope.LIBRARY_GROUP.html">RestrictTo.Scope.LIBRARY_GROUP</a></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="ar-core-input.html"><span class="token function">arCoreInput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">facingFront<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-processor/-input/-pausable/index.html">ImageProcessor.Input.Pausable</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Creates a <a href="-image-processor/-input/-pausable/index.html">ImageProcessor.Input.Pausable</a> instance that uses ARCore development kit to provide surface tracking capabilities.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1673125010%2FFunctions%2F1404709923" anchor-label="connectInput" id="-1673125010%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="connect-input.html"><span>connect</span><wbr></wbr><span><span>Input</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1673125010%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="connect-input.html">P</a><span class="token operator"> : </span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt; </span><a href="connect-input.html">P</a><span class="token punctuation">.</span><a href="connect-input.html"><span class="token function">connectInput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a><span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Int.MIN_VALUE<span class="token punctuation">, </span></span><span class="parameter ">facingFront<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">horizontalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.width<span class="token punctuation">, </span></span><span class="parameter ">verticalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.height<span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/-input/-option/index.html">ImageProcessor.Input.Option</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptySet()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Connects the provided <a href="connect-input.html">file</a> and associated optional parameters as a video based <a href="-image-processor/-input/index.html">ImageProcessor.Input</a>. Invoking <a href="-image-processor/-input/-pausable/index.html#358956095%2FFunctions%2F1404709923">Closeable.close</a> on the returned <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a> stops the video playback and releases any resources associated with it.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1314493329%2FFunctions%2F1404709923" anchor-label="connectOutput" id="-1314493329%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="connect-output.html"><span>connect</span><wbr></wbr><span><span>Output</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1314493329%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="connect-output.html">P</a><span class="token operator"> : </span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt; </span><a href="connect-output.html">P</a><span class="token punctuation">.</span><a href="connect-output.html"><span class="token function">connectOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">textureView<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/TextureView.html">TextureView</a><span class="token punctuation">, </span></span><span class="parameter ">outputOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/-output/-option/index.html">ImageProcessor.Output.Option</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Collections.emptySet()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Allows to connect <a href="https://developer.android.com/reference/kotlin/android/view/TextureView.html">TextureView</a> as output to <a href="-image-processor/index.html">ImageProcessor</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1289163573%2FFunctions%2F1404709923" anchor-label="inputFrameFrom" id="-1289163573%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="input-frame-from.html"><span>input</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1289163573%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="input-frame-from.html"><span class="token function">inputFrameFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">samplesCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-audio-processor/-input/-frame/index.html">AudioProcessor.Input.Frame</a></div><div class="brief "><p class="paragraph">Creates or uses a recycled <a href="-audio-processor/-input/-frame/index.html">AudioProcessor.Input.Frame</a> that gets populated with the provided parameters.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="549682186%2FFunctions%2F1404709923" anchor-label="inputFrom" id="549682186%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="input-from.html"><span>input</span><wbr></wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="549682186%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="input-from.html"><span class="token function">inputFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceTexture<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html">SurfaceTexture</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">facingFront<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">horizontalFieldOfView<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html">Callable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">verticalFieldOfView<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html">Callable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-processor/-input/index.html">ImageProcessor.Input</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="input-from.html"><span class="token function">inputFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceTexture<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html">SurfaceTexture</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">facingFront<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">horizontalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">verticalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-processor/-input/index.html">ImageProcessor.Input</a></div><div class="brief "><p class="paragraph">Creates <a href="https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html">SurfaceTexture</a> backed <a href="-image-processor/-input/index.html">ImageProcessor.Input</a> with the provided properties.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-436976280%2FFunctions%2F1404709923" anchor-label="microphoneSourceFor" id="-436976280%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="microphone-source-for.html"><span>microphone</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>For</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-436976280%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RequiresPermission.html"><span class="token annotation builtin">RequiresPermission</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;android.permission.RECORD_AUDIO&quot;</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>conditional<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="microphone-source-for.html"><span class="token function">microphoneSourceFor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executorService<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html">ExecutorService</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-audio-processor/index.html">AudioProcessor</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a new <a href="-source/index.html">Source</a> that attempts to use device microphone to read audio data and provide it to an attached <a href="-audio-processor/index.html">AudioProcessor</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1196675155%2FFunctions%2F1404709923" anchor-label="newBuilder" id="1196675155%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="new-builder.html"><span>new</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1196675155%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="new-builder.html"><span class="token function">newBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">lifecycleOwner<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a><span class="token operator">?</span><span class="token operator"> = </span>context as? LifecycleOwner</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-session/-builder/index.html">Session.Builder</a></div><div class="brief "><p class="paragraph">Creates a new <a href="-session/-builder/index.html">Session.Builder</a> with the provided <a href="new-builder.html">context</a>. An optional <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a> can be provided as an aid to tie behaviours such as audio playback to application lifecycle. If no <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a> is provided then the <a href="new-builder.html">context</a> will be checked for <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a> implementation to be used as a fallback.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="900728073%2FFunctions%2F1404709923" anchor-label="outputFrom" id="900728073%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="output-from.html"><span>output</span><wbr></wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="900728073%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="output-from.html"><span class="token function">outputFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceTexture<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html">SurfaceTexture</a><span class="token punctuation">, </span></span><span class="parameter ">purpose<span class="token operator">: </span><a href="-image-processor/-output/-purpose/index.html">ImageProcessor.Output.Purpose</a><span class="token operator"> = </span>ImageProcessor.Output.Purpose.PREVIEW<span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Int.MIN_VALUE</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-processor/-output/index.html">ImageProcessor.Output</a></div><div class="brief "><p class="paragraph">Creates <a href="https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html">SurfaceTexture</a> backed <a href="-image-processor/-output/index.html">ImageProcessor.Output</a> with the provided <a href="output-from.html">purpose</a> and <a href="output-from.html">rotationDegrees</a>.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="output-from.html"><span class="token function">outputFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surface<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/Surface.html">Surface</a><span class="token punctuation">, </span></span><span class="parameter ">purpose<span class="token operator">: </span><a href="-image-processor/-output/-purpose/index.html">ImageProcessor.Output.Purpose</a><span class="token operator"> = </span>ImageProcessor.Output.Purpose.PREVIEW<span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Int.MIN_VALUE</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-processor/-output/index.html">ImageProcessor.Output</a></div><div class="brief "><p class="paragraph">Creates <a href="https://developer.android.com/reference/kotlin/android/view/Surface.html">Surface</a> backed <a href="-image-processor/-output/index.html">ImageProcessor.Output</a> with the provided <a href="output-from.html">purpose</a> and <a href="output-from.html">rotationDegrees</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-422895477%2FFunctions%2F1404709923" anchor-label="processBitmap" id="-422895477%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="process-bitmap.html"><span>process</span><wbr></wbr><span><span>Bitmap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-422895477%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/WorkerThread.html"><span class="token annotation builtin">WorkerThread</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="process-bitmap.html">P</a><span class="token operator"> : </span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt; </span><a href="process-bitmap.html">P</a><span class="token punctuation">.</span><a href="process-bitmap.html"><span class="token function">processBitmap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">connectedInput<span class="token operator">: </span><a href="-image-processor/-input/index.html">ImageProcessor.Input</a><span class="token punctuation">, </span></span><span class="parameter ">bitmap<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token punctuation">, </span></span><span class="parameter ">outputRotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">10</span><span class="token punctuation">, </span></span><span class="parameter ">timeoutUnit<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html">TimeUnit</a><span class="token operator"> = </span>TimeUnit.SECONDS<span class="token punctuation">, </span></span><span class="parameter ">mirrorHorizontally<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">mirrorVertically<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">allowDownscaling<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">If <a href="process-bitmap.html">connectedInput</a> is currently connected to this processor, process the <a href="process-bitmap.html">bitmap</a> and output the result as <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a>. Source <a href="process-bitmap.html">bitmap</a> will be cropped to match <a href="process-bitmap.html">connectedInput</a> aspect ratio if they are different. Source <a href="process-bitmap.html">bitmap</a> will be rotated on <a href="-image-processor/-input/rotation-degrees.html">ImageProcessor.Input.rotationDegrees</a> of the <a href="process-bitmap.html">connectedInput</a> during processing. <a href="process-bitmap.html">outputRotationDegrees</a> can be used to apply an additional rotation to the resulting <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a>. This method is a blocking operation therefore it is expected to run on a worker thread.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1699657110%2FFunctions%2F1404709923" anchor-label="processImage" id="-1699657110%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="process-image.html"><span>process</span><wbr></wbr><span><span>Image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1699657110%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/WorkerThread.html"><span class="token annotation builtin">WorkerThread</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="process-image.html">P</a><span class="token operator"> : </span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt; </span><a href="process-image.html">P</a><span class="token punctuation">.</span><a href="process-image.html"><span class="token function">processImage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">connectedInput<span class="token operator">: </span><a href="-image-processor/-input/index.html">ImageProcessor.Input</a><span class="token punctuation">, </span></span><span class="parameter ">image<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/media/Image.html">Image</a><span class="token punctuation">, </span></span><span class="parameter ">outputRotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">10</span><span class="token punctuation">, </span></span><span class="parameter ">timeoutUnit<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html">TimeUnit</a><span class="token operator"> = </span>TimeUnit.SECONDS<span class="token punctuation">, </span></span><span class="parameter ">mirrorHorizontally<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">mirrorVertically<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">allowDownscaling<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">If <a href="process-image.html">connectedInput</a> is currently connected to this processor, process the <a href="process-image.html">image</a> and output the result as <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a>. Source <a href="process-image.html">image</a> will be cropped to match <a href="process-image.html">connectedInput</a> aspect ratio if they are different. Source <a href="process-image.html">image</a> will be rotated on <a href="-image-processor/-input/rotation-degrees.html">ImageProcessor.Input.rotationDegrees</a> of the <a href="process-image.html">connectedInput</a> during processing. <a href="process-image.html">outputRotationDegrees</a> can be used to apply an additional rotation to the resulting <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a>. Only images of <a href="https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#jpeg">android.graphics.ImageFormat.JPEG</a> format are currently supported. This method is a blocking operation therefore it is expected to run on a worker thread.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1836395115%2FFunctions%2F1404709923" anchor-label="sourceFrom" id="1836395115%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="source-from.html"><span>source</span><wbr></wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1836395115%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="source-from.html"><span class="token function">sourceFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a><span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Int.MIN_VALUE<span class="token punctuation">, </span></span><span class="parameter ">facingFront<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">horizontalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.width<span class="token punctuation">, </span></span><span class="parameter ">verticalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.height<span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/-input/-option/index.html">ImageProcessor.Input.Option</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptySet()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a video <a href="source-from.html">file</a> based <a href="-source/index.html">Source</a> for <a href="-image-processor/index.html">ImageProcessor</a>. The returned <a href="-source/index.html">Source</a> attempts to read and play video as soon as <a href="-image-processor/index.html">ImageProcessor</a> is attached to it. When <a href="-image-processor/index.html">ImageProcessor</a> is de-attached, the <a href="-source/index.html">Source</a> stops the video and releases all resources associated with it.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="source-from.html"><span class="token function">sourceFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bitmap<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token punctuation">, </span></span><span class="parameter ">choreographer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/Choreographer.html">Choreographer</a><span class="token operator"> = </span>Choreographer.getInstance()<span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">facingFront<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">horizontalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.width<span class="token punctuation">, </span></span><span class="parameter ">verticalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.height<span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/-input/-option/index.html">ImageProcessor.Input.Option</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptySet()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a <a href="source-from.html">bitmap</a> based <a href="-source/index.html">Source</a> for <a href="-image-processor/index.html">ImageProcessor</a>. The returned <a href="-source/index.html">Source</a> simply renders the provided <a href="source-from.html">bitmap</a> as <a href="-image-processor/-input/index.html">ImageProcessor.Input</a> using callbacks queued via <a href="https://developer.android.com/reference/kotlin/android/view/Choreographer.html">Choreographer</a> for synchronization.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="source-from.html"><span class="token function">sourceFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a> </span>color<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">1280</span><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">1920</span><span class="token punctuation">, </span></span><span class="parameter ">choreographer<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/Choreographer.html">Choreographer</a><span class="token operator"> = </span>Choreographer.getInstance()<span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">facingFront<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">horizontalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.width<span class="token punctuation">, </span></span><span class="parameter ">verticalFieldOfView<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>DEFAULT_FIELD_OF_VIEW.height<span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/-input/-option/index.html">ImageProcessor.Input.Option</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptySet()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-source/index.html">Source</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a <a href="source-from.html">color</a> based <a href="-source/index.html">Source</a> for <a href="-image-processor/index.html">ImageProcessor</a>. The returned <a href="-source/index.html">Source</a> simply renders the provided <a href="source-from.html">color</a> as <a href="-image-processor/-input/index.html">ImageProcessor.Input</a> using callbacks queued via <a href="https://developer.android.com/reference/kotlin/android/view/Choreographer.html">Choreographer</a> for synchronization.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="951209726%2FFunctions%2F1404709923" anchor-label="supported" id="951209726%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="supported.html"><span><span>supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="951209726%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="supported.html"><span class="token function">supported</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Allows to check if the current environment is supported to run CameraKit <a href="-session/index.html">Session</a>. Attempts to build and run <a href="-session/index.html">Session</a> in unsupported environment will lead to undefined behavior and exceptions routed to an error handler, if one is supplied using <a href="-session/-builder/handle-errors-with.html">Session.Builder.handleErrorsWith</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="254611739%2FFunctions%2F1404709923" anchor-label="toBitmap" id="254611739%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-bitmap.html"><span>to</span><wbr></wbr><span><span>Bitmap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="254611739%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/WorkerThread.html"><span class="token annotation builtin">WorkerThread</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="to-bitmap.html">P</a><span class="token operator"> : </span><a href="-image-processor/index.html">ImageProcessor</a><span class="token operator">&gt; </span><a href="to-bitmap.html">P</a><span class="token punctuation">.</span><a href="to-bitmap.html"><span class="token function">toBitmap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Int.MIN_VALUE<span class="token punctuation">, </span></span><span class="parameter ">purpose<span class="token operator">: </span><a href="-image-processor/-output/-purpose/index.html">ImageProcessor.Output.Purpose</a><span class="token operator"> = </span>ImageProcessor.Output.Purpose.SNAPSHOT</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">If <a href="-image-processor/-input/index.html">ImageProcessor.Input</a> is currently connected to this processor, process the input and outputs the result as <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a> for the specified <a href="to-bitmap.html">width</a> and <a href="to-bitmap.html">height</a> dimensions and an optional <a href="to-bitmap.html">rotationDegrees</a> as well as <a href="to-bitmap.html">purpose</a>. This method is a blocking operation therefore it is expected to run on a worker thread.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="856096114%2FFunctions%2F1404709923" anchor-label="versionFrom" id="856096114%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="version-from.html"><span>version</span><wbr></wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="856096114%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="version-from.html"><span class="token function">versionFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-version/index.html">Version</a></div><div class="brief "><p class="paragraph">Obtains the current <a href="-version/index.html">Version</a> of CameraKit library using the information from the provided <a href="version-from.html">context</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
