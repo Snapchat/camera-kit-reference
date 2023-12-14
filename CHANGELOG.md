@@ -17,7 +17,7 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 - **Android:** Addressed behavior changes for apps targetting Android 14 or higher ([behavior-changes-14](https://developer.android.com/about/versions/14/behavior-changes-14)).  
 
 <a name="1.26.2"></a>
-## [1.26.2] - 2023-11-13
+## [1.26.2] - 2023-12-13
 - **IOS:** Fix face detection for 3+ faces on IOS front camera.
 - **iOS:** Update CocoaPods's pod names to SCCameraKit, SCCameraKitReferenceUI, SCCameraKitReferenceSwiftUI, SCCameraKitLoginKitAuth, SCCameraKitBaseExtension, SCCameraKitConnectedLensesExtension, SCCameraKitPushToDeviceExtension from this release on. Framework names in code remain the same.
 
