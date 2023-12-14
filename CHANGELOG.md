@@ -8,6 +8,19 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.27.0"></a>
+## [1.27.0] - 2023-12-13
+### Features
+- Lens Studio 5.0.2 support
+
+### Updates
+- **Android:** Addressed behavior changes for apps targetting Android 14 or higher ([behavior-changes-14](https://developer.android.com/about/versions/14/behavior-changes-14)).  
+
+<a name="1.26.2"></a>
+## [1.26.2] - 2023-11-13
+- **IOS:** Fix face detection for 3+ faces on IOS front camera.
+- **iOS:** Update CocoaPods's pod names to SCCameraKit, SCCameraKitReferenceUI, SCCameraKitReferenceSwiftUI, SCCameraKitLoginKitAuth, SCCameraKitBaseExtension, SCCameraKitConnectedLensesExtension, SCCameraKitPushToDeviceExtension from this release on. Framework names in code remain the same.
+
 <a name="1.26.1"></a>
 ## [1.26.1] - 2023-10-12
 ### Bug Fixes
@@ -17,7 +30,7 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 - **Android:** Early display rotation notification causing incorrect input processing size calculation on Android 14
 
 <a name="1.26.0"></a>
-## [1.26.0] - 2023-09-13 - [_LTS_](https://docs.snap.com/camera-kit/changelog/lts)
+## [1.26.0] - 2023-09-13 - _LTS_
 ### Features
 - Lens Studio 4.55 support
 
@@ -249,7 +262,7 @@ Media Picker lenses feature.
 ## [1.12.0] - 2022-04-22
 ### Notes
 - Starting with this release, an API token **must** be provided as part of the Camera Kit configuration, failure to do so will result in a runtime exception. See [Android](https://docs.snap.com/snap-kit/camera-kit/configuration/android#service-authorization) and [iOS](https://docs.snap.com/snap-kit/camera-kit/configuration/ios/#service-authorization) documentation for examples on how to obtain and provide an API token.
-- The legal agreement prompt has been updated to use a more user friendly text copy. Updating to this release will result in users needing to accept the updated prompt which includes a new link to the Camera Kit's "learn more" [page](https://support.snapchat.com/en-US/article/camera-information-use).
+- The legal agreement prompt has been updated to use a more user friendly text copy. Updating to this release will result in users needing to accept the updated prompt which includes a new link to the Camera Kit&#39;s "learn more" [page](https://support.snapchat.com/en-US/article/camera-information-use).
 
 ### Features
 - Lens Studio 4.19 support
@@ -562,7 +575,7 @@ Media Picker lenses feature.
 <a name="1.6.1"></a>
 ## [1.6.1] - 2021-05-10
 ### Bug Fixes
-- **Android:**  Lens is not applied when carousel's disableIdle = true
+- **Android:**  Lens is not applied when carousel&#39;s disableIdle = true
 - **iOS:**  Deadlock on stopping session
 
 

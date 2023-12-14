@@ -23,9 +23,9 @@ Four frameworks are required for Push To Device. The frameworks are bundled in w
 ```swift
 target 'Your-App-Name' do
 ...
-  pod 'SCSDKCameraKitLoginKitAuth', :path => 'CameraKit/CameraKitLoginKitAuth', :configurations => ['Debug']
-  pod 'SCSDKCameraKitBaseExtension', :path => 'CameraKit/CameraKitBaseExtension/', :configurations => ['Debug']
-  pod 'SCSDKCameraKitPushToDeviceExtension', :path => 'CameraKit/CameraKitPushToDeviceExtension/', :configurations => ['Debug']
+  pod 'SCCameraKitLoginKitAuth', :path => 'CameraKit/CameraKitLoginKitAuth', :configurations => ['Debug']
+  pod 'SCCameraKitBaseExtension', :path => 'CameraKit/CameraKitBaseExtension/', :configurations => ['Debug']
+  pod 'SCCameraKitPushToDeviceExtension', :path => 'CameraKit/CameraKitPushToDeviceExtension/', :configurations => ['Debug']
 ...
 ```
 

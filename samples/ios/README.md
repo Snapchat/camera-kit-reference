@@ -28,14 +28,14 @@ Camera Kit currently supports CocoaPods.
 Add
 
 ```
-pod 'SCSDKCameraKitReferenceUI'
+pod 'SCCameraKitReferenceUI'
 ```
 
 to your `Podfile`. If your application uses SwiftUI, you can use our SwiftUI SDK below
 
 ```
-pod 'SCSDKCameraKit'
-pod 'SCSDKCameraKitReferenceSwiftUI'
+pod 'SCCameraKit'
+pod 'SCCameraKitReferenceSwiftUI'
 ```
 
 Before opening the workspace make sure you run

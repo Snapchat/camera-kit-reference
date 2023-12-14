@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CameraController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/CameraController" class="dashAnchor"></a>
+
+    <a title="CameraController Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          SCSDKCameraKitReferenceUI 1.27.0 Docs
+        </a>
+         (60% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">SCSDKCameraKitReferenceUI Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      CameraController Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AdjustmentControlView.html">AdjustmentControlView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AdjustmentControlView/Variant.html">– Variant</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BundleHelper.html">BundleHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraActionsView.html">CameraActionsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraBottomBar.html">CameraBottomBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraButton.html">CameraButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraButton.html#/s:25SCSDKCameraKitReferenceUI12CameraButtonC9ConstantsO">– Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraConfigurableActionView.html">CameraConfigurableActionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraController.html">CameraController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraController/PointOfInterestOptions.html">– PointOfInterestOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraController/FlashMode.html">– FlashMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraController/FlashState.html">– FlashState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraView.html">CameraView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CameraViewController.html">CameraViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CarouselCollectionViewCell.html">CarouselCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CarouselCollectionViewLayout.html">CarouselCollectionViewLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CarouselItem.html">CarouselItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CarouselView.html">CarouselView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ControlSlider.html">ControlSlider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultCarouselImageLoader.html">DefaultCarouselImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EmptyItem.html">EmptyItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FlashControlView.html">FlashControlView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FlashModeSelectionView.html">FlashModeSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ImagePreviewViewController.html">ImagePreviewViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeyboardAccessoryViewProvider.html">KeyboardAccessoryViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MediaPickerView.html">MediaPickerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MessageNotificationView.html">MessageNotificationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PreviewViewController.html">PreviewViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Recorder.html">Recorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RingLightColorSelectionView.html">RingLightColorSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RingLightColorSelectionViewCell.html">RingLightColorSelectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RingLightGradientView.html">RingLightGradientView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RingLightView.html">RingLightView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SnapAttributionView.html">SnapAttributionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TapAnimationView.html">TapAnimationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UserDataProvider.html">UserDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VideoPreviewViewController.html">VideoPreviewViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CameraBottomBarElements.html">CameraBottomBarElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CameraElements.html">CameraElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CameraElements/CameraFlip.html">– CameraFlip</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CarouselElements.html">CarouselElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FlashControlElements.html">FlashControlElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MessageNotificationElements.html">MessageNotificationElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/OtherElements.html">OtherElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PreviewElements.html">PreviewElements</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SnapchatScreen.html">SnapchatScreen</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSString.html">NSString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UILabel.html">UILabel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:25SCSDKCameraKitReferenceUI06CameraB15LocalizedString3key6bundle18preferredLanguages7comment5tableS2S_So8NSBundleCSgSaySSGSSSgALtF">CameraKitLocalizedString(key:bundle:preferredLanguages:comment:table:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AdjustmentControlViewDelegate.html">AdjustmentControlViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AppOrientationDelegate.html">AppOrientationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CameraButtonDelegate.html">CameraButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CameraControllerUIDelegate.html">CameraControllerUIDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CarouselCollectionViewLayoutDataSource.html">CarouselCollectionViewLayoutDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CarouselCollectionViewLayoutDelegate.html">CarouselCollectionViewLayoutDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CarouselImageLoader.html">CarouselImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CarouselViewDataSource.html">CarouselViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CarouselViewDelegate.html">CarouselViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ControlSliderDelegate.html">ControlSliderDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FlashControlViewDelegate.html">FlashControlViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FlashModeSelectionViewDelegate.html">FlashModeSelectionViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MediaPickerViewDelegate.html">MediaPickerViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/RingLightColorSelectionViewDelegate.html">RingLightColorSelectionViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SnapchatDelegate.html">SnapchatDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TestableElement.html">TestableElement</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>CameraController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">CameraController</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">LensRepositoryGroupObserver</span><span class="p">,</span> <span class="kt">LensPrefetcherObserver</span><span class="p">,</span> <span class="kt">LensHintDelegate</span><span class="p">,</span>
+    <span class="kt"><a href="../Protocols/MediaPickerViewDelegate.html">MediaPickerViewDelegate</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/AdjustmentControlViewDelegate.html">AdjustmentControlViewDelegate</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A controller which manages the camera and lenses stack on behalf of its owner</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20vars"></a>
+                <a name="//apple_ref/swift/Section/Public vars" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20vars"></a>
+                  <h3 class="section-name"><span>Public vars</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC14captureSessionSo09AVCaptureH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/captureSession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC14captureSessionSo09AVCaptureH0Cvp">captureSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A capture session we&rsquo;ll use for camera input.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">captureSession</span><span class="p">:</span> <span class="kt">AVCaptureSession</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC06cameraB0So08SCCameraB8Protocol_pvp"></a>
+                    <a name="//apple_ref/swift/Property/cameraKit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC06cameraB0So08SCCameraB8Protocol_pvp">cameraKit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The CameraKit session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cameraKit</span><span class="p">:</span> <span class="kt">CameraKitProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC14cameraPositionSo015AVCaptureDeviceH0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/cameraPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC14cameraPositionSo015AVCaptureDeviceH0Vvp">cameraPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The position of the camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Outputs"></a>
+                <a name="//apple_ref/swift/Section/Outputs" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Outputs"></a>
+                  <h3 class="section-name"><span>Outputs</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC18photoCaptureOutputSo08SCCamerab5PhotohI0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/photoCaptureOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC18photoCaptureOutputSo08SCCamerab5PhotohI0CSgvp">photoCaptureOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An output used for taking still photos.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">photoCaptureOutput</span><span class="p">:</span> <span class="kt">PhotoCaptureOutput</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC8recorderAA8RecorderCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/recorder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC8recorderAA8RecorderCSgvp">recorder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An output used for recording videos.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">recorder</span><span class="p">:</span> <span class="kt"><a href="../Classes/Recorder.html">Recorder</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Data%20providers"></a>
+                <a name="//apple_ref/swift/Section/Data providers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Data%20providers"></a>
+                  <h3 class="section-name"><span>Data providers</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC17lensMediaProviderSo08SCCamerab4Lensh6PickerI12PhotoLibraryCvp"></a>
+                    <a name="//apple_ref/swift/Property/lensMediaProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC17lensMediaProviderSo08SCCamerab4Lensh6PickerI12PhotoLibraryCvp">lensMediaProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Media provider for CameraKit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lensMediaProvider</span><span class="p">:</span> <span class="kt">LensMediaPickerProviderPhotoLibrary</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Delegates"></a>
+                <a name="//apple_ref/swift/Section/Delegates" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Delegates"></a>
+                  <h3 class="section-name"><span>Delegates</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC16snapchatDelegateAA08SnapchatH0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/snapchatDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC16snapchatDelegateAA08SnapchatH0_pSgvp">snapchatDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Snapchat delegate for requests to open the main Snapchat app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">snapchatDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SnapchatDelegate.html">SnapchatDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC10uiDelegateAA0eF10UIDelegate_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/uiDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC10uiDelegateAA0eF10UIDelegate_pSgvp">uiDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate for responding to UI requests from camera controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">uiDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CameraControllerUIDelegate.html">CameraControllerUIDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/State"></a>
+                <a name="//apple_ref/swift/Section/State" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/State"></a>
+                  <h3 class="section-name"><span>State</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC11currentLensSo08SCCamerabH0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/currentLens" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC11currentLensSo08SCCamerabH0_pSgvp">currentLens</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The currently selected and active lens.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">currentLens</span><span class="p">:</span> <span class="kt">Lens</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC8groupIDsSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/groupIDs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC8groupIDsSaySSGvp">groupIDs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List of lens repository groups to observe/show in carousel</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">groupIDs</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC28isToneMapAdjustmentAvailableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isToneMapAdjustmentAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC28isToneMapAdjustmentAvailableSbvp">isToneMapAdjustmentAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether or not the tone map adjustment is available for the current device.
+This variable should be checked before showing any UI associated with the tone map adjustment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isToneMapAdjustmentAvailable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC29isPortraitAdjustmentAvailableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isPortraitAdjustmentAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC29isPortraitAdjustmentAvailableSbvp">isPortraitAdjustmentAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether or not the portrait adjustment is available for the current device.
+This variable should be checked before showing any UI associated with the portrait adjustment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isPortraitAdjustmentAvailable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC10flashStateAC05FlashH0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/flashState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC10flashStateAC05FlashH0Ovp">flashState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current state of the camera flash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">flashState</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraController/FlashState.html">FlashState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><span>Initializers</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC13sessionConfigACSo08SCCamerab7SessionH0CSg_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(sessionConfig:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC13sessionConfigACSo08SCCamerab7SessionH0CSg_tcfc">init(sessionConfig:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a camera controller that is initialized with a newly created AVCaptureSession stack
+and CameraKit session with the specified configuration and list of group IDs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">sessionConfig</span><span class="p">:</span> <span class="kt">SessionConfig</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionConfig</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Config to configure session with application id and api token.
+Pass this in if you wish to dynamically update or overwrite the application id and api token in the application&rsquo;s <code>Info.plist</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC06cameraB014captureSessionACSo08SCCameraB8Protocol_p_So09AVCaptureI0Ctcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(cameraKit:captureSession:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC06cameraB014captureSessionACSo08SCCameraB8Protocol_p_So09AVCaptureI0Ctcfc">init(cameraKit:<wbr>captureSession:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init with camera kit session, capture session, and lens holder</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">cameraKit</span><span class="p">:</span> <span class="kt">CameraKitProtocol</span><span class="p">,</span> <span class="nv">captureSession</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cameraKit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>camera kit session</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>captureSession</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>avcapturesession</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuration"></a>
+                <a name="//apple_ref/swift/Section/Configuration" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><span>Configuration</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC9configure11orientation24textInputContextProvider022agreementsPresentationkL010completionySo25AVCaptureVideoOrientationV_So08SCCamerab4TextjkL0_pSgSo0sb10AgreementsnkL0_pSgyycSgtF"></a>
+                    <a name="//apple_ref/swift/Method/configure(orientation:textInputContextProvider:agreementsPresentationContextProvider:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC9configure11orientation24textInputContextProvider022agreementsPresentationkL010completionySo25AVCaptureVideoOrientationV_So08SCCamerab4TextjkL0_pSgSo0sb10AgreementsnkL0_pSgyycSgtF">configure(orientation:<wbr>textInputContextProvider:<wbr>agreementsPresentationContextProvider:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures the overall camera and lenses stack.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span>
+    <span class="nv">orientation</span><span class="p">:</span> <span class="kt">AVCaptureVideoOrientation</span><span class="p">,</span>
+    <span class="nv">textInputContextProvider</span><span class="p">:</span> <span class="kt">TextInputContextProvider</span><span class="p">?,</span>
+    <span class="nv">agreementsPresentationContextProvider</span><span class="p">:</span> <span class="kt">AgreementsPresentationContextProvider</span><span class="p">?,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the orientation</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a nullable completion that is called after configuration is done.
+         In case it&rsquo;s a first app start (when camera permission is not determined yet) a completion will be called after the prompt.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC15configureLenses11orientation24textInputContextProvider022agreementsPresentationlM0ySo25AVCaptureVideoOrientationV_So08SCCamerab4TextklM0_pSgSo0sb10AgreementsolM0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/configureLenses(orientation:textInputContextProvider:agreementsPresentationContextProvider:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC15configureLenses11orientation24textInputContextProvider022agreementsPresentationlM0ySo25AVCaptureVideoOrientationV_So08SCCamerab4TextklM0_pSgSo0sb10AgreementsolM0_pSgtF">configureLenses(orientation:<wbr>textInputContextProvider:<wbr>agreementsPresentationContextProvider:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures the lenses pipeline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">configureLenses</span><span class="p">(</span>
+    <span class="nv">orientation</span><span class="p">:</span> <span class="kt">AVCaptureVideoOrientation</span><span class="p">,</span>
+    <span class="nv">textInputContextProvider</span><span class="p">:</span> <span class="kt">TextInputContextProvider</span><span class="p">?,</span>
+    <span class="nv">agreementsPresentationContextProvider</span><span class="p">:</span> <span class="kt">AgreementsPresentationContextProvider</span><span class="p">?</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the camera orientation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC21configureDataProviderSo08SCCamerabhI9ComponentCyF"></a>
+                    <a name="//apple_ref/swift/Method/configureDataProvider()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC21configureDataProviderSo08SCCamerabhI9ComponentCyF">configureDataProvider()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures the data provider for lenses. Subclasses may override this to customize their data provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">configureDataProvider</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">DataProviderComponent</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a configured data provider.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Camera%20Control"></a>
+                <a name="//apple_ref/swift/Section/Camera Control" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Camera%20Control"></a>
+                  <h3 class="section-name"><span>Camera Control</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC17zoomExistingLevel2byy14CoreFoundation7CGFloatV_tF"></a>
+                    <a name="//apple_ref/swift/Method/zoomExistingLevel(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC17zoomExistingLevel2byy14CoreFoundation7CGFloatV_tF">zoomExistingLevel(by:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zoom in by a given factor from whatever the current zoom level is</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    the zoom level will be capped to a minimum level of 1.0.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">zoomExistingLevel</span><span class="p">(</span><span class="n">by</span> <span class="nv">factor</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>factor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the factor to zoom by.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC12finalizeZoomyyF"></a>
+                    <a name="//apple_ref/swift/Method/finalizeZoom()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC12finalizeZoomyyF">finalizeZoom()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Save whatever the current zoom level is.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">finalizeZoom</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC04flipE0yyF"></a>
+                    <a name="//apple_ref/swift/Method/flipCamera()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC04flipE0yyF">flipCamera()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flips the camera to the other side</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">flipCamera</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC22PointOfInterestOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/PointOfInterestOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC22PointOfInterestOptionsV">PointOfInterestOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Options to support when setting a point of interest</p>
+
+                        <a href="../Classes/CameraController/PointOfInterestOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PointOfInterestOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC18setPointOfInterest2at3forySo7CGPointV_AC0hiJ7OptionsVtF"></a>
+                    <a name="//apple_ref/swift/Method/setPointOfInterest(at:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC18setPointOfInterest2at3forySo7CGPointV_AC0hiJ7OptionsVtF">setPointOfInterest(at:<wbr>for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets camera point of interest for operations in the option set. Also adds observers for the current device such
+that once the focusing/exposure rebalancing operations are complete, continuous autofocus/autoexposure
+are restored (see observeValue)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPointOfInterest</span><span class="p">(</span><span class="n">at</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="k">for</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraController/PointOfInterestOptions.html">PointOfInterestOptions</a></span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">exposure</span><span class="p">,</span> <span class="o">.</span><span class="n">focus</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Taking%20Photos"></a>
+                <a name="//apple_ref/swift/Section/Taking Photos" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Taking%20Photos"></a>
+                  <h3 class="section-name"><span>Taking Photos</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC9takePhoto10completionyySo7UIImageCSg_s5Error_pSgtcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/takePhoto(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC9takePhoto10completionyySo7UIImageCSg_s5Error_pSgtcSg_tF">takePhoto(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Takes a photo.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">takePhoto</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">UIImage</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion to be called with the photo or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/LensRepositoryGroupObserver"></a>
+                <a name="//apple_ref/swift/Section/LensRepositoryGroupObserver" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/LensRepositoryGroupObserver"></a>
+                  <h3 class="section-name"><span>LensRepositoryGroupObserver</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)repository:didUpdateLenses:forGroupID:"></a>
+                    <a name="//apple_ref/swift/Method/repository(_:didUpdateLenses:forGroupID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)repository:didUpdateLenses:forGroupID:">repository(_:<wbr>didUpdateLenses:<wbr>forGroupID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">repository</span><span class="p">(</span><span class="n">_</span> <span class="nv">repository</span><span class="p">:</span> <span class="kt">LensRepository</span><span class="p">,</span> <span class="n">didUpdateLenses</span> <span class="nv">lenses</span><span class="p">:</span> <span class="p">[</span><span class="kt">Lens</span><span class="p">],</span> <span class="n">forGroupID</span> <span class="nv">groupID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)repository:didFailToUpdateLensesForGroupID:error:"></a>
+                    <a name="//apple_ref/swift/Method/repository(_:didFailToUpdateLensesForGroupID:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)repository:didFailToUpdateLensesForGroupID:error:">repository(_:<wbr>didFailToUpdateLensesForGroupID:<wbr>error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">repository</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">repository</span><span class="p">:</span> <span class="kt">LensRepository</span><span class="p">,</span> <span class="n">didFailToUpdateLensesForGroupID</span> <span class="nv">groupID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/LensPrefetcherObserver"></a>
+                <a name="//apple_ref/swift/Section/LensPrefetcherObserver" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/LensPrefetcherObserver"></a>
+                  <h3 class="section-name"><span>LensPrefetcherObserver</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)prefetcher:didUpdateLens:status:"></a>
+                    <a name="//apple_ref/swift/Method/prefetcher(_:didUpdate:status:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)prefetcher:didUpdateLens:status:">prefetcher(_:<wbr>didUpdate:<wbr>status:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">prefetcher</span><span class="p">(</span><span class="n">_</span> <span class="nv">prefetcher</span><span class="p">:</span> <span class="kt">LensPrefetcher</span><span class="p">,</span> <span class="n">didUpdate</span> <span class="nv">lens</span><span class="p">:</span> <span class="kt">Lens</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">LensFetchStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Recording"></a>
+                <a name="//apple_ref/swift/Section/Recording" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Recording"></a>
+                  <h3 class="section-name"><span>Recording</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC14startRecordingyyF"></a>
+                    <a name="//apple_ref/swift/Method/startRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC14startRecordingyyF">startRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin recording video.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">startRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC15cancelRecordingyyF"></a>
+                    <a name="//apple_ref/swift/Method/cancelRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC15cancelRecordingyyF">cancelRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancel recording video.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">cancelRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC15finishRecording10completionyy10Foundation3URLVSg_s5Error_pSgtcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/finishRecording(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC15finishRecording10completionyy10Foundation3URLVSg_s5Error_pSgtcSg_tF">finishRecording(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Finish recording the video.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">finishRecording</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">URL</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>completion to be called with a URL to the recorded video or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Lens%20Application"></a>
+                <a name="//apple_ref/swift/Section/Lens Application" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Lens%20Application"></a>
+                  <h3 class="section-name"><span>Lens Application</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC9applyLens_10completionySo08SCCamerabH0_p_ySbcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/applyLens(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC9applyLens_10completionySo08SCCamerabH0_p_ySbcSgtF">applyLens(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apply a specified lens.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applyLens</span><span class="p">(</span><span class="n">_</span> <span class="nv">lens</span><span class="p">:</span> <span class="kt">Lens</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lens</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>selected lens</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>callback on completion with success/failure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC9clearLens11willReapply10completionySb_ySbcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/clearLens(willReapply:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC9clearLens11willReapply10completionySb_ySbcSgtF">clearLens(willReapply:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clear the currently selected lens, and return to unmodified camera feed.</p>
+
+<ul>
+<li>willReapply: if true, cameraKit will not clear out the &ldquo;currentLens&rdquo; property, and reapplyCurrentLens will apply the lens that was cleared.</li>
+<li>completion: callback on completion with success/failure</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clearLens</span><span class="p">(</span><span class="nv">willReapply</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC18reapplyCurrentLensyyF"></a>
+                    <a name="//apple_ref/swift/Method/reapplyCurrentLens()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC18reapplyCurrentLensyyF">reapplyCurrentLens()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If a lens has already been applied, reapply it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reapplyCurrentLens</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Adjustments%20Application"></a>
+                <a name="//apple_ref/swift/Section/Adjustments Application" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Adjustments%20Application"></a>
+                  <h3 class="section-name"><span>Adjustments Application</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC23enableToneMapAdjustmentSfSgyF"></a>
+                    <a name="//apple_ref/swift/Method/enableToneMapAdjustment()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC23enableToneMapAdjustmentSfSgyF">enableToneMapAdjustment()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables the tone map adjustment.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Before calling this function, check whether or not the adjustment is available for the device. See <code><a href="../Classes/CameraController.html#/s:25SCSDKCameraKitReferenceUI16CameraControllerC28isToneMapAdjustmentAvailableSbvp">isToneMapAdjustmentAvailable</a></code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enableToneMapAdjustment</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Float representing the intensity of the tone map effect.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC24disableToneMapAdjustmentyyF"></a>
+                    <a name="//apple_ref/swift/Method/disableToneMapAdjustment()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC24disableToneMapAdjustmentyyF">disableToneMapAdjustment()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables the tone map adjustment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disableToneMapAdjustment</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC24enablePortraitAdjustmentSfSgyF"></a>
+                    <a name="//apple_ref/swift/Method/enablePortraitAdjustment()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC24enablePortraitAdjustmentSfSgyF">enablePortraitAdjustment()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables the portrait adjustment.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Before calling this function, check whether or not the adjustment is available for the device. See <code><a href="../Classes/CameraController.html#/s:25SCSDKCameraKitReferenceUI16CameraControllerC29isPortraitAdjustmentAvailableSbvp">isPortraitAdjustmentAvailable</a></code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enablePortraitAdjustment</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Float representing the intensity of the portrait blur effect.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC25disablePortraitAdjustmentyyF"></a>
+                    <a name="//apple_ref/swift/Method/disablePortraitAdjustment()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC25disablePortraitAdjustmentyyF">disablePortraitAdjustment()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables the portrait adjustment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disablePortraitAdjustment</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/LensHintDelegate"></a>
+                <a name="//apple_ref/swift/Section/LensHintDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/LensHintDelegate"></a>
+                  <h3 class="section-name"><span>LensHintDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)lensProcessor:shouldDisplayHint:forLens:autohide:"></a>
+                    <a name="//apple_ref/swift/Method/lensProcessor(_:shouldDisplayHint:for:autohide:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)lensProcessor:shouldDisplayHint:forLens:autohide:">lensProcessor(_:<wbr>shouldDisplayHint:<wbr>for:<wbr>autohide:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lensProcessor</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">lensProcessor</span><span class="p">:</span> <span class="kt">LensProcessor</span><span class="p">,</span> <span class="n">shouldDisplayHint</span> <span class="nv">hint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">for</span> <span class="nv">lens</span><span class="p">:</span> <span class="kt">Lens</span><span class="p">,</span> <span class="nv">autohide</span><span class="p">:</span> <span class="kt">Bool</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)lensProcessor:shouldHideAllHintsForLens:"></a>
+                    <a name="//apple_ref/swift/Method/lensProcessor(_:shouldHideAllHintsFor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SCSDKCameraKitReferenceUI@objc(cs)CameraController(im)lensProcessor:shouldHideAllHintsForLens:">lensProcessor(_:<wbr>shouldHideAllHintsFor:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lensProcessor</span><span class="p">(</span><span class="n">_</span> <span class="nv">lensProcessor</span><span class="p">:</span> <span class="kt">LensProcessor</span><span class="p">,</span> <span class="n">shouldHideAllHintsFor</span> <span class="nv">lens</span><span class="p">:</span> <span class="kt">Lens</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MediaPickerViewDelegate"></a>
+                <a name="//apple_ref/swift/Section/MediaPickerViewDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MediaPickerViewDelegate"></a>
+                  <h3 class="section-name"><span>MediaPickerViewDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI23MediaPickerViewDelegateP05mediafG0_13selectedAssetyAA0efG0C_So08SCCamerab4LensefK0_ptF"></a>
+                    <a name="//apple_ref/swift/Method/mediaPickerView(_:selectedAsset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI23MediaPickerViewDelegateP05mediafG0_13selectedAssetyAA0efG0C_So08SCCamerab4LensefK0_ptF">mediaPickerView(_:<wbr>selectedAsset:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mediaPickerView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mediaPickerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/MediaPickerView.html">MediaPickerView</a></span><span class="p">,</span> <span class="nv">selectedAsset</span><span class="p">:</span> <span class="kt">LensMediaPickerProviderAsset</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AdjustmentsControlViewDelegate"></a>
+                <a name="//apple_ref/swift/Section/AdjustmentsControlViewDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/AdjustmentsControlViewDelegate"></a>
+                  <h3 class="section-name"><span>AdjustmentsControlViewDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI29AdjustmentControlViewDelegateP010adjustmentfG0_18sliderValueChangedyAA0efG0C_SdtF"></a>
+                    <a name="//apple_ref/swift/Method/adjustmentControlView(_:sliderValueChanged:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI29AdjustmentControlViewDelegateP010adjustmentfG0_18sliderValueChangedyAA0efG0C_SdtF">adjustmentControlView(_:<wbr>sliderValueChanged:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">adjustmentControlView</span><span class="p">(</span><span class="n">_</span> <span class="nv">control</span><span class="p">:</span> <span class="kt"><a href="../Classes/AdjustmentControlView.html">AdjustmentControlView</a></span><span class="p">,</span> <span class="n">sliderValueChanged</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20vars"></a>
+                <a name="//apple_ref/swift/Section/Private vars" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Private%20vars"></a>
+                  <h3 class="section-name"><span>Private vars</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC19brightnessToRestore14CoreFoundation7CGFloatVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/brightnessToRestore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC19brightnessToRestore14CoreFoundation7CGFloatVSgvp">brightnessToRestore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Temporary state that holds the brightness that should be restored after the ring light is disabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">brightnessToRestore</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Flash"></a>
+                <a name="//apple_ref/swift/Section/Flash" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Flash"></a>
+                  <h3 class="section-name"><span>Flash</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC9FlashModeO"></a>
+                    <a name="//apple_ref/swift/Enum/FlashMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC9FlashModeO">FlashMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enumerates the different flash enabled modes.</p>
+
+                        <a href="../Classes/CameraController/FlashMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">FlashMode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC10FlashStateO"></a>
+                    <a name="//apple_ref/swift/Enum/FlashState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC10FlashStateO">FlashState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enumerates the different possible flash states.</p>
+
+                        <a href="../Classes/CameraController/FlashState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">FlashState</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC11enableFlashyyF"></a>
+                    <a name="//apple_ref/swift/Method/enableFlash()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC11enableFlashyyF">enableFlash()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables the camera flash with the appopriate flash mode as per camera position and prior user selections.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">enableFlash</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC12disableFlashyyF"></a>
+                    <a name="//apple_ref/swift/Method/disableFlash()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC12disableFlashyyF">disableFlash()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables the camera flash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">disableFlash</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC28restoreBrightnessIfNecessaryyyF"></a>
+                    <a name="//apple_ref/swift/Method/restoreBrightnessIfNecessary()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC28restoreBrightnessIfNecessaryyyF">restoreBrightnessIfNecessary()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Restores brightness to what it was before the ring light was enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">restoreBrightnessIfNecessary</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:25SCSDKCameraKitReferenceUI16CameraControllerC29increaseBrightnessIfNecessaryyyF"></a>
+                    <a name="//apple_ref/swift/Method/increaseBrightnessIfNecessary()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:25SCSDKCameraKitReferenceUI16CameraControllerC29increaseBrightnessIfNecessaryyyF">increaseBrightnessIfNecessary()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Increases brightness to max if the ring light is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">increaseBrightnessIfNecessary</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2023 <a class="link" href="https://kit.snapchat.com/camera-kit" target="_blank" rel="external noopener">Snap Inc.</a>. All rights reserved. (Last updated: 2023-12-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>
