@@ -1,11 +1,11 @@
 PODS:
-  - SCCameraKit (1.27.0)
+  - SCCameraKit (1.28.0)
   - SnapSDK/SCSDKCoreKit (2.4.0)
   - SnapSDK/SCSDKCreativeKit (2.4.0):
     - SnapSDK/SCSDKCoreKit
 
 DEPENDENCIES:
-  - SCCameraKit (= 1.27.0)
+  - SCCameraKit (= 1.28.0)
   - SnapSDK/SCSDKCreativeKit (= 2.4.0)
 
 SPEC REPOS:
@@ -14,9 +14,9 @@ SPEC REPOS:
     - SnapSDK
 
 SPEC CHECKSUMS:
-  SCCameraKit: db1a1ea9da38b2daede5c0cac8e229a8fadb27e0
+  SCCameraKit: a5ea231c9e398487c7193e8724382f34d1412234
   SnapSDK: e832716ff024b17b448f9bca5feeac5a3daed3ff
 
-PODFILE CHECKSUM: 02de655be4f42caea5b2a4ca17b492b28bf3abb3
+PODFILE CHECKSUM: 7fe8e74891b482e1e8a2c2e7dad102f22119928f
 
 COCOAPODS: 1.11.3

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Prefetcher</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>CameraKit</span>
+            </a>
+    </div>
+    <div>
+1.28.0    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit.lenses/LensesComponent.Prefetcher///PointingToDeclaration//1404709923">
+  <div class="breadcrumbs"><a href="../../../../index.html">CameraKit</a><span class="delimiter">/</span><a href="../../index.html">com.snap.camerakit.lenses</a><span class="delimiter">/</span><a href="../index.html">LensesComponent</a><span class="delimiter">/</span><span class="current">Prefetcher</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Prefetcher</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Prefetcher</a></div><p class="paragraph">Provides ability to prefetch content of lenses before they are applied using a <a href="../-processor/index.html">Processor</a>. The amount of lenses content that gets prefetched is limited by the <a href="../-cache/-configuration/index.html">Cache.Configuration</a> provided to <a href="../index.html">LensesComponent</a>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-2102933551%2FClasslikes%2F1404709923" anchor-label="Noop" id="-2102933551%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-noop/index.html"><span><span>Noop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2102933551%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-noop/index.html">Noop</a> : <a href="index.html">LensesComponent.Prefetcher</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1016053953%2FClasslikes%2F1404709923" anchor-label="Status" id="1016053953%2FClasslikes%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-status/index.html"><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1016053953%2FClasslikes%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-status/index.html">Status</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-status/index.html">LensesComponent.Prefetcher.Status</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Possible states of lens content availability for local use.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1047941768%2FFunctions%2F1404709923" anchor-label="observe" id="-1047941768%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="observe.html"><span><span>observe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1047941768%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="observe.html"><span class="token function">observe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lens<span class="token operator">: </span><a href="../-lens/index.html">LensesComponent.Lens</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-status/index.html">LensesComponent.Prefetcher.Status</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Consumer {}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Allows to observe individual <a href="observe.html">lens</a> content loading <a href="-status/index.html">Status</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1653820961%2FFunctions%2F1404709923" anchor-label="run" id="-1653820961%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="run.html"><span><span>run</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1653820961%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="run.html"><span class="token function">run</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lenses<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-lens/index.html">LensesComponent.Lens</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Consumer {}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Starts a new operation to prefetch content for the provided list of <a href="run.html">lenses</a>. The <a href="run.html">callback</a> receives True when operation completes successfully or False if it fails or is interrupted before completion. The returned <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a> can be used to cancel the operation. However, if <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a> is ignored, then any incomplete prefetch operation will be cancelled once <a href="../index.html">LensesComponent</a> is closed.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="-2102933551%2FInheritors%2F1404709923" anchor-label="Noop" id="-2102933551%2FInheritors%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-noop/index.html">Noop</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2102933551%2FInheritors%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
