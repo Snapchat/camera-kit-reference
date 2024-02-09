@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Builder</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>CameraKit</span>
+            </a>
+    </div>
+    <div>
+1.28.0    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="CameraKit::com.snap.camerakit.lenses/LensesComponent.Builder///PointingToDeclaration//1404709923">
+  <div class="breadcrumbs"><a href="../../../../index.html">CameraKit</a><span class="delimiter">/</span><a href="../../index.html">com.snap.camerakit.lenses</a><span class="delimiter">/</span><a href="../index.html">LensesComponent</a><span class="delimiter">/</span><span class="current">Builder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Builder</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="157517974%2FFunctions%2F1404709923" anchor-label="attachWidgetsTo" id="157517974%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="attach-widgets-to.html"><span>attach</span><wbr></wbr><span>Widgets</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="157517974%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="attach-widgets-to.html"><span class="token function">attachWidgetsTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewStub<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewStub.html">ViewStub</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Uses the provided <a href="attach-widgets-to.html">viewStub</a> to inflate view hierarchy of the lens widgets (like media picker) which otherwise appear above the lenses carousel.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1931181201%2FFunctions%2F1404709923" anchor-label="build" id="-1931181201%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1931181201%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/CheckResult.html"><span class="token annotation builtin">CheckResult</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">LensesComponent</a></div><div class="brief "><p class="paragraph">Builds an instance of <a href="../index.html">LensesComponent</a> with the configuration of this builder and starts the internal lifecycle which can be disposed by calling <a href="../close.html">LensesComponent.close</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="74752173%2FFunctions%2F1404709923" anchor-label="configureCache" id="74752173%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-cache.html"><span>configure</span><wbr></wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="74752173%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-cache.html"><span class="token function">configureCache</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">withConfiguration<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-suppress-wildcards/index.html"><span class="token annotation builtin">JvmSuppressWildcards</span></a> </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-cache/-configuration/index.html">LensesComponent.Cache.Configuration</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to configure lenses cache by receiving <a href="../-cache/-configuration/index.html">Cache.Configuration</a> in the provided <a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1493933091%2FFunctions%2F1404709923" anchor-label="configureCarousel" id="1493933091%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-carousel.html"><span>configure</span><wbr></wbr><span><span>Carousel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1493933091%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-carousel.html"><span class="token function">configureCarousel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">withConfiguration<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-suppress-wildcards/index.html"><span class="token annotation builtin">JvmSuppressWildcards</span></a> </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-carousel/-configuration/index.html">LensesComponent.Carousel.Configuration</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to enable and configure lenses carousel feature by receiving <a href="../-carousel/-configuration/index.html">Carousel.Configuration</a> in the provided <a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="61767489%2FFunctions%2F1404709923" anchor-label="configureHints" id="61767489%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-hints.html"><span>configure</span><wbr></wbr><span><span>Hints</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="61767489%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-hints.html"><span class="token function">configureHints</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">withConfiguration<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-suppress-wildcards/index.html"><span class="token annotation builtin">JvmSuppressWildcards</span></a> </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-hints/-configuration/index.html">LensesComponent.Hints.Configuration</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to enable and configure lens hints feature by receiving <a href="../-hints/-configuration/index.html">Hints.Configuration</a> in the provided <a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1194842083%2FFunctions%2F1404709923" anchor-label="configureLoadingOverlay" id="1194842083%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-loading-overlay.html"><span>configure</span><wbr></wbr><span>Loading</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1194842083%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-loading-overlay.html"><span class="token function">configureLoadingOverlay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">withConfiguration<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-suppress-wildcards/index.html"><span class="token annotation builtin">JvmSuppressWildcards</span></a> </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-loading-overlay/-configuration/index.html">LensesComponent.LoadingOverlay.Configuration</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to enable and configure lens loading overlay feature by receiving <a href="../-loading-overlay/-configuration/index.html">LoadingOverlay.Configuration</a> in the provided <a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1957319155%2FFunctions%2F1404709923" anchor-label="configureMediaPicker" id="-1957319155%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-media-picker.html"><span>configure</span><wbr></wbr><span>Media</span><wbr></wbr><span><span>Picker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1957319155%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-media-picker.html"><span class="token function">configureMediaPicker</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">withConfiguration<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-suppress-wildcards/index.html"><span class="token annotation builtin">JvmSuppressWildcards</span></a> </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-media-picker/-configuration/index.html">LensesComponent.MediaPicker.Configuration</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to enable and configure lens media picker feature by receiving <a href="../-media-picker/-configuration/index.html">MediaPicker.Configuration</a> in the provided <a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="53773901%2FFunctions%2F1404709923" anchor-label="configureProcessor" id="53773901%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="configure-processor.html"><span>configure</span><wbr></wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="53773901%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configure-processor.html"><span class="token function">configureProcessor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">withConfiguration<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-suppress-wildcards/index.html"><span class="token annotation builtin">JvmSuppressWildcards</span></a> </span><a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-processor/-configuration/index.html">LensesComponent.Processor.Configuration</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to configure lenses processor by receiving <a href="../-processor/-configuration/index.html">Processor.Configuration</a> in the provided <a href="../../../com.snap.camerakit.common/-consumer/index.html">Consumer</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-211199596%2FFunctions%2F1404709923" anchor-label="dispatchTouchEventsTo" id="-211199596%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="dispatch-touch-events-to.html"><span>dispatch</span><wbr></wbr><span>Touch</span><wbr></wbr><span>Events</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-211199596%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="dispatch-touch-events-to.html"><span class="token function">dispatchTouchEventsTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">view<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to receive touch events that were not handled by <a href="../index.html">LensesComponent</a>, if any views are configured to be shown, see <a href="../../../com.snap.camerakit/-session/-builder/image-processor-source.html">com.snap.camerakit.Session.Builder.imageProcessorSource</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1098020020%2FFunctions%2F1404709923" anchor-label="remoteApiServiceFactory" id="-1098020020%2FFunctions%2F1404709923" data-filterable-set=":camera-kit-distribution:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":camera-kit-distribution:dokkaHtml/release" data-filterable-set=":camera-kit-distribution:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="remote-api-service-factory.html"><span>remote</span><wbr></wbr><span>Api</span><wbr></wbr><span>Service</span><wbr></wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098020020%2FFunctions%2F1404709923"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":camera-kit-distribution:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remote-api-service-factory.html"><span class="token function">remoteApiServiceFactory</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../-remote-api-service/-factory/index.html">LensesComponent.RemoteApiService.Factory</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">LensesComponent.Builder</a></div><div class="brief "><p class="paragraph">Allows to provide a <a href="../-remote-api-service/-factory/index.html">RemoteApiService.Factory</a> called per each lifecycle of a lens which sends requests to a remote API service.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
