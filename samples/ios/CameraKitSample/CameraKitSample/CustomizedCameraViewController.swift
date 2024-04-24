@@ -169,6 +169,14 @@ extension CameraViewController: PushToDeviceDelegate {
         }
     }
     
+    public func pushToDeviceUnpairingComplete(_ pushToDevice: PushToDeviceProtocol) {
+        showAlert("Unpairing succeeded")
+    }
+
+    public func pushToDevice(_ pushToDevice: PushToDeviceProtocol, failedToUnpairWithError error: Error) {
+        showAlert("Failed to unpair: \(error.localizedDescription)")
+    }
+    
     private func showAlert(_ message: String, numberOfLines: Int = 1, duration: TimeInterval = 1.5) {
         DispatchQueue.main.async {
             self.cameraView.showMessage(text: message, numberOfLines: numberOfLines, duration: duration)

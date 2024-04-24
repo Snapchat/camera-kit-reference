@@ -8,6 +8,16 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.30.0"></a>
+## [1.30.0] - 2024-04-24
+### Features
+- Lens Studio 5.0.10 support
+- **iOS:** Added [Privacy manifest file](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) describing data the SDK collects and reasons required APIs it uses.
+
+### Updates
+- **Android** Added new `LensPushToDeviceService#initiatePairing` and `LensPushToDeviceService#unpair` methods to pair and unpair Push-to-Device without using default UI.
+- **iOS:** Added new `SCCameraKitPushToDeviceProtocol#unpair` method to unpair from Push-to-Device.
+
 <a name="1.29.0"></a>
 ## [1.29.0] - 2024-03-20
 - **Android:** Fix for incorrect processing size that sometimes resulted in pixelated image on some of the Android devices
