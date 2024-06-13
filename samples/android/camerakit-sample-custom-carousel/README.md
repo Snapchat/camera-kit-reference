@@ -5,11 +5,7 @@ display a camera preview with lenses applied using Camera Kit.
 
 ## Build
 
-Open project's `gradle.properties` file and enter values for `com.snap.camerakit.application.id`
-, `com.snap.camerakit.api.token` from [Snap Kit Developer Portal](https://snapkit.com/manage)
-and `com.snap.camerakit.lenses.group.id` from
-your [Camera Kit Portal](https://camera-kit.snapchat.com/). After that to build, install and launch
-the `camerakit-sample-custom-carousel` on a connected device follow one of the following options:
+Open project's `gradle.properties` file and enter values for `com.snap.camerakit.api.token` from [Snap Kit Developer Portal](https://snapkit.com/manage)  and `com.snap.camerakit.lenses.group.id` from  your [My Lenses Portal](https://my-lenses.snapchat.com/) (Under the apps tab). After that to build, install and launch  the `camerakit-sample-custom-carousel` on a connected device follow one of the following options:
 
 ### Command Line
 

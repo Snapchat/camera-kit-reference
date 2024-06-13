@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Camera Kit Basic Sample</string>
+    <string name="camera_kit_not_supported">Camera Kit not supported on this device</string>
+</resources>
