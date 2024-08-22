@@ -8,6 +8,10 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.33.0"></a>
+## [1.33.0] - 2024-08-21
+- Lens Studio 5.0.19 support
+
 <a name="1.32.0"></a>
 ## [1.32.0] - 2024-07-24
 ### Features

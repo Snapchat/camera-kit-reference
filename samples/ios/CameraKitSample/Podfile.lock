@@ -1,16 +1,16 @@
 PODS:
-  - SCCameraKit (1.32.0)
-  - SCCameraKitBaseExtension (1.32.0):
-    - SCCameraKit (~> 1.32.0)
-  - SCCameraKitLoginKitAuth (1.32.0):
+  - SCCameraKit (1.33.0)
+  - SCCameraKitBaseExtension (1.33.0):
+    - SCCameraKit (~> 1.33.0)
+  - SCCameraKitLoginKitAuth (1.33.0):
     - SCCameraKit
     - SnapSDK/SCSDKLoginKit (= 2.4.0)
-  - SCCameraKitPushToDeviceExtension (1.32.0):
-    - SCCameraKitBaseExtension (~> 1.32.0)
-  - SCCameraKitReferenceSwiftUI (1.32.0):
-    - SCCameraKitReferenceUI (~> 1.32.0)
-  - SCCameraKitReferenceUI (1.32.0):
-    - SCCameraKit (~> 1.32.0)
+  - SCCameraKitPushToDeviceExtension (1.33.0):
+    - SCCameraKitBaseExtension (~> 1.33.0)
+  - SCCameraKitReferenceSwiftUI (1.33.0):
+    - SCCameraKitReferenceUI (~> 1.33.0)
+  - SCCameraKitReferenceUI (1.33.0):
+    - SCCameraKit (~> 1.33.0)
   - SnapSDK/SCSDKCoreKit (2.4.0)
   - SnapSDK/SCSDKCreativeKit (2.4.0):
     - SnapSDK/SCSDKCoreKit
@@ -18,12 +18,12 @@ PODS:
     - SnapSDK/SCSDKCoreKit
 
 DEPENDENCIES:
-  - SCCameraKit (= 1.32.0)
-  - SCCameraKitBaseExtension (= 1.32.0)
-  - SCCameraKitLoginKitAuth (= 1.32.0)
-  - SCCameraKitPushToDeviceExtension (= 1.32.0)
-  - SCCameraKitReferenceSwiftUI (= 1.32.0)
-  - SCCameraKitReferenceUI (= 1.32.0)
+  - SCCameraKit (= 1.33.0)
+  - SCCameraKitBaseExtension (= 1.33.0)
+  - SCCameraKitLoginKitAuth (= 1.33.0)
+  - SCCameraKitPushToDeviceExtension (= 1.33.0)
+  - SCCameraKitReferenceSwiftUI (= 1.33.0)
+  - SCCameraKitReferenceUI (= 1.33.0)
   - SnapSDK/SCSDKCreativeKit (= 2.4.0)
 
 SPEC REPOS:
@@ -37,14 +37,14 @@ SPEC REPOS:
     - SnapSDK
 
 SPEC CHECKSUMS:
-  SCCameraKit: 4b0295122214127b1aac7e89c139648733fac38d
-  SCCameraKitBaseExtension: b3b85cfa18569b3972f5e313cd02a487a9900195
-  SCCameraKitLoginKitAuth: cc72009118bef3e6512a28016cf646031adddee1
-  SCCameraKitPushToDeviceExtension: c635056d651cd530d9fe458629c1b1cbbd257803
-  SCCameraKitReferenceSwiftUI: e1f263ea42dacc032af2166f9c3b460d1f5335fe
-  SCCameraKitReferenceUI: 9f82b98bd1bd5133b53e12ee17a9dc7402f490c0
+  SCCameraKit: fdf62d540bc55fe3746196b339a5249a9c9a4a97
+  SCCameraKitBaseExtension: 9b1042e8a48ddaaf9fb7b61807fb1c0aa5f62950
+  SCCameraKitLoginKitAuth: 483bc0ab91c1dc622f9832e63028b9d5e69df586
+  SCCameraKitPushToDeviceExtension: 179b731a6113ab69d306b71b02cd4d0bc378cf1e
+  SCCameraKitReferenceSwiftUI: f7ab898f1c220e7d59eee1557c624c94ad34345b
+  SCCameraKitReferenceUI: 90d361b81d7ee7036b608a148607249bb39a88d2
   SnapSDK: e832716ff024b17b448f9bca5feeac5a3daed3ff
 
-PODFILE CHECKSUM: 5a01e7a10df30f4ab3df9c938f56c2b945de2563
+PODFILE CHECKSUM: 06f472ec6a49a476a01f9a8770b09f7639f41d0c
 
 COCOAPODS: 1.11.3
