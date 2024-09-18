@@ -29,6 +29,7 @@ class DebugStore: ObservableObject, DebugStoreProtocol {
     /// - Parameter defaultGroupIDs: The default group IDs to populate the configuration screen with.
     init(defaultGroupIDs: [String]) {
         self.defaultGroupIDs = defaultGroupIDs
+        assert(apiToken != "REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE", "Please specify API Token in Info.plist (SCCameraKitAPIToken)")
         apiToken = UserDefaults.standard.string(forKey: Constants.apiTokenDefaultsKey) ?? apiToken
         groupIDs = UserDefaults.standard.stringArray(forKey: Constants.lensGroupIDsDefaultsKey) ?? defaultGroupIDs
         $apiToken.sink { newValue in
