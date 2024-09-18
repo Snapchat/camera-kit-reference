@@ -8,6 +8,14 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.34.0"></a>
+## [1.34.0] - 2024-09-17
+- Lens Studio 5.1 support
+
+### Updates
+- **iOS:** Fix an issue with Custom Location Markers
+- **iOS:** Fix an issue caused by the NS_OPTIONS not being supported in Objc++
+
 <a name="1.33.0"></a>
 ## [1.33.0] - 2024-08-21
 - Lens Studio 5.0.19 support
