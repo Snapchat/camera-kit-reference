@@ -8,12 +8,25 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.36.0"></a>
+## [1.36.0] - 2024-11-14
+### Features
+- Lens Studio 5.3 support
+
+### Updates
+- **Android:** Updated basic sample application to apply single specified Lens
+- **Android:** Optimized Camera Kit Session initialization for better performance
+- **Android:** Launched a dedicated Android repository: https://github.com/Snapchat/camera-kit-android-sdk
+- **iOS:** Launched a dedicated iOS repository: https://github.com/Snapchat/camera-kit-ios-sdk, now supporting Swift Package Manager
+
 <a name="1.35.0"></a>
 ## [1.35.0] - 2024-10-16
+### Features
 - Lens Studio 5.2 support
 
 <a name="1.34.0"></a>
 ## [1.34.0] - 2024-09-17
+### Features
 - Lens Studio 5.1 support
 
 ### Updates
@@ -22,6 +35,7 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 
 <a name="1.33.0"></a>
 ## [1.33.0] - 2024-08-21
+### Features
 - Lens Studio 5.0.19 support
 
 <a name="1.32.0"></a>

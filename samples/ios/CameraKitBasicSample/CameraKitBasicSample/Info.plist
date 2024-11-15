@@ -6,5 +6,7 @@
 	<string>CameraKit Basic Sample app uses the camera to apply Lenses</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>CameraKit Basic Sample app uses microphone for post capture</string>
+	<key>SCSDKClientId</key>
+	<string>[Enter the OAuth2 client ID you get from the Snap Kit developer portal]</string>
 </dict>
 </plist>

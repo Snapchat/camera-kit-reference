@@ -14,6 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CameraKitDemo">
 
+        <meta-data android:name="com.snap.camerakit.api.token" android:value="REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"/>
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"

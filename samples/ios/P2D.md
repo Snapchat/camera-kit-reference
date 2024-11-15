@@ -12,7 +12,7 @@ In Xcode, add `-DCAMERAKIT_PUSHTODEVICE` to `Other Swift Flags`'s `Debug` config
 
 Ensure that you are part of the group of demo testers on the app from the developer portal.
 
-- Go to Snap Kit Developer Portal [for your specific app](https://kit.snapchat.com/manage/apps/)
+- Go to Snap Kit Developer Portal [for your specific app](https://kit.snapchat.com/manage/)
 - Go to the Demo Users section
 - Add your Snapchat username
 
