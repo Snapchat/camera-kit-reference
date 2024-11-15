@@ -1,13 +1,18 @@
 # Camera Kit Basic Sample
 
-This example app shows how to implement Camera Kit in the most simplistic way. Whether you are  
-building a brand new app or integrating Camera Kit in your existing app, this  
-could be the starting point from where you can build custom UX or logics around Camera Kit. We 
-recommend you to add error handling, capture and share buttons on top of this app.
+This example app shows the most simplistic Camera Kit implementation, applying a single lens. 
+
+Whether you are building a brand new app or integrating Camera Kit in your existing app, this could 
+be the starting point from where you can build custom UX or logics around Camera Kit. 
+
+We recommend you to add error handling, capture and share buttons on top of this app.
 
 ## Build
 
-Open project's `gradle.properties` file and enter values for `com.snap.camerakit.api.token` from [Snap Kit Developer Portal](https://snapkit.com/manage)  and `com.snap.camerakit.lenses.group.id` from  your [My Lenses Portal](https://my-lenses.snapchat.com/) (Under the apps tab). After that to build,  install and launch  the `camerakit-sample-basic` on a connected device follow one of the following options:
+1) Open project's `AndroidManifest.xml` file and update value for `com.snap.camerakit.api.token` This can be found under IDs and Tokens in your [Lenses Portal](https://my-lenses.snapchat.com/) (Under the apps tab).
+2) Within the `sample/basic/MainActivity.kt` file, update the values for `LENS_GROUP_ID` and `LENS_ID` with your desired lens, also retrieved from the Lenses Portal. 
+
+To build, install and launch the `camerakit-sample-basic` on a connected device follow one of the following options:
 
 ### Command Line
 
@@ -39,7 +44,7 @@ implementation "com.snap.camerakit:support-camerax:$cameraKitVersion"
 Add `ViewStub` to xml like this:
  ``` 
 <ViewStub  
-	android:id="@+id/camera_kit_stub"  
+	android:id="@+id/camera_kit_stub"
 	android:layout_width="match_parent"  
 	android:layout_height="match_parent" />  
 ```
@@ -59,11 +64,11 @@ val cameraKitSession = Session(context = this) {
     attachTo(findViewById(R.id.camera_kit_stub))
 }.apply {
     lenses.repository.observe(
-        LensesComponent.Repository.QueryCriteria.Available(ADD_GROUP_ID_HERE)
+        LensesComponent.Repository.QueryCriteria.ById(ADD_LENS_ID_HERE, ADD_GROUP_ID_HERE)
     ) { result ->
-        result.whenHasSome { myLenses ->
-            // applying the first Lens here but you can choose any other Lens from the list to be applied
-            lenses.processor.apply(myLenses.first())
+        result.whenHasFirst { requestedLens ->
+            // applying the Lens here
+            lenses.processor.apply(requestedLens)
         }
     }
 }

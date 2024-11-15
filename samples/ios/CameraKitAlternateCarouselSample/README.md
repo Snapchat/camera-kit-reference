@@ -2,17 +2,13 @@
 
 This sample app shows how to create an alternate carousel to select lenses and display a camera view with lenses applied using Camera Kit.
 
-## Setup
-
-See [README.md](./../README.md) for overall project setup.
-
 ## Interaction examples
 
 1) Alternate carousel opening and closing:
 
-    ![carousel-open-and-close](../.doc/sample_alternate_carousel_open_and_close.gif)
+![sample_alternate_carousel_open_and_close](https://github.com/user-attachments/assets/c5846bc4-e668-4275-8d51-d81b27085566)
 
 2) Clearing applied lenses:
 
-    ![clear-lens](../.doc/sample_alternate_carousel_clear_lens.gif)
+![sample_alternate_carousel_clear_lens](https://github.com/user-attachments/assets/ec23d168-e218-499e-91c1-1b5436828287)
 

@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private lateinit var imageProcessorSource: CameraXImageProcessorSource
     private var permissionRequest: Closeable? = null
 
+    companion object {
+        const val LENS_GROUP_ID = "REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"
+        const val LENS_ID = "REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"
+    }
+
     // Initialize a permission request launcher
     private val requestPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
@@ -38,7 +43,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         // Checking if Camera Kit is supported on this device or not.
         if (!supported(this)) {
             Toast.makeText(this, getString(R.string.camera_kit_not_supported), Toast.LENGTH_SHORT).show()
@@ -58,16 +62,14 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         cameraKitSession = Session(context = this) {
-            apiToken(BuildConfig.CAMERA_KIT_API_TOKEN)
             imageProcessorSource(imageProcessorSource)
             attachTo(findViewById(R.id.camera_kit_stub))
         }.apply {
             lenses.repository.observe(
-                LensesComponent.Repository.QueryCriteria.Available(BuildConfig.LENS_GROUP_ID_TEST)
+                LensesComponent.Repository.QueryCriteria.ById(LENS_ID, LENS_GROUP_ID)
             ) { result ->
-                result.whenHasFirst { firstLens ->
-                    // applying the first Lens here but you can choose any other Lens from the result to be applied
-                    lenses.processor.apply(firstLens)
+                result.whenHasFirst { requestedLens ->
+                    lenses.processor.apply(requestedLens)
                 }
             }
         }
