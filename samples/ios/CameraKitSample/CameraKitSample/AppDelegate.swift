@@ -46,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     //        apiToken: "api_token_here"))
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        NSLog("Using the CameraKit version: \(CameraKitVersion), LensCore version: \(CameraKitLensCoreVersion)");
         window = UIWindow(frame: UIScreen.main.bounds)
         if let previousGroupIDs = debugStore?.groupIDs {
             cameraController.groupIDs = previousGroupIDs

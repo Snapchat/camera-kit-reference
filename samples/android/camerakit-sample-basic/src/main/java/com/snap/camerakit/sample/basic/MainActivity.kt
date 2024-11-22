@@ -13,7 +13,6 @@ import com.snap.camerakit.lenses.LensesComponent
 import com.snap.camerakit.lenses.whenHasFirst
 import com.snap.camerakit.support.camerax.CameraXImageProcessorSource
 import com.snap.camerakit.supported
-import java.io.Closeable
 
 /**
  * A bare minimum Camera Kit app which simply applies 1 Lens in full screen. You should add error handling and UI
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     private lateinit var cameraKitSession: Session
     private lateinit var imageProcessorSource: CameraXImageProcessorSource
-    private var permissionRequest: Closeable? = null
 
     companion object {
         const val LENS_GROUP_ID = "REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"
@@ -81,7 +79,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
     override fun onDestroy() {
-        permissionRequest?.close()
         cameraKitSession.close()
         super.onDestroy()
     }
