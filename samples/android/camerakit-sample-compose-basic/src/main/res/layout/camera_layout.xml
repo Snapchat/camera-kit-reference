@@ -1,0 +1,11 @@
+<!-- res/layout/camera_kit_stub.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewStub
+        android:id="@+id/camera_kit_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
+

@@ -15,7 +15,7 @@ plugins {
 allprojects {
     ext {
         kotlinVersion = libs.versions.kotlin.get()
-        ktxVersion = '1.8.0'
+        ktxVersion = '1.9.0'
         exoPlayerVersion = '2.16.1'
         appCompatVersion = '1.4.0'
         constraintLayoutVersion = '2.1.2'
@@ -24,6 +24,10 @@ allprojects {
         drawerLayoutVersion = '1.1.1'
         glideVersion = '4.11.0'
         gmsVisionVersion = '16.2.0'
+        composeBomVersion = '2023.08.00'
+        accompistPermissionsVersion = '0.32.0'
+        activityComposeVersion = '1.9.3'
+        activityKtxVersion = '1.3.3'
 
         androidMinSdkVersion = 21
         androidCompileSdkVersion = 34
