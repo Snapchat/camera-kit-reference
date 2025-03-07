@@ -8,6 +8,17 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.39.0"></a>
+## [1.39.0] - 2025-03-05
+### Features
+- Lens Studio 5.7 support
+- **iOS:** Ability to select an image or video from the device&#39;s gallery and use it as a source for Lens processing
+
+### Bug Fixes
+- **iOS:** Fix for UIImage and AVAsset orientation handling
+- **iOS:** Improvements for Lens assets caching logic
+- **iOS:** Performance and stability improvements
+
 <a name="1.38.0"></a>
 ## [1.38.0] - 2025-02-05
 ### Features
