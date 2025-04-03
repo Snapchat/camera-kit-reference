@@ -1,6 +1,5 @@
 import SwiftUI
 
-@available(iOS 13.0.0, *)
 struct DebugView: View {
     
     @ObservedObject var store: DebugStore
@@ -19,7 +18,6 @@ struct DebugView: View {
     
 }
 
-@available(iOS 13.0, *)
 extension View {
     
     func ck_navigationTitle(_ titleKey: LocalizedStringKey) -> some View {

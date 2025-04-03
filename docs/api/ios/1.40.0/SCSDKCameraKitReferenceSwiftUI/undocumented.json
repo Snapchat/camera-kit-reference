@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/private/var/lib/jenkins/workspace/camera-kit-ios-sdk/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/SwiftUI/CameraView.swift",
+      "line": 9,
+      "symbol": "CameraView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/camera-kit-ios-sdk/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/SwiftUI/CameraView.swift",
+      "line": 16,
+      "symbol": "CameraView.init(cameraController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/camera-kit-ios-sdk/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/SwiftUI/CameraViewState.swift",
+      "line": 10,
+      "symbol": "CameraViewState",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/camera-kit-ios-sdk/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/SwiftUI/CameraViewState.swift",
+      "line": 76,
+      "symbol": "CameraViewState",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/jenkins/workspace/camera-kit-ios-sdk/SDKs/CameraKit/CameraKitSandbox/Sources/Reference/SwiftUI/CarouselView.swift",
+      "line": 68,
+      "symbol": "CarouselView.Coordinator.item(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/private/var/lib/jenkins/workspace/camera-kit-ios-sdk"
+}

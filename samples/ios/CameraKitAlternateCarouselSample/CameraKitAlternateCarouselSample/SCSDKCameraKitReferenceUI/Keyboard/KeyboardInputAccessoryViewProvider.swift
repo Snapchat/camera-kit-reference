@@ -147,19 +147,15 @@ extension UIColor {
     ///   - dark: Color to use in dark mode.
     /// - Returns: A dynamic color.
     static func ck_dynamic(light: UIColor, dark: UIColor) -> UIColor {
-        if #available(iOS 13.0, *) {
-            return UIColor { traitCollection in
-                switch traitCollection.userInterfaceStyle {
-                case .light:
-                    return light
-                case .dark:
-                    return dark
-                default:
-                    return light
-                }
+        return UIColor { traitCollection in
+            switch traitCollection.userInterfaceStyle {
+            case .light:
+                return light
+            case .dark:
+                return dark
+            default:
+                return light
             }
-        } else {
-            return light
         }
     }
 

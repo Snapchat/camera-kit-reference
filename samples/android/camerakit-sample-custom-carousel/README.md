@@ -29,7 +29,7 @@ Select the `camerakit-sample-custom-carousel` module configuration and click run
    in `MainActivity.kt` file in this example.
 3) In this sample we are using the Camera Kit's `CameraXImageProcessorSource` support class for the
    image processing input at the time of `Session` creation in `MainActivity.kt` file. However, you
-   are free to use your own image processing input and connect it to `Session.processor` .
+   are free to use your own image processing input and connect it to `Session.processor`.
 4) We are using `RecyclerView` with `GridLayoutManager` for the lenses carousel. Once you have the
    view hierarchy setup you can simply query the lenses repository from the `Session.lenses` object
    to fetch lenses group and fill the `RecyclerView` with the group's items using custom layout as a

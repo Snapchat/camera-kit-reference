@@ -11,7 +11,6 @@ import UIKit
 import SCSDKCameraKit
 import SCSDKCameraKitReferenceUI
 
-@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private enum Constants {

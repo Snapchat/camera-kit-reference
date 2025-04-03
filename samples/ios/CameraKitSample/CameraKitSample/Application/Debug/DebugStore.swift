@@ -17,7 +17,6 @@ protocol DebugStoreProtocol {
     func processDeepLink(_ url: URL) 
 }
 
-@available(iOS 13.0, *)
 class DebugStore: ObservableObject, DebugStoreProtocol {
     
     @Published var apiToken: String = ApplicationInfo.apiToken!
@@ -61,7 +60,6 @@ class DebugStore: ObservableObject, DebugStoreProtocol {
     
 }
 
-@available(iOS 13.0, *)
 extension DebugStore {
     
     private enum Constants {
