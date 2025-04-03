@@ -8,6 +8,18 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.40.0"></a>
+## [1.40.0] - 2025-04-03
+### Features
+- Lens Studio 5.8 support
+
+### Updates
+- **Android/iOS:** Improvement for HTTP request validation, now accepting empty optional parameters
+- **iOS:** Minimum supported version changed to iOS 14.0
+
+### Bug Fixes
+- **iOS:** Fix for Custom Locations not initializing 
+
 <a name="1.39.0"></a>
 ## [1.39.0] - 2025-03-05
 ### Features

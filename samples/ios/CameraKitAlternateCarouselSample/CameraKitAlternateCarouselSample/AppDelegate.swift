@@ -21,9 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         cameraController.groupIDs = [SCCameraKitLensRepositoryBundledGroup, Constants.partnerGroupId]
-        if #available(iOS 13.0, *) {
-            window?.overrideUserInterfaceStyle = .dark
-        }
+        window?.overrideUserInterfaceStyle = .dark
 
         cameraController.snapchatDelegate = self
         let cameraViewController = CameraViewController(cameraController: cameraController)

@@ -39,12 +39,8 @@ public class LensPickerCollectionViewCell: UICollectionViewCell {
     /// Activity indicator view that should activate when lens content is loading
     public let activityIndicatorView: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView()
-        if #available(iOS 13.0, *) {
-            view.style = .medium
-            view.color = .white
-        } else {
-            view.style = .white
-        }
+        view.style = .medium
+        view.color = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

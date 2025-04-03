@@ -75,8 +75,7 @@ class CustomizedCameraViewController: CameraViewController {
     /// The user has tapped the debug sheet button.
     /// - Parameter sender: the button that was tapped
     @objc func lensDebugSheetAction(_ sender: UIButton) {
-        if #available(iOS 13.0.0, *) {
-            guard let debugStore = debugStore as? DebugStore else { return }
+        guard let debugStore = debugStore as? DebugStore else { return }
             let vc = UIHostingController(rootView: DebugView(store: debugStore))
             let cancellable = debugStore.$groupIDs.sink { [weak self] groupIDs in
                 guard let self = self else { return }
@@ -92,7 +91,6 @@ class CustomizedCameraViewController: CameraViewController {
                 nav.sheetPresentationController?.detents = [.medium()]
             }
             present(nav, animated: true, completion: nil)
-        }
     }
 }
 

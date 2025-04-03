@@ -72,9 +72,9 @@ private const val KEY_LENS_GROUPS = "lens_groups"
 private const val KEY_API_TOKEN = "api_token"
 
 /**
- * A simple activity which demonstrates how to use CameraKit to apply/remove lenses onto a camera preview.
+ * A simple activity which demonstrates how to use CameraKit to apply and remove lenses onto a camera preview.
  * Use of camera and management of the [com.snap.camerakit.Session] is done through the [CameraLayout] helper view
- * which is open to extension and customization depending on the app's needs.
+ * which is open to extension and customization depending on the apps needs.
  */
 class MainActivity : AppCompatActivity(), LifecycleOwner {
 
