@@ -1,9 +1,9 @@
 platform :ios, '14.0'
 target 'CameraKitSample' do
 	project 'CameraKitSample.xcodeproj'
-	pod 'SCCameraKit', '1.40.0'
-	pod 'SCCameraKitReferenceUI', '1.40.0'
-	pod 'SCCameraKitReferenceSwiftUI', '1.40.0'
+	pod 'SCCameraKit', '1.41.0'
+	pod 'SCCameraKitReferenceUI', '1.41.0'
+	pod 'SCCameraKitReferenceSwiftUI', '1.41.0'
 	pod 'SnapSDK', '2.4.0', :subspecs => ['SCSDKCreativeKit']
 
 	target 'CameraKitSampleTests' do
@@ -11,10 +11,9 @@ target 'CameraKitSample' do
 	end
 
 	# Only include Push to Device in non-App Store configurations using `, :configurations => ['Debug']`, eg:
-  # pod 'SCCameraKitPushToDeviceExtension', '1.40.0', :configurations => ['Debug']
-	pod 'SCCameraKitBaseExtension', '1.40.0'
-	pod 'SCCameraKitPushToDeviceExtension', '1.40.0'
-	pod 'SCCameraKitLoginKitAuth', '1.40.0'
+  # pod 'SCCameraKitPushToDeviceExtension', @base_path, :configurations => ['Debug']
+	pod 'SCCameraKitPushToDeviceExtension', '1.41.0'
+	pod 'SCCameraKitLoginKitAuth', '1.41.0'
 
 end
 
