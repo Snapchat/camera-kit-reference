@@ -1,9 +1,0 @@
-platform :ios, '14.0'
-target 'CameraKitAlternateCarouselSample' do
-	project 'CameraKitAlternateCarouselSample.xcodeproj'
-	pod 'SCCameraKit', '1.40.0'
-	pod 'SnapSDK', '2.4.0', :subspecs => ['SCSDKCreativeKit']
-	target 'CameraKitAlternateCarouselSampleTests' do
-		inherit! :search_paths
-	end
-end

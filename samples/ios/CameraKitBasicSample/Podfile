@@ -1,5 +1,0 @@
-platform :ios, '14.0'
-target 'CameraKitBasicSample' do
-	project 'CameraKitBasicSample.xcodeproj'
-	pod 'SCCameraKit', '1.40.0'
-end

@@ -7,7 +7,6 @@ import Combine
 // WARNING: Push to Device support cannot be shipped to the App Store.
 // Push to Device must be compiled out before submission.
  #if CAMERAKIT_PUSHTODEVICE
-     import SCSDKCameraKitBaseExtension
      import SCSDKCameraKitLoginKitAuth
      import SCSDKCameraKitPushToDeviceExtension
  #endif
@@ -102,11 +101,11 @@ fileprivate extension CustomizedCameraViewController {
     
     /// Configures the push to device button in the toolbar.
     func setUpPushToDeviceButton() {
-        if let extensibleSession = cameraController.cameraKit as? CameraKitExtensible {
-            extensibleSession.register(pushToDevice)
-            pushToDevice.delegate = self
-            cameraController.groupIDs.insert(SCCameraKitPushToDeviceGroupID, at: 0)
-        }
+        let extensibleSession = cameraController.cameraKit
+        extensibleSession.register(pushToDevice)
+        pushToDevice.delegate = self
+        cameraController.groupIDs.insert(SCCameraKitPushToDeviceGroupID, at: 0)
+
         cameraView.cameraActionsView.buttonStackView.addArrangedSubview(devicePairingButton)
         NSLayoutConstraint.activate([
             devicePairingButton.widthAnchor.constraint(equalToConstant: 40),
