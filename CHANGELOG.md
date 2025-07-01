@@ -9,20 +9,17 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 ## [Unreleased]
 
 <a name="1.41.0"></a>
-## [1.41.0] - 2025-06-23
-### Features
-- Lens Studio 5.11 support
+## [1.41.0] - 2025-06-27
 
-### Updates
-- **iOS:** Removed base extension
-- **iOS:** A new Lens Prefetch API, which will enable the customization of priorities for preloading lens content
-- **iOS:** A Lens WarmUp API to preload a lens without rendering it
+<a name="1.41.0"></a>
+## [1.41.0] - 2025-06-27
 
-### Bug Fixes
-- **iOS:** Fixed potential race condition for ToS prompt
-- **Android:** Fixed memory leak related to lens keyboard
-- **Android/iOS:** Minor fixes
-  
+<a name="1.41.0"></a>
+## [1.41.0] - 2025-06-27
+
+<a name="1.41.0"></a>
+## [1.41.0] - 2025-06-26
+
 <a name="1.40.0"></a>
 ## [1.40.0] - 2025-04-03
 ### Features
