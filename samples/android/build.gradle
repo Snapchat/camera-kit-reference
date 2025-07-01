@@ -35,7 +35,7 @@ allprojects {
 
         cameraKitDistributionVersion = rootProject.file('../../VERSION').text.trim()
         cameraKitDistributionCode = 1
-        cameraKitVersion = "$cameraKitDistributionVersion"
+        cameraKitVersion = "$cameraKitDistributionVersion+4b62309c.camkit.pipeline.test.release.1.41.x.0"
         // NOTE: replace the value with a token specific to your application
         cameraKitApiToken = property('com.snap.camerakit.api.token')
         // NOTE: replace the value with a lenses group ID specific to your application
