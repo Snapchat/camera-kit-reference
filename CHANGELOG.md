@@ -8,6 +8,18 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.45.0"></a>
+## [1.45.0] - 2025-11-13
+### Features 
+- Lens Studio 5.16 support
+
+### Updates
+- **iOS:** New API to remove lens by ID
+- **Android:** A Lens WarmUp API to preload a lens without rendering it
+
+### Bug Fixes
+- **Android:** Fixed an issue that allowed Surfaces usage after the Session had been released in Camera Kit
+
 <a name="1.44.0"></a>
 ## [1.44.0] - 2025-10-17
 ### Features
