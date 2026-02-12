@@ -8,10 +8,21 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
-<a name="1.45.0"></a>
-## [1.45.0] - 2025-11-13
+<a name="1.46.0"></a>
+## [1.46.0] - 2026-02-11
+
 ### Features 
-- Lens Studio 5.16 support
+- Lens Studio 5.18 support
+
+### Updates
+- **iOS:** Support for ray tracing
+- **iOS:** Performance improvements
+- **Android:** Android target version updated to 36
+
+<a name="1.45.0"></a>
+## [1.45.0] - 2025-12-18
+### Features 
+- Lens Studio 5.17 support
 
 ### Updates
 - **iOS:** New API to remove lens by ID
