@@ -8,6 +8,15 @@ and the Camera Kit SDK adheres to [Semantic Versioning](https://semver.org/spec/
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="1.48.0"></a>
+## [1.48.0] - 2026-04-08
+
+### Features 
+- Lens Studio 5.20 support
+
+### Updates
+- **Android:** SDK is now built with Kotlin 2.2 requiring a compatible Kotlin version for consumers, and Kotlin sample code using configureEachItem has been updated to the newer explicit callback parameter style.
+
 <a name="1.47.0"></a>
 ## [1.47.0] - 2026-03-11
 

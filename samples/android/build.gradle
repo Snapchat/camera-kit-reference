@@ -4,12 +4,13 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools:r8:8.6.17'
-        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath 'com.android.tools.build:gradle:7.3.1'
     }
 }
 
 plugins {
     alias libs.plugins.kotlin apply false
+    alias libs.plugins.composeCompiler apply false
     alias libs.plugins.ktlint apply false
 }
 

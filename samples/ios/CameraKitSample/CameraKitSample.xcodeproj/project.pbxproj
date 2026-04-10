@@ -779,7 +779,7 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.snap.camerakit.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "CameraKit Sample Ad Hoc";
+				PROVISIONING_PROFILE_SPECIFIER = "2026-2027 Dev Tools Wildcard Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
