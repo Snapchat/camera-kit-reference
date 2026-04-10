@@ -164,11 +164,14 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                 observedGroupIds = linkedSetOf(*lensGroups)
                 // A lambda passed to configureEachItem can be used to customize position or appearance of each
                 // item in the lenses carousel.
-                configureEachItem {
-                    if (lens.groupId == LENS_GROUP_ID_BUNDLED || index == 1) {
-                        moveToLeft()
+                configureEachItem { itemOptions ->
+                    if (
+                        itemOptions.lens.groupId == LENS_GROUP_ID_BUNDLED ||
+                        itemOptions.lenses.indexOf(itemOptions.lens) == 1
+                    ) {
+                        itemOptions.moveToLeft()
                     } else {
-                        moveToRight()
+                        itemOptions.moveToRight()
                     }
                 }
             }

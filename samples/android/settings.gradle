@@ -6,8 +6,9 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         libs {
-            def kotlin = version('kotlin', '1.9.0')
+            def kotlin = version('kotlin', '2.2.10')
             plugin('kotlin', 'org.jetbrains.kotlin.jvm').versionRef(kotlin)
+            plugin('composeCompiler', 'org.jetbrains.kotlin.plugin.compose').versionRef(kotlin)
             plugin('ktlint', 'org.jlleitschuh.gradle.ktlint').version('11.0.0')
         }
     }
