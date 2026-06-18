@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/private/var/lib/snapci/workspace/checkouts/Snapchat/camera-kit-distribution/samples/ios/__CameraKitSupport/CameraKit/CameraKitReferenceSwiftUI/Sources/CameraView.swift",
+      "line": 9,
+      "symbol": "CameraView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/snapci/workspace/checkouts/Snapchat/camera-kit-distribution/samples/ios/__CameraKitSupport/CameraKit/CameraKitReferenceSwiftUI/Sources/CameraView.swift",
+      "line": 16,
+      "symbol": "CameraView.init(cameraController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/snapci/workspace/checkouts/Snapchat/camera-kit-distribution/samples/ios/__CameraKitSupport/CameraKit/CameraKitReferenceSwiftUI/Sources/CameraViewState.swift",
+      "line": 10,
+      "symbol": "CameraViewState",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/snapci/workspace/checkouts/Snapchat/camera-kit-distribution/samples/ios/__CameraKitSupport/CameraKit/CameraKitReferenceSwiftUI/Sources/CameraViewState.swift",
+      "line": 76,
+      "symbol": "CameraViewState",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/private/var/lib/snapci/workspace/checkouts/Snapchat/camera-kit-distribution/samples/ios/__CameraKitSupport/CameraKit/CameraKitReferenceSwiftUI/Sources/CarouselView.swift",
+      "line": 68,
+      "symbol": "CarouselView.Coordinator.item(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/private/var/lib/snapci/workspace/checkouts/Snapchat/camera-kit-distribution/samples/ios"
+}
