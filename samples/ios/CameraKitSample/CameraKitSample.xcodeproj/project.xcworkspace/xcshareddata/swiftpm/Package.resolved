@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SnapSDK",
+        "repositoryURL": "https://github.com/Snapchat/snap-kit-spm",
+        "state": {
+          "branch": null,
+          "revision": "b4593a1ec3813af844806fef319ef68888611fba",
+          "version": "2.6.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

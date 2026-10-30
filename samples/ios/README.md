@@ -21,30 +21,19 @@ In order to test sharing to Snapchat, make sure you also add your Snap Kit clien
 
 ### Dependency Management
 
-Camera Kit currently supports CocoaPods.
+Camera Kit is distributed with Swift Package Manager from https://github.com/Snapchat/camera-kit-ios-sdk. New releases are no longer published to CocoaPods; the last version available there is 1.50.0.
 
-#### CocoaPods
+#### Swift Package Manager
 
-Add
-
-```
-pod 'SCCameraKitReferenceUI'
-```
-
-to your `Podfile`. If your application uses SwiftUI, you can use our SwiftUI SDK below
+In Xcode, choose **File > Add Package Dependencies…**, enter
 
 ```
-pod 'SCCameraKit'
-pod 'SCCameraKitReferenceSwiftUI'
+https://github.com/Snapchat/camera-kit-ios-sdk
 ```
 
-Before opening the workspace make sure you run
+and add `SCSDKCameraKitReferenceUI` to your app target. If your application uses SwiftUI, add `SCSDKCameraKit` and `SCSDKCameraKitReferenceSwiftUI` instead.
 
-```
-pod install
-```
-
-and open `CameraKitSample.xcworkspace`.
+The sample apps already depend on this package: open `CameraKitSample.xcodeproj` and Xcode fetches it for you.
 
 #### Configure your AVCaptureSession Pipeline
 

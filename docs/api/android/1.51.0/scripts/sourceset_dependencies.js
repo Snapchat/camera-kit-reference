@@ -1,0 +1,1 @@
+sourceset_dependencies='{":camera-kit-api/main":[],":camera-kit-api/release":[]}'
