@@ -18,13 +18,12 @@ Ensure that you are part of the group of demo testers on the app from the develo
 
 ### Install Pods for Push To Device
 
-Four frameworks are required for Push To Device. The frameworks are bundled in with the Camera Kit distribution folder. To use them make the following changes to your Podfile:
+Additional frameworks are required for Push To Device. The frameworks are bundled in with the Camera Kit distribution folder. To use them make the following changes to your Podfile:
 
 ```swift
 target 'Your-App-Name' do
 ...
   pod 'SCCameraKitLoginKitAuth', :path => 'CameraKit/CameraKitLoginKitAuth', :configurations => ['Debug']
-  pod 'SCCameraKitBaseExtension', :path => 'CameraKit/CameraKitBaseExtension/', :configurations => ['Debug']
   pod 'SCCameraKitPushToDeviceExtension', :path => 'CameraKit/CameraKitPushToDeviceExtension/', :configurations => ['Debug']
 ...
 ```
